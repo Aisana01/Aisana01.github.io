@@ -1,0 +1,105 @@
+header {
+	width: auto;
+	background-color: #2D426D;
+	max-width: 1350px;
+	margin: auto;
+}
+.messages_href {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.top_header {
+	display: flex;
+	height: 44px;
+}
+.header_right {
+	height: 100%;
+	width: 72%;
+	border-right: 1px solid #FFFFFF;
+	display: flex;
+}
+.header_left {
+	height: 100%;
+	width: 28%;
+	display: flex;
+}
+.logo {
+	margin: auto 0;
+	width: 28%;
+	text-align: center;
+}
+.logo_link {
+	color: #FFFFFF;
+	padding-left: 10px;
+	font-weight: 600;
+	font-size: 34px;
+}
+.search_field {
+	margin: auto 0;
+	width: 50%;
+}
+.field_in {
+	margin: 0 auto;
+}
+.search_field input {
+	margin: 0 auto;
+	width: 100%;
+	height: 30px;
+	border-radius: 4px;
+	border-width: 0;
+}
+.basket {
+	height: auto;
+	width: 25%;
+	margin: auto 0;
+	text-align: center;
+}
+.basket_link {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 19px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+.icons {
+	height: 100%;
+	width: 50%;
+	text-align: center;
+	padding-top: 9px;
+}
+.auth_button {
+	height: 100%;
+	width: 50%;
+	background-color: #FFB72B;
+	padding-top: 10px;
+	text-align: center;
+}
+.btn_SignIn {
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.bottom_header {
+	height: 100px;
+
+}
+.bottom_header_in {
+	width: 75%;
+	display: flex;
+	height: 100%;
+	margin: 0 auto;
+}
+.bottom_header_in a {
+	width: 12.5%;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+}	

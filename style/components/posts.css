@@ -1,0 +1,110 @@
+.post {
+	height: 363px;
+    width: 25%;
+    justify-content: center;
+    left: 58px;
+    float: left;
+    flex-wrap: wrap;
+    background-color: #d34c59;
+    margin-right: 10px;
+    border: 1px solid #d34c59;
+    box-shadow: 0 0 5px rgba(0,0,0,.10);
+    position: relative;
+    margin-top: 12px;
+}
+
+.post1 {
+	height: 370px;
+	width: 18.8%;
+	background-color: #d34c59;
+	margin: 1em 0.4em;
+	border: 1px solid #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.10);
+
+}
+.figure_inside{
+	height: 180px;
+
+}
+.post_bottom{
+	display: grid;
+}
+.post_image{
+	overflow: hidden;
+	height: 180px;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+	overflow: auto;
+	padding-bottom: 10px;
+	white-space: nowrap;
+	max-width: 1160px;
+}
+
+.list ul {
+	display: flex;
+}
+.list ul li a {
+	padding: 28px 1.333em;
+	line-height: 80px;
+	color: #777;
+	    font-weight: 600;
+}
+.list a {
+	display: inline-block;
+	color: white;
+	color: #464646;
+	text-align: center;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.not_conf_button{
+	background-color: #c3293a;
+	border: 1px solid #c3293a;
+	border-radius: 4px;
+	margin: 8px 0 0 0;
+	cursor: pointer;
+	padding: 5px 10px;
+	color: #FFF;
+	height: 30px;
+	width: 140px;
+	justify-content: center;
+}
+.remove_button{
+	background-color: #ededed;
+	border: 1px solid #ededed;
+	border-radius: 4px;
+	margin: 8px 0 0 0;
+	cursor: pointer;
+	padding: 5px 10px;
+	color: #c3293a;
+	height: 30px;
+	width: 140px;
+	justify-content: center;	
+}
+.det_but{
+	margin-top: 20px;
+}
+.adm_button{
+	margin-top: 15px;
+}
+.products{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.product_item{
+	width: 18.8%;
+	margin: 1em 0.4em;
+}
+
+.title_adm{
+	margin: 40px 0 20px 0;
+	font-weight: 700;
+	font-size: 30px;
+	color: #464646;
+}

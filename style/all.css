@@ -1,0 +1,17 @@
+@import url('components/basic.css');
+@import url('components/auth.css');
+@import url('components/footer.css');
+@import url('components/section.css');
+@import url('components/landing_blog.css');
+@import url('components/client_side.css');
+@import url('components/worker_side.css');
+@import url('components/product_info_page.css');
+@import url('components/messenger.css');
+@import url('components/resumes.css');
+@import url('components/header.css');
+@import url('components/posts.css');
+@import url('components/grid.css');
+@import url('components/shop.css');
+@import url('vendor/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
