@@ -22,7 +22,7 @@
 </head>
 
 <body class="about">
-    <header>
+    <header class = "aboutUs_header">
         <div class="top_header">
             <div class="header_right">
                 <div class="logo">
@@ -49,14 +49,79 @@
         </div>
         <div class="bottom_header">
             <div class="bottom_header_in">
-                <a href="shop.php" class="categories">Фундамент</a>
-                <a href="shop.php" class="categories">Электрика</a>
-                <a href="shop.php" class="categories">Кровля</a>
-                <a href="shop.php" class="categories">Теплотехника</a>
-                <a href="shop.php" class="categories">Стены</a>
-                <a href="shop.php" class="categories">Матералы</a>
-                <a href="shop.php" class="categories">Заборы</a>
-                <a href="AboutUs.php" class="categories">О Нас</a>
+                <div class="dropdown">
+                    <a href="shop.php" class="categories">Фундамент и бетон</a>
+                    <div class="dropdown_content">
+                        <a href="#">Расчет фундаментной плиты</a>
+                        <a href="#">Расчет ленточного фундамента</a>
+                        <a href="#">Расчет ленточного фундамента(2 секции)</a>
+                        <a href="#">Расчет ленточного фундамента(3 секции)</a>
+                        <a href="#">Расчет ленточного фундамента(4 секции)</a>
+                        <a href="#">Расчет состава бетона</a>
+                        <a href="#">Количество материала для бетонных колец</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="shop.php" class="categories">Стены</a>
+                    <div class="dropdown_content">
+                        <a href="#">Расчет кирпичных стен</a>
+                        <a href="#">Расчет стен из блоков</a>
+                        <a href="#">Расчет стен из блоков по своим размерам</a>
+                        <a href="#">Объем блоков/кирпича в м3</a>
+                        <a href="#">Объем блоков/кирпича в ярде3</a>
+                        <a href="#">Параметры стеновых блоков</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="shop.php" class="categories">Отделка</a>
+                    <div class="dropdown_content">
+                        <a href="#">Количество утеплителя для стен и фундаментов</a>
+                        <a href="#">Расчет настила из досок/перекрытий</a>
+                        <a href="#">Расчет количества плитки</a>
+                        <a href="#">Расчет напольного покрытия</a>
+                        <a href="#">Расчет количества вагонки на поверхность</a>
+                        <a href="#">Расход грунтовки</a>
+                        <a href="#">Расход краски</a>
+                        <a href="#">Расход штукатурки</a>
+                        <a href="#">Расход шпаклевки</a>
+                        <a href="#">Расход стяжки</a>
+                        <a href="#">Расход ровнителя/наливных полов</a>
+                        <a href="#">Расход плиточного клея</a>
+                        <a href="#">Расход обоев</a>
+                        <a href="#">Плинтус</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="shop.php" class="categories">Пиломатериалы</a>
+                    <div class="dropdown_content">
+                        <a href="#">Объем пиломатериалов по количеству</a>
+                        <a href="#">Количество пиломатериалов по объему</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="shop.php" class="categories">Кровли</a>
+                    <div class="dropdown_content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="shop.php" class="categories">Объемы</a>
+                    <div class="dropdown_content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a> 
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="shop.php" class="categories">Земляные работы</a>
+                    <div class="dropdown_content">
+                        <a href="#">Расчет подушки из сыпучих материалов</a>
+                        <a href="#">Объем земленых работ(вертикальные стены)</a>
+                        <a href="#">Объем земленых работ(Уклон)</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -179,7 +244,7 @@
         <div class="slider__wrapper">
             <div class="slider__items">
                 <div class="slider__item">
-                    <div style="height: 650px; background: white;">
+                    <div style="height: 650px; background: #fff;">
                         <div class="container_block_landing">
                             <div class="landing_main">
                                 <div class="landing_large">IBUILD – <b>Cтроительный калькулятор онлайн №1</b>
@@ -246,37 +311,99 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <div style="height: 650px; background: #DDE7DC;">
+                    <div style="height: 650px; background: #f5f5f5;">
                         <div class="our_team_block">
                             <h3 class="our_team_title">Наша Команда</h3>
-                            <h6 class="title-style-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">Люди, стоящие за нашим успехом</h6>
+                            <h6 class="our_team_title">Люди, стоящие за нашим <b>успехом!</b></h6>
                             <div class="container_block_landing_about">
-                            <div class="card_item_about">   
-                                <div class="card">
-                                    <img src="image/team1.jpg" alt="">
-                                    <h5 class="team-classic-name"><a href="#">Olpan Aisana</a></h5>
+                                <div class="card_item_about">
+                                    <div class="card">
+                                        <img src="image/team1.jpg" alt="">
+                                        <h5 class="team-classic-name"><a href="#">Olpan Aisana</a></h5>
+                                    </div>
+                                    <div class="card_item">
+                                        <div class="team_status">Front-end and Designer</div>
+                                        <div class="heading_name"> Aisana</div>
+                                    </div>
                                 </div>
-                            </div> 
-                            <div class="card_item_about">   
-                                <div class="card">
-                                    <img src="image/team2.jpg" alt="">
+                                <div class="card_item_about">
+                                    <div class="card">
+                                        <img src="image/team2.jpg" alt="">
+                                        <h5 class="team-classic-name"><a href="#">Uisynbaiyev Yelaman</a></h5>
+                                    </div>
+                                    <div class="card_item">
+                                        <div class="team_status">Back-end developer</div>
+                                        <div class="heading_name"> Yelaman</div>
+                                    </div>
                                 </div>
-                            </div> 
-                            <div class="card_item_about">   
-                                <div class="card">
-                                    <img src="image/team3.jpg" alt="">
+                                <div class="card_item_about">
+                                    <div class="card">
+                                        <img src="image/team3.jpg" alt="">
+                                        <h5 class="team-classic-name"><a href="#">Auganbekova Ayaulym</a></h5>
+                                    </div>
+                                    <div class="card_item">
+                                        <div class="team_status">Mobile developer</div>
+                                        <div class="heading_name"> Ayaulym</div>
+                                    </div>
                                 </div>
-                            </div> 
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="slider__item">
-                    <div style="height: 650px; background: violet;"></div>
-                </div>
-                <div class="slider__item">
-                    <div style="height: 650px; background: coral;"></div>
+                    <div style="height: 650px; background: #fff;">
+                        <div class="container_block_landing">
+
+                            <div class="landing_main_left2">
+                                <div class="landing_container">
+
+                                    <div class="layer_wrap">
+                                        <div class="layer_wrap_img" data-depth="0.4">
+                                            <img src="image/index_7.png" alt="" width="700" height="531">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="layer_wrap_img2" data-depth="0.4">
+                                    <img src="image/imgbin_building.png" alt="" width="350" height="350">
+                                </div>
+                            </div>
+
+                            <div class="landing_main">
+                                <div class="landing_large">IBOT – <b>Cтроительный помощник №1</b>
+                                </div>
+                                <div class="landing_small">
+                                    <h6>Давайте работать вместе!</h6>
+                                </div>
+                                <div class="landing_large_form">
+
+                                    <form class="landing_form_input">
+                                        <div class="form_wrap">
+                                            <!-- <label class="input_label" >Имя</label> -->
+                                            <input class="form_control" type="text" name="name" name placeholder="Имя"><span class="form_validation"></span>
+                                        </div>
+                                        <div class="form_wrap">
+                                            <!-- <label class="input_label">Email</label> -->
+                                            <input class="form_control" type="email" name="email" name placeholder="Email"><span class="form_validation"></span>
+                                        </div>
+                                        <div class="form_wrap">
+                                            <!-- <label class="input_label" >Номер-телефона</label> -->
+                                            <input class="form_control" type="text" name="phone" name placeholder="Номер-телефона"><span class="form_validation"></span>
+                                        </div>
+                                        <div class="form_wrap">
+                                            <button class="button_primary" type="submit">Отправить
+                                            </button>
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
