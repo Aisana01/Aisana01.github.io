@@ -109,7 +109,24 @@
 }
 
 
+.top_block{
+     background: linear-gradient(rgba(44, 69, 179, 0.9) 0%, rgba(45, 45, 45, 0) 100%);
+     margin: 0 auto;
+     max-width: 1400px;
+     opacity: 1;
+     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+     transform-origin: 50% 50% 0px;
+     background: rgb(44, 69, 179, 0.9) url(https://livedemo00.template-help.com/wt_prod-20819/images/slide-1-1339x729.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
 
+}
+
+.wpb_wrapper{
+  text-align: center;
+  font-family:  'Montserrat', sans-serif;
+}
 
 @media (max-width: 1024px){
 
@@ -183,3 +200,88 @@
     vertical-align: middle;
     line-height: 16px;
 }
+
+/*modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 0 auto;
+  width: 57%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.6s;
+  animation-name: animatetop;
+  animation-duration: 0.6s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #C4956A;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.expand_img{
+ display: flex;
+ justify-content: center;
+}
+.expand_img_svg {
+  width: 21px;
+  margin-left: 20px;
+  margin-top:3px;
+  fill: #C4956A;
+ }
+.expand_img_svg :hover{
+
+  fill: #2D426D;
+ }
+ 
