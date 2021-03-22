@@ -261,13 +261,13 @@
                     <div class="result_calc_title"></div>
                     <div class="result_calc_words_main">
                         <div class="result_calc_words_titles">
-                            <p>Площадь основания плиты:</p>
+                            <p>Площадь основания фундамента:</p>
                             <p>Объем бетона:</p>
-                            <p>Периметр плиты:</p>
-                            <p>Площадь боковой поверхности:</p>
+                            <p>Внешний периметр:</p>
+                            <p>Площадь внешней боковой поверхности:</p>
                             <p>Вес бетона:</p>
                             <p>Нагрузка на почву:</p>
-                            <p>Стоимость бетона:</p>
+                            <p>Стоимость:</p>
                         </div>
                         <div class="result_calc_words_parameters">
                             <p><output id="beton_volume"></output> м2</p>

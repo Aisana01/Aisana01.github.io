@@ -178,7 +178,7 @@
                     <!-- <img id = "myBtn" src="image/expand.svg" alt="" > -->
 
                     <div class="expand_img">
-                        <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Ленточный фундамент (III секция) <div class="h3_border"></div>
+                        <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Количество матреиала для бетонных колец<div class="h3_border"></div>
                         </h3>
                         <div class="expand_img_svg">
                             <!-- <img id = "myBtn" src="image/question.svg" alt=""> -->
@@ -228,55 +228,45 @@
                     <form class="landing_form_input_calc">
                         <fieldset class="fields">
                             <div class="form_wrap_calc">
-                                <label class="input_label">Размер[А]:</label>
-                                <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span class="form_validation"></span>
+                                <label class="input_label">Диаметр[D]:</label>
+                                <input class="form_control_calc" type="number" name="phone" placeholder="м" id="C"><span class="form_validation"></span>
                             </div>
                             <div class="form_wrap_calc">
-                                <label class="input_label">Размер[B]:</label>
-                                <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span class="form_validation"></span>
-                            </div>
-                        </fieldset>
-                        <fieldset class="fields">
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Размер[C]:</label>
-                                <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                <label class="input_label">Высота[Н]:</label>
+                                <input class="form_control_calc" type="number" name="phone" placeholder="м" id="C"><span class="form_validation"></span>
                             </div>
                             <div class="form_wrap_calc">
-                                <label class="input_label">Размер[D]:</label>
-                                <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
-                            </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Стоимость бетона за м3:</label>
-                                <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
+                                <label class="input_label">Толщина:</label>
+                                <input class="form_control_calc" type="number" name="phone" placeholder="см"><span class="form_validation"></span>
                             </div>
                         </fieldset>
 
-                        <div class="form_wrap_calc">
+                        
                             <button class="button_primary" type="submit"><a href="#">Сохранить</a>
                             </button>
-                        </div>
+                        
                     </form>
                 </div>
                 <div class="result_calc_words">
                     <div class="result_calc_title"></div>
                     <div class="result_calc_words_main">
                         <div class="result_calc_words_titles">
-                            <p>Площадь основания фундамента:</p>
+                            <p>Внутренний диаметр:</p>
                             <p>Объем бетона:</p>
-                            <p>Внешний периметр:</p>
-                            <p>Площадь внешней боковой поверхности:</p>
-                            <p>Вес бетона:</p>
-                            <p>Нагрузка на почву:</p>
-                            <p>Стоимость:</p>
+                            <p>Внутренний объем:</p>
+                            <p>Высота арматурной сетки:</p>
+                            <p>Ширина арматурной сетки:</p>
+                            <p>Площадь арматурной сетки:</p>
+                            <p>Приблизительный вес:</p>
                         </div>
                         <div class="result_calc_words_parameters">
-                            <p><output id="beton_volume"></output> м2</p>
+                            <p><output id="beton_volume"></output> мм</p>
                             <p><output id="perimetr_vneshni"></output> метров³</p>
-                            <p><output id="obshaya_dlina"></output> метров</p>
-                            <p><output id="ploshad_podoshva"></output> м2</p>
-                            <p><output id="vneshni_bokovoi"></output> кг</p>
-                            <p><output id="ves_beton"></output> кг/см2</p>
-                            <p><output id="nagruzka"></output> тенге</p>
+                            <p><output id="obshaya_dlina"></output> метров³</p>
+                            <p><output id="ploshad_podoshva"></output> мм</p>
+                            <p><output id="vneshni_bokovoi"></output> мм</p>
+                            <p><output id="ves_beton"></output> м2</p>
+                            <p><output id="nagruzka"></output> кг</p>
                         </div>
                     </div>
                 </div>
@@ -290,7 +280,7 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <img src="image/3s.jpg" alt="">
+                <img src="image/foundation.jpg" alt="">
 
                 <!-- <div class="modal-header">
                     <span class="close">&times;</span>

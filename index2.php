@@ -256,18 +256,29 @@
                             </button>
                         </div>
                     </form>
+                    <!-- <button id="myBtn">Open Modal</button> -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <img src="image/1s.jpg" alt="">
+                        </div>
+
+                    </div>
                 </div>
+                
                 <div class="result_calc_words">
                     <div class="result_calc_title"></div>
                     <div class="result_calc_words_main">
                         <div class="result_calc_words_titles">
-                            <p>Площадь основания плиты:</p>
+                            <p>Площадь основания фундамента:</p>
                             <p>Объем бетона:</p>
-                            <p>Периметр плиты:</p>
-                            <p>Площадь боковой поверхности:</p>
+                            <p>Внешний периметр:</p>
+                            <p>Площадь внешней боковой поверхности:</p>
                             <p>Вес бетона:</p>
                             <p>Нагрузка на почву:</p>
-                            <p>Стоимость бетона:</p>
+                            <p>Стоимость:</p>
                         </div>
                         <div class="result_calc_words_parameters">
                             <p><output id="beton_volume"></output> м2</p>
@@ -280,29 +291,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-        </div>
-
-        <!-- <button id="myBtn">Open Modal</button> -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <img src="image/1s.jpg" alt="">
-
-                <!-- <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2>Modal Header</h2>
-                </div>
-                <div class="modal-body">
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div> -->
             </div>
 
         </div>
