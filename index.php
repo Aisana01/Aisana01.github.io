@@ -53,11 +53,11 @@
             <div class="bottom_header">
                 <div class="bottom_header_in">
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Фундамент и бетон</a>
+                        <a href="shop.php" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
                         <div class="dropdown_content">
-                            <a href="#">Расчет фундаментной плиты</a>
-                            <a href="#">Расчет ленточного фундамента</a>
-                            <a href="#">Расчет ленточного фундамента(2 секции)</a>
+                            <a href="#" class="source source-1">Расчет фундаментной плиты</a>
+                            <a href="#" class="source source-2">Расчет ленточного фундамента</a>
+                            <a href="#" class="source source-3">Расчет ленточного фундамента(2 секции)</a>
                             <a href="#">Расчет ленточного фундамента(3 секции)</a>
                             <a href="#">Расчет ленточного фундамента(4 секции)</a>
                             <a href="#">Расчет состава бетона</a>
@@ -136,95 +136,193 @@
 
         <div class="landing_main_calc">
             <div class="landing_large_form_calc">
-                <div class="landing_large_calc">
-                    <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
-                    <div class="expand_img">
-                        <h3
-                            style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
-                            Плита фундамента<div class="h3_border"></div>
-                        </h3>
-                        <div class="expand_img_svg">
-                            <!-- <img id = "myBtn" src="image/question.svg" alt=""> -->
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="15" height="15" x="0" y="0"
-                                viewBox="0 0 973.1 973.1" style="enable-background:new 0 0 512 512" xml:space="preserve"
-                                id="myBtn" class="">
-                                <circle r="486.55" cx="486.55" cy="486.55" fill="#2D426D" shape="circle"
-                                    transform="matrix(1,0,0,1,0,0)" />
-                                <g transform="matrix(0.7,0,0,0.7,145.9651016235352,145.964852142334)">
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9   C562.29,815,535.391,788.199,502.29,788.199z"
-                                            fill="#ffffff" data-original="#000000" style="" class="" />
-                                        <path
-                                            d="M170.89,285.8l86.7,10.8c27.5,3.4,53.6-12.4,63.5-38.3c12.5-32.7,29.9-58.5,52.2-77.3c31.601-26.6,70.9-40,117.9-40   c48.7,0,87.5,12.8,116.3,38.3c28.8,25.6,43.1,56.2,43.1,92.1c0,25.8-8.1,49.4-24.3,70.8c-10.5,13.6-42.8,42.2-96.7,85.9   c-54,43.7-89.899,83.099-107.899,118.099c-18.4,35.801-24.8,75.5-26.4,115.301c-1.399,34.1,25.8,62.5,60,62.5h49   c31.2,0,57-23.9,59.8-54.9c2-22.299,5.7-39.199,11.301-50.699c9.399-19.701,33.699-45.701,72.699-78.1   C723.59,477.8,772.79,428.4,795.891,392c23-36.3,34.6-74.8,34.6-115.5c0-73.5-31.3-138-94-193.4c-62.6-55.4-147-83.1-253-83.1   c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z"
-                                            fill="#ffffff" data-original="#000000" style="" class="" />
+
+                <div class="target target-1">
+                    <div class="landing_large_calc">
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Плита фундамента<div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <!-- <img id = "myBtn" src="image/question.svg" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="15" height="15" x="0" y="0" viewBox="0 0 973.1 973.1" style="enable-background:new 0 0 512 512" xml:space="preserve" id="myBtn" class="">
+                                    <circle r="486.55" cx="486.55" cy="486.55" fill="#2D426D" shape="circle" transform="matrix(1,0,0,1,0,0)" />
+                                    <g transform="matrix(0.7,0,0,0.7,145.9651016235352,145.964852142334)">
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9   C562.29,815,535.391,788.199,502.29,788.199z" fill="#ffffff" data-original="#000000" style="" class="" />
+                                            <path d="M170.89,285.8l86.7,10.8c27.5,3.4,53.6-12.4,63.5-38.3c12.5-32.7,29.9-58.5,52.2-77.3c31.601-26.6,70.9-40,117.9-40   c48.7,0,87.5,12.8,116.3,38.3c28.8,25.6,43.1,56.2,43.1,92.1c0,25.8-8.1,49.4-24.3,70.8c-10.5,13.6-42.8,42.2-96.7,85.9   c-54,43.7-89.899,83.099-107.899,118.099c-18.4,35.801-24.8,75.5-26.4,115.301c-1.399,34.1,25.8,62.5,60,62.5h49   c31.2,0,57-23.9,59.8-54.9c2-22.299,5.7-39.199,11.301-50.699c9.399-19.701,33.699-45.701,72.699-78.1   C723.59,477.8,772.79,428.4,795.891,392c23-36.3,34.6-74.8,34.6-115.5c0-73.5-31.3-138-94-193.4c-62.6-55.4-147-83.1-253-83.1   c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z" fill="#ffffff" data-original="#000000" style="" class="" />
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
                                     </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                </g>
-                            </svg>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[А]:</label>
+                                    <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[B]:</label>
+                                    <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[C]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Стоимость бетона за м3:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <div class="form_wrap_calc">
+                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img src="image/fp.jpg" alt="">
+                            </div>
+
                         </div>
                     </div>
-                    <form class="landing_form_input_calc">
-                        <fieldset class="fields">
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Размер[А]:</label>
-                                <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span
-                                    class="form_validation"></span>
-                            </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Размер[B]:</label>
-                                <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span
-                                    class="form_validation"></span>
-                            </div>
-                        </fieldset>
-                        <fieldset class="fields">
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Размер[C]:</label>
-                                <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                    id="C"><span class="form_validation"></span>
-                            </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Стоимость бетона за м3:</label>
-                                <input class="form_control_calc" type="number" name="phone" placeholder="тенге"
-                                    id="COST"><span class="form_validation"></span>
-                            </div>
-                        </fieldset>
-                        <div class="form_wrap_calc">
-                            <button class="button_primary" type="submit"><a href="#">Сохранить</a></button>
-                        </div>
-                    </form>
-                    <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
                 </div>
+                <!--2block!-->
+                <div class="target target-2">
+                    <div class="landing_large_calc">
+
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+                        <!-- <img id = "myBtn" src="image/expand.svg" alt="" > -->
+
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Ленточный фундамент (I секция) <div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <!-- <img id = "myBtn" src="image/question.svg" alt=""> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="15" height="15" x="0" y="0" viewBox="0 0 973.1 973.1" style="enable-background:new 0 0 512 512" xml:space="preserve" id="myBtn2" class="">
+                                    <circle r="486.55" cx="486.55" cy="486.55" fill="#2D426D" shape="circle" transform="matrix(1,0,0,1,0,0)" />
+                                    <g transform="matrix(0.7,0,0,0.7,145.9651016235352,145.964852142334)">
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9   C562.29,815,535.391,788.199,502.29,788.199z" fill="#ffffff" data-original="#000000" style="" class="" />
+                                            <path d="M170.89,285.8l86.7,10.8c27.5,3.4,53.6-12.4,63.5-38.3c12.5-32.7,29.9-58.5,52.2-77.3c31.601-26.6,70.9-40,117.9-40   c48.7,0,87.5,12.8,116.3,38.3c28.8,25.6,43.1,56.2,43.1,92.1c0,25.8-8.1,49.4-24.3,70.8c-10.5,13.6-42.8,42.2-96.7,85.9   c-54,43.7-89.899,83.099-107.899,118.099c-18.4,35.801-24.8,75.5-26.4,115.301c-1.399,34.1,25.8,62.5,60,62.5h49   c31.2,0,57-23.9,59.8-54.9c2-22.299,5.7-39.199,11.301-50.699c9.399-19.701,33.699-45.701,72.699-78.1   C723.59,477.8,772.79,428.4,795.891,392c23-36.3,34.6-74.8,34.6-115.5c0-73.5-31.3-138-94-193.4c-62.6-55.4-147-83.1-253-83.1   c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z" fill="#ffffff" data-original="#000000" style="" class="" />
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                        <g xmlns="http://www.w3.org/2000/svg">
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[А]:</label>
+                                    <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[B]:</label>
+                                    <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[C]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[D]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Стоимость бетона за м3:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+
+                            <div class="form_wrap_calc">
+                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button>
+                            </div>
+                        </form>
+                        <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                        <div id="myModal2" class="modal2">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <img src="image/1s.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- !-->
                 <div class="result_calc_words">
                     <div class="result_calc_title"></div>
                     <div class="result_calc_words_main">
@@ -251,56 +349,8 @@
             </div>
 
         </div>
-        <div id="myModal" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <img src="image/fp.jpg" alt="">
-
-                <!-- <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2>Modal Header</h2>
-                </div>
-                <div class="modal-body">
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div> -->
-            </div>
-
-        </div>
-        <!-- Script modal !-->
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks the button, open the modal
-            btn.onmouseenter = function () {
-                modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
-
+       
         <footer>
             <div class="content_blog">
                 <div class="top_footer">
@@ -335,223 +385,103 @@
                 <div class="bottom_footer">
                     <p>© 2020 - iBuild. Все права защищены</p>
                 </div>
+                <!-- <button class="js-button" data-toggle-text="Close">Open</button>
+                <div class="js-container hidden">
+                    Some text here.
+                </div>  -->
 
             </div>
         </footer>
     </section>
 
-    <!-- <section class="main_content">
-            <div class="calculation_section">
-                <div class="parameters_form">
-                     <script type="text/javascript">
-                        function changeText0() {
+     <!-- Script modal !-->
+     <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
 
-                            var a = parseFloat(document.getElementById('A').value);
-                            var b = parseFloat(document.getElementById('B').value);
-                            var c = parseFloat(document.getElementById('C').value) / 1000;
-                            var d = parseFloat(document.getElementById('D').value) / 1000;
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            var btn2 = document.getElementById("myBtn2");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
 
-                            var beton_volume = a * b * c - (a - 2 * d) * (b - 2 * d) * c
-                            var perimetr_vneshni = (a + b) * 2
-                            var obshaya_dlina = ((a - d) + (b - d)) * 2
-                            var ploshad_podoshva = (a * b) - (a - (2 * d) * (b - (2 * d)))
-                            var vneshni_bokovoi = ((a - d) + (b - d)) * 2
-                            var ves_beton = (beton_volume * 2348) / 1000
-                            var nagruzka = (beton_volume * 2348) / (ploshad_podoshva * 10000)
+            // When the user clicks the button, open the modal 
+            btn.onmouseenter = function() {
+                modal.style.display = "block";
+            }
+            btn2.onmouseenter = function() {
+                modal2.style.display = "block";
+            }
 
-                            var a_min_tolsh = 44
-                            var h = 700
-                            var objem_pilomat = 700 * 44 * obshaya_dlina
-                            var kolichestvo_dosok = objem_pilomat / 1000000 * 33
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
 
-                            document.getElementById('beton_volume').innerHTML = Math.round((beton_volume) * 10) / 10;
-                            document.getElementById('perimetr_vneshni').innerHTML = Math.round((perimetr_vneshni) * 10) / 10;
-                            document.getElementById('obshaya_dlina').innerHTML = Math.round((obshaya_dlina) * 10) / 10;
-                            document.getElementById('ploshad_podoshva').innerHTML = Math.round((ploshad_podoshva) * 10) / 10;
-                            document.getElementById('vneshni_bokovoi').innerHTML = Math.round((vneshni_bokovoi) * 10) / 10;
-                            document.getElementById('ves_beton').innerHTML = Math.round((ves_beton) * 10) / 10;
-                            document.getElementById('nagruzka').innerHTML = Math.round(nagruzka);
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
-                            document.getElementById('a_min_tolsh').innerHTML = Math.round(a_min_tolsh);
-                            document.getElementById('objem_pilomat').innerHTML = Math.round(objem_pilomat);
-                            document.getElementById('kolichestvo_dosok').innerHTML = Math.round(kolichestvo_dosok);
+    <!--- !-->
+    <script>
+        var HIDDEN_CLASS_NAME = 'hidden'
+        var TARGET_CLASS_NAME = 'target'
+        var SOURCE_CLASS_NAME = 'source'
 
-                        }
-                    </script>
-                    <form class="form-parameters" onsubmit="return false;" oninput="changeText0()">
-                        <div class="inner_form">
-                            <div class="groundwork_type">
-                                <p class="big_title">Фундамент</p>
-                                <input type="radio" class="foundation_type" name="foundation_type" id="foundation1">
-                                <label for="foundation1">Ленточный</label>
-                                <br>
-                                <input type="radio" class="foundation_type" name="foundation_type" id="foundation2">
-                                <label for="foundation2">Плитный</label>
-                                <br>
-                                <input type="radio" class="foundation_type" name="foundation_type" id="foundation3">
-                                <label for="foundation3">Свайный</label>
-                            </div>
-                            <div class="parameters">
-                                <p class="big_title">Параметры</p>
-                                <div class="foundation_type">
-                                    <a href=""><img class="icon_fond" src="image/icon_fund1.png"></a>
-                                    <a href=""><img class="icon_fond" src="image/icon_fund2.png"></a>
-                                    <a href=""><img class="icon_fond" src="image/icon_fund3.png"></a>
-                                    <a href=""><img class="icon_fond" src="image/icon_fund4.png"></a>
-                                </div>
-                                <div class="parameters_fields">
-                                    <div class="width">
-                                        <p class="parameters_title">Ширина: </p>
-                                        <input class="parameters_input" type="number" id="A">
-                                        <p class="parameter_unit">метров</p>
-                                    </div>
-                                    <div class="length">
-                                        <p class="parameters_title">Длина: </p>
-                                        <input class="parameters_input" type="number" id="B">
-                                        <p class="parameter_unit">метров</p>
-                                    </div>
-                                    <div class="height">
-                                        <p class="parameters_title">Высота: </p>
-                                        <input class="parameters_input" type="number" id="C">
-                                        <p class="parameter_unit">мм</p>
-                                    </div>
-                                    <div class="thickness">
-                                        <p class="parameters_title">Толщина: </p>
-                                        <input class="parameters_input" type="number" id="D">
-                                        <p class="parameter_unit">мм</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="draft">
-                    <p class="big_title">Черчеж</p>
-                    <div class="draft_image">
-                        <img src="image/foundation.jpg">
-                    </div>
-                </div>
-            </div>
-            <div class="result_section">
-                <p class="result_section_title">Расчеты</p>
-                <div class="result_table">
-                    <div class="result_calc_image">
-                        <img src="image/razrez-chertezh-fundamenta_29.jpg">
-                    </div>
-                    <div class="result_calc_words">
-                        <p class="result_calc_title">Лента</p>
-                        <div class="result_calc_words_main">
-                            <div class="result_calc_words_titles">
-                                <p>Обьем бетона</p>
-                                <p>Внешний периметр бетона</p>
-                                <p>Общая длина ленты</p>
-                                <p>Площадь подошвы ленты</p>
-                                <p>Площадь внешней боковой поверхности</p>
-                                <p>Вес бетона</p>
-                                <p>Нагрузка на почву от фундамента</p>
-                            </div>
-                            <div class="result_calc_words_parameters">
-                                <p><output id="beton_volume"></output> метров³</p>
-                                <p><output id="perimetr_vneshni"></output> метров</p>
-                                <p><output id="obshaya_dlina"></output> метров</p>
-                                <p><output id="ploshad_podoshva"></output> м2</p>
-                                <p><output id="vneshni_bokovoi"></output> м2</p>
-                                <p><output id="ves_beton"></output> тонн</p>
-                                <p><output id="nagruzka"></output> кг/см2</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="result_table">
-                    <div class="result_calc_image">
-                        <img src="image/image018.png">
-                    </div>
-                    <div class="result_calc_words">
-                        <p class="result_calc_title">Опалубка</p>
-                        <div class="result_calc_words_main">
-                            <div class="result_calc_words_titles">
-                                <p>Минимальная толщина доски при опорах через каждый 1 метр</p>
-                                <p>Кол-во досок для опалубки размером 150 x 6000 мм</p>
-                                <p>Объем пиломатериала для опалубки</p>
-                            </div>
-                            <div class="result_calc_words_parameters">
-                                <p><output id="a_min_tolsh"></output> мм</p>
-                                <p><output id="kolichestvo_dosok"></output> шт</p>
-                                <p><output id="objem_pilomat"></output> м3</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="result_table">
-                    <div class="result_calc_image">
-                        <img src="image/armatura.jpg">
-                    </div>
-                    <div class="result_calc_words">
-                        <p class="result_calc_title">Арматура</p>
-                        <div class="result_calc_words_main">
-                            <div class="result_calc_words_titles">
-                                <p>Величина защитного слоя</p>
-                                <p>Диаметр продольных стержней рабочей арматуры</p>
-                                <p>Диаметр поперечных стержней арматуры (хомутов)</p>
-                                <p>Шаг поперечных стержней арматуры (хомутов)</p>
-                                <p>Величина нахлеста арматуры</p>
-                                <p>Общая длина продольной арматуры диаметром 14мм.</p>
-                                <p>Общий вес продольной арматуры</p>
-                                <p>Общая длина поперечной арматуры диаметром 6мм.</p>
-                                <p>Общий вес поперечной арматуры (хомутов) </p>
-                                <p>Общий вес всей арматуры</p>
-                            </div>
-                            <div class="result_calc_words_parameters">
-                                <p><output id="beton_volume"></output>44 мм</p>
-                                <p><output id="beton_volume"></output>14 мм</p>
-                                <p><output id="beton_volume"></output>6 мм</p>
-                                <p><output id="beton_volume"></output>455 мм</p>
-                                <p><output id="beton_volume"></output>686 мм</p>
-                                <p><output id="beton_volume"></output>111.8 метров</p>
-                                <p><output id="beton_volume"></output>135 кг</p>
-                                <p><output id="beton_volume"></output>127.6 метров</p>
-                                <p><output id="beton_volume"></output>28 кг</p>
-                                <p><output id="beton_volume"></output>163 кг</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    <!-- <footer>
-            <div class="content_blog">
-                <div class="top_footer">
-                    <div class="introduction">
-                        <p class="footer_big_title">iBuild</p>
-                        <p class="introduction_words"> Сервис расчета и покупки строительных материалов</p>
-                    </div>
-                    <div class="navigation">
-                        <p class="footer_title">Навигация</p>
+        var targetIdToShow = 1
 
-                        <a href="">О системе</a><br>
-                        <a href="">Контакты</a><br>
-                        <a href="">Бренды</a><br>
-                        <a href="">Карта сайта</a><br>
-                        <a href="">Статьи и советы</a>
-                    </div>
-                    <div class="contacts">
-                        <p class="footer_title">Контакты</p>
+        function main() {
+            var targets = getElements(TARGET_CLASS_NAME)
+            var sources = getElements(SOURCE_CLASS_NAME)
+            sources.forEach(function(sourceNode) {
+                var sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME)
+                sourceNode.addEventListener('click', function() {
+                    showTarget(targets, sourceNodeId)
+                })
+            })
+            showTarget(targets, targetIdToShow)
+        }
 
-                        <a href="">8 707 520 16 99</a><br>
-                        <a href="">yelaman.ui@gmail.com</a><br>
-                    </div>
-                    <div class="subscribtion">
-                        <p class="footer_title">Подписка на рассылку</p>
+        function getElements(type) {
+            return [].slice.call(document.querySelectorAll('.' + type)).sort(function(targetNode1, targetNode2) {
+                var target1Num = extractId(targetNode1, TARGET_CLASS_NAME)
+                var target2Num = extractId(targetNode2, TARGET_CLASS_NAME)
+                return target1Num > target2Num
+            })
+        }
 
-                        <input class="mailing_input" type="text" name="" placeholder="Email">
-                        <input class="mailing_input" type="text" name="" placeholder="Ваше имя">
-                        <br>
-                        <button class="mailing_button">Подписаться</button>
-                    </div>
-                </div>
-                <div class="bottom_footer">
-                    <p>© 2020 - iBuild. Все права защищены</p>
-                </div>
+        function extractId(targetNode, baseClass) {
+            var currentClassIndex = targetNode.classList.length
+            while (currentClassIndex--) {
+                var currentClass = targetNode.classList.item(currentClassIndex)
+                var maybeIdNum = parseInt(currentClass.split('-')[1])
+                if (isNaN(maybeIdNum)) {
+                    continue
+                }
+                var classStrinToValidate = baseClass + '-' + maybeIdNum
+                if (classStrinToValidate === currentClass) {
+                    return maybeIdNum
+                }
+            }
+        }
+
+        function showTarget(targets, targetId) {
+            targets.forEach(function(targetNode, targetIndex) {
+                var currentTargetNodeId = extractId(targetNode, TARGET_CLASS_NAME)
+                if (currentTargetNodeId === targetId) {
+                    targetNode.classList.remove(HIDDEN_CLASS_NAME)
+                } else {
+                    targetNode.classList.add(HIDDEN_CLASS_NAME)
+                }
+            })
+        }
+
+        main()
+    </script>
 
             </div>
         </footer> -->

@@ -203,7 +203,7 @@
 
 /*modal*/
 /* The Modal (background) */
-.modal {
+.modal{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -220,6 +220,7 @@
 /* Modal Content */
 .modal-content {
   position: relative;
+  text-align: center;
   background-color: #fefefe;
   margin: 0 auto;
   width: 57%;
@@ -228,6 +229,7 @@
   -webkit-animation-duration: 0.6s;
   animation-name: animatetop;
   animation-duration: 0.6s;
+  
 }
 
 /* Add Animation */
