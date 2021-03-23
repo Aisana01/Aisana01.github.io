@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="basket">
-                        <a href="" class="basket_link">Закупки</a>
+                        <a href="AboutUs.php" class="basket_link">Главная страница</a>
                     </div>
                 </div>
                 <div class="header_left">
@@ -55,13 +55,13 @@
                     <div class="dropdown">
                         <a href="shop.php" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
                         <div class="dropdown_content">
-                            <a href="#" class="source source-1">Расчет фундаментной плиты</a>
-                            <a href="#" class="source source-2">Расчет ленточного фундамента</a>
-                            <a href="#" class="source source-3">Расчет ленточного фундамента(2 секции)</a>
-                            <a href="#">Расчет ленточного фундамента(3 секции)</a>
-                            <a href="#">Расчет ленточного фундамента(4 секции)</a>
-                            <a href="#">Расчет состава бетона</a>
-                            <a href="#">Количество материала для бетонных колец</a>
+                            <a href="#block1" class="source source-1">Расчет фундаментной плиты</a>
+                            <a href="#block2" class="source source-2">Расчет ленточного фундамента</a>
+                            <a href="#block3" class="source source-3">Расчет ленточного фундамента(2 секции)</a>
+                            <a href="#block4" class="source source-4">Расчет ленточного фундамента(3 секции)</a>
+                            <a href="#block5" class="source source-5">Расчет ленточного фундамента(4 секции)</a>
+                            <a href="#block6" class="source source-6">Расчет состава бетона</a>
+                            <a href="#block7" class="source source-7">Количество материала для бетонных колец</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -129,61 +129,19 @@
             </div>
         </header>
 
-        <!-- <div class="wpb_wrapper">
-                <h3 style="color:#ffffff; padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;" class="   nd_options_first_font ">Фундамент и Бетон</h3>
-                <h1 style="color:#ffffff; padding:px; text-align:center; font-size:50px; line-height:60px;">Расчет материалов</h1>
-            </div> -->
+
 
         <div class="landing_main_calc">
             <div class="landing_large_form_calc">
 
-                <div class="target target-1">
+                <div class="target target-1" id="block1">
                     <div class="landing_large_calc">
                         <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
                         <div class="expand_img">
                             <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Плита фундамента<div class="h3_border"></div>
                             </h3>
                             <div class="expand_img_svg">
-                                <!-- <img id = "myBtn" src="image/question.svg" alt=""> -->
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="15" height="15" x="0" y="0" viewBox="0 0 973.1 973.1" style="enable-background:new 0 0 512 512" xml:space="preserve" id="myBtn" class="">
-                                    <circle r="486.55" cx="486.55" cy="486.55" fill="#2D426D" shape="circle" transform="matrix(1,0,0,1,0,0)" />
-                                    <g transform="matrix(0.7,0,0,0.7,145.9651016235352,145.964852142334)">
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9   C562.29,815,535.391,788.199,502.29,788.199z" fill="#ffffff" data-original="#000000" style="" class="" />
-                                            <path d="M170.89,285.8l86.7,10.8c27.5,3.4,53.6-12.4,63.5-38.3c12.5-32.7,29.9-58.5,52.2-77.3c31.601-26.6,70.9-40,117.9-40   c48.7,0,87.5,12.8,116.3,38.3c28.8,25.6,43.1,56.2,43.1,92.1c0,25.8-8.1,49.4-24.3,70.8c-10.5,13.6-42.8,42.2-96.7,85.9   c-54,43.7-89.899,83.099-107.899,118.099c-18.4,35.801-24.8,75.5-26.4,115.301c-1.399,34.1,25.8,62.5,60,62.5h49   c31.2,0,57-23.9,59.8-54.9c2-22.299,5.7-39.199,11.301-50.699c9.399-19.701,33.699-45.701,72.699-78.1   C723.59,477.8,772.79,428.4,795.891,392c23-36.3,34.6-74.8,34.6-115.5c0-73.5-31.3-138-94-193.4c-62.6-55.4-147-83.1-253-83.1   c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z" fill="#ffffff" data-original="#000000" style="" class="" />
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                    </g>
-                                </svg>
+                                <img id="myBtn1" src="image/question-mark.svg" alt="">
                             </div>
                         </div>
 
@@ -213,68 +171,52 @@
                                 </button>
                             </div>
                         </form>
-                        <div id="myModal" class="modal">
+                        <div id="myModal1" class="modal modal1">
 
                             <!-- Modal content -->
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
+                            <div class="modal-content modal-content1">
+                                <span class="close close1">&times;</span>
                                 <img src="image/fp.jpg" alt="">
                             </div>
 
                         </div>
                     </div>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Площадь основания плиты:</p>
+                                <p>Объем бетона:</p>
+                                <p>Периметр плиты:</p>
+                                <p>Площадь боковой поверхности:</p>
+                                <p>Вес бетона:</p>
+                                <p>Нагрузка на почву:</p>
+                                <p>Стоимость бетона:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id="beton_volume"></output> м2</p>
+                                <p><output id="perimetr_vneshni"></output> метров³</p>
+                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="ploshad_podoshva"></output> м2</p>
+                                <p><output id="vneshni_bokovoi"></output> кг</p>
+                                <p><output id="ves_beton"></output> кг/см2</p>
+                                <p><output id="nagruzka"></output> тенге</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--2block!-->
-                <div class="target target-2">
+                <div class="target target-2" id="block2">
                     <div class="landing_large_calc">
 
                         <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
-                        <!-- <img id = "myBtn" src="image/expand.svg" alt="" > -->
+
 
                         <div class="expand_img">
                             <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Ленточный фундамент (I секция) <div class="h3_border"></div>
                             </h3>
                             <div class="expand_img_svg">
-                                <!-- <img id = "myBtn" src="image/question.svg" alt=""> -->
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="15" height="15" x="0" y="0" viewBox="0 0 973.1 973.1" style="enable-background:new 0 0 512 512" xml:space="preserve" id="myBtn2" class="">
-                                    <circle r="486.55" cx="486.55" cy="486.55" fill="#2D426D" shape="circle" transform="matrix(1,0,0,1,0,0)" />
-                                    <g transform="matrix(0.7,0,0,0.7,145.9651016235352,145.964852142334)">
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9   C562.29,815,535.391,788.199,502.29,788.199z" fill="#ffffff" data-original="#000000" style="" class="" />
-                                            <path d="M170.89,285.8l86.7,10.8c27.5,3.4,53.6-12.4,63.5-38.3c12.5-32.7,29.9-58.5,52.2-77.3c31.601-26.6,70.9-40,117.9-40   c48.7,0,87.5,12.8,116.3,38.3c28.8,25.6,43.1,56.2,43.1,92.1c0,25.8-8.1,49.4-24.3,70.8c-10.5,13.6-42.8,42.2-96.7,85.9   c-54,43.7-89.899,83.099-107.899,118.099c-18.4,35.801-24.8,75.5-26.4,115.301c-1.399,34.1,25.8,62.5,60,62.5h49   c31.2,0,57-23.9,59.8-54.9c2-22.299,5.7-39.199,11.301-50.699c9.399-19.701,33.699-45.701,72.699-78.1   C723.59,477.8,772.79,428.4,795.891,392c23-36.3,34.6-74.8,34.6-115.5c0-73.5-31.3-138-94-193.4c-62.6-55.4-147-83.1-253-83.1   c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z" fill="#ffffff" data-original="#000000" style="" class="" />
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                        </g>
-                                    </g>
-                                </svg>
+                                <img id="myBtn2" src="image/question-mark.svg" alt="">
                             </div>
                         </div>
 
@@ -306,51 +248,487 @@
                             </fieldset>
 
                             <div class="form_wrap_calc">
-                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
-                                </button>
+                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button> -->
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
                             </div>
                         </form>
-                        <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
-                        <div id="myModal2" class="modal2">
+                        <div id="myModal2" class="modal modal2">
 
                             <!-- Modal content -->
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
+                            <div class="modal-content modal-content2">
+                                <span class="close close2">&times;</span>
                                 <img src="image/1s.jpg" alt="">
                             </div>
 
                         </div>
                     </div>
-                </div>
-                <!-- !-->
-                <div class="result_calc_words">
-                    <div class="result_calc_title"></div>
-                    <div class="result_calc_words_main">
-                        <div class="result_calc_words_titles">
-                            <p>Площадь основания плиты:</p>
-                            <p>Объем бетона:</p>
-                            <p>Периметр плиты:</p>
-                            <p>Площадь боковой поверхности:</p>
-                            <p>Вес бетона:</p>
-                            <p>Нагрузка на почву:</p>
-                            <p>Стоимость бетона:</p>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Площадь основания плиты:</p>
+                                <p>Объем бетона:</p>
+                                <p>Периметр плиты:</p>
+                                <p>Площадь боковой поверхности:</p>
+                                <p>Вес бетона:</p>
+                                <p>Нагрузка на почву:</p>
+                                <p>Стоимость бетона:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id="beton_volume"></output> м2</p>
+                                <p><output id="perimetr_vneshni"></output> метров³</p>
+                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="ploshad_podoshva"></output> м2</p>
+                                <p><output id="vneshni_bokovoi"></output> кг</p>
+                                <p><output id="ves_beton"></output> кг/см2</p>
+                                <p><output id="nagruzka"></output> тенге</p>
+                            </div>
                         </div>
-                        <div class="result_calc_words_parameters">
-                            <p><output id="beton_volume"></output> м2</p>
-                            <p><output id="perimetr_vneshni"></output> метров³</p>
-                            <p><output id="obshaya_dlina"></output> метров</p>
-                            <p><output id="ploshad_podoshva"></output> м2</p>
-                            <p><output id="vneshni_bokovoi"></output> кг</p>
-                            <p><output id="ves_beton"></output> кг/см2</p>
-                            <p><output id="nagruzka"></output> тенге</p>
+                    </div>
+                </div>
+                <!--3block!-->
+                <div class="target target-3" id="block3">
+                    <div class="landing_large_calc">
+
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+
+
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Ленточный фундамент (II секция) <div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <img id="myBtn3" src="image/question-mark.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[А]:</label>
+                                    <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[B]:</label>
+                                    <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[C]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[D]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Стоимость бетона за м3:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+
+                            <div class="form_wrap_calc">
+                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button> -->
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                            </div>
+                        </form>
+                        <div id="myModal3" class="modal modal3">
+
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content3">
+                                <span class="close close3">&times;</span>
+                                <img src="image/2s.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Площадь основания плиты:</p>
+                                <p>Объем бетона:</p>
+                                <p>Периметр плиты:</p>
+                                <p>Площадь боковой поверхности:</p>
+                                <p>Вес бетона:</p>
+                                <p>Нагрузка на почву:</p>
+                                <p>Стоимость бетона:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id="beton_volume"></output> м2</p>
+                                <p><output id="perimetr_vneshni"></output> метров³</p>
+                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="ploshad_podoshva"></output> м2</p>
+                                <p><output id="vneshni_bokovoi"></output> кг</p>
+                                <p><output id="ves_beton"></output> кг/см2</p>
+                                <p><output id="nagruzka"></output> тенге</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--4block!-->
+                <div class="target target-4" id="block4">
+                    <div class="landing_large_calc">
+
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+
+
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Ленточный фундамент (III секция) <div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <img id="myBtn4" src="image/question-mark.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[А]:</label>
+                                    <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[B]:</label>
+                                    <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[C]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fields">
+
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[D]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[E]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="м" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Стоимость бетона за м3:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+
+                            <div class="form_wrap_calc">
+                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button> -->
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                            </div>
+                        </form>
+                        <div id="myModal4" class="modal modal4">
+
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content4">
+                                <span class="close close4">&times;</span>
+                                <img src="image/3s.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Площадь основания плиты:</p>
+                                <p>Объем бетона:</p>
+                                <p>Периметр плиты:</p>
+                                <p>Площадь боковой поверхности:</p>
+                                <p>Вес бетона:</p>
+                                <p>Нагрузка на почву:</p>
+                                <p>Стоимость бетона:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id="beton_volume"></output> м2</p>
+                                <p><output id="perimetr_vneshni"></output> метров³</p>
+                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="ploshad_podoshva"></output> м2</p>
+                                <p><output id="vneshni_bokovoi"></output> кг</p>
+                                <p><output id="ves_beton"></output> кг/см2</p>
+                                <p><output id="nagruzka"></output> тенге</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--5block!-->
+                <div class="target target-5" id="block5">
+                    <div class="landing_large_calc">
+
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+
+
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Ленточный фундамент (IV секция) <div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <img id="myBtn5" src="image/question-mark.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[А]:</label>
+                                    <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[B]:</label>
+                                    <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[C]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[D]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Стоимость бетона за м3:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+
+                            <div class="form_wrap_calc">
+                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button> -->
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                            </div>
+                        </form>
+                        <div id="myModal5" class="modal modal5">
+
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content5">
+                                <span class="close close5">&times;</span>
+                                <img src="image/4s.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Площадь основания плиты:</p>
+                                <p>Объем бетона:</p>
+                                <p>Периметр плиты:</p>
+                                <p>Площадь боковой поверхности:</p>
+                                <p>Вес бетона:</p>
+                                <p>Нагрузка на почву:</p>
+                                <p>Стоимость бетона:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id="beton_volume"></output> м2</p>
+                                <p><output id="perimetr_vneshni"></output> метров³</p>
+                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="ploshad_podoshva"></output> м2</p>
+                                <p><output id="vneshni_bokovoi"></output> кг</p>
+                                <p><output id="ves_beton"></output> кг/см2</p>
+                                <p><output id="nagruzka"></output> тенге</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--6block!-->
+                <div class="target target-6" id="block6">
+                    <div class="landing_large_calc">
+
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+
+
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Состав бетона<div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <img id="myBtn6" src="image/question-mark.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Объем бетона:</label>
+                                    <input class="form_control_calc" type="number" name="name" placeholder="м3" id="A"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Влажность песка:</label>
+                                    <input class="form_control_calc" type="number" name="email" placeholder="%" id="B"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Влажность щебня:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="%" id="C"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Марка бетона:</label>
+                                    <select class="select_calc" id="mark">
+                                        <option value="first">M-100=B 7.5</option>
+                                        <option value="second">M-150=B 10</option>
+                                        <option value="third">M-200=B 15</option>
+                                        <option value="fourth">M-250=B 20</option>
+                                        <option value="fifth">M-300=B 25</option>
+                                    </select>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Марка цемента:</label>
+                                    <select class="select_calc" id="mark">
+                                        <option value="first">M-400</option>
+                                        <option value="second">M-500</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Подвижность бетонной смеси:</label>
+                                    <select class="select_calc" id="mark">
+                                        <option value="first">П-1</option>
+                                        <option value="second">П-2</option>
+                                        <option value="third">П-3</option>
+                                        <option value="fourth">П-4</option>
+                                        <option value="fifth">П-5</option>
+                                    </select>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Фракция песка:</label>
+                                    <select class="select_calc" id="mark">
+                                        <option value="first">0,7мм-1мм</option>
+                                        <option value="second">1мм-1,5мм</option>
+                                        <option value="third">1,5мм-2мм</option>
+                                        <option value="fourth">2мм-2,5мм</option>
+                                        <option value="fifth">2,5мм-3мм</option>
+                                    </select>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Фракция щебня:</label>
+                                    <select class="select_calc" id="mark">
+                                        <option value="first">5мм-10мм</option>
+                                        <option value="second">5мм-15мм</option>
+                                        <option value="third">5мм-20мм</option>
+                                        <option value="fourth">5мм-30мм</option>
+                                        <option value="fifth">5мм-40мм</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+
+                            <div class="form_wrap_calc">
+                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="myModal6" class="modal modal6">
+
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content6">
+                                <span class="close close6">&times;</span>
+                                <img src="image/бетон.jpg" alt="" width="510px" height="510px">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Цемент:</p>
+                                <p>Песок:</p>
+                                <p>Щебень:</p>
+                                <p>Вода:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id="beton_volume"></output> кг</p>
+                                <p><output id="perimetr_vneshni"></output> кг</p>
+                                <p><output id="obshaya_dlina"></output> кг</p>
+                                <p><output id="ploshad_podoshva"></output> л</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--7block!-->
+                <div class="target target-7" id="block7">
+                    <div class="landing_large_calc">
+
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+
+
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Бетонные кольца<div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <img id="myBtn7" src="image/question-mark.svg" alt="">
+                            </div>
+                        </div>
+
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Диаметр[D]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="м" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Высота[Н]:</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="м" id="C"><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Толщина(А):</label>
+                                    <input class="form_control_calc" type="number" name="phone" placeholder="см"><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+
+
+                            <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                            </button>
+
+                        </form>
+                        <div id="myModal7" class="modal modal7">
+
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content7">
+                                <span class="close close7">&times;</span>
+                                <img src="image/БетонныеКольца.jpg" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Внутренний диаметр:</p>
+                                <p>Объем бетона:</p>
+                                <p>Внутренний объем:</p>
+                                <p>Высота арматурной сетки:</p>
+                                <p>Ширина арматурной сетки:</p>
+                                <p>Площадь арматурной сетки:</p>
+                                <p>Приблизительный вес:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id="beton_volume"></output> мм</p>
+                                <p><output id="perimetr_vneshni"></output> метров³</p>
+                                <p><output id="obshaya_dlina"></output> метров³</p>
+                                <p><output id="ploshad_podoshva"></output> мм</p>
+                                <p><output id="vneshni_bokovoi"></output> мм</p>
+                                <p><output id="ves_beton"></output> м2</p>
+                                <p><output id="nagruzka"></output> кг</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
-       
+
         <footer>
             <div class="content_blog">
                 <div class="top_footer">
@@ -385,48 +763,127 @@
                 <div class="bottom_footer">
                     <p>© 2020 - iBuild. Все права защищены</p>
                 </div>
-                <!-- <button class="js-button" data-toggle-text="Close">Open</button>
-                <div class="js-container hidden">
-                    Some text here.
-                </div>  -->
 
             </div>
         </footer>
+
+
     </section>
 
-     <!-- Script modal !-->
-     <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
 
+
+
+    <!-- Script modal !-->
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+        var modal5 = document.getElementById("myModal5");
+        var modal6 = document.getElementById("myModal6");
+        var modal7 = document.getElementById("myModal7");
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("myBtn1");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("myBtn4");
+        var btn5 = document.getElementById("myBtn5");
+        var btn6 = document.getElementById("myBtn6");
+        var btn7 = document.getElementById("myBtn7");
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
+        var span4 = document.getElementsByClassName("close4")[0];
+        var span5 = document.getElementsByClassName("close5")[0];
+        var span6 = document.getElementsByClassName("close6")[0];
+        var span7 = document.getElementsByClassName("close7")[0];
+        // When the user clicks the button, open the modal 
+        btn1.onmouseenter = function() {
+            modal1.style.display = "block";
+        }
+        btn2.onmouseenter = function() {
+            modal2.style.display = "block";
+        }
+        btn3.onmouseenter = function() {
+            modal3.style.display = "block";
+        }
+        btn4.onmouseenter = function() {
+            modal4.style.display = "block";
+        }
+        btn5.onmouseenter = function() {
+            modal5.style.display = "block";
+        }
+        btn6.onmouseenter = function() {
+            modal6.style.display = "block";
+        }
+        btn7.onmouseenter = function() {
+            modal7.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
+            modal1.style.display = "none";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+        span3.onclick = function() {
+            modal3.style.display = "none";
+        }
+        span4.onclick = function() {
+            modal4.style.display = "none";
+        }
+        span5.onclick = function() {
+            modal5.style.display = "none";
+        }
+        span6.onclick = function() {
+            modal6.style.display = "none";
+        }
+        span7.onclick = function() {
+            modal7.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target == modal4 || event.target == modal5 || event.target == modal6 || event.target == modal7) {
+                modal1.style.display = "none";
+                modal2.style.display = "none";
+                modal3.style.display = "none";
+                modal4.style.display = "none";
+                modal5.style.display = "none";
+                modal6.style.display = "none";
+                modal7.style.display = "none";
+            }
+        }
+    </script>
+    <!-- <script>
+        // Get the modal
+        var i;
+        for (i = 1; i < 7; i++) {
+
+            var modal = document.getElementById("myModal" + i.toString());
             // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-            var btn2 = document.getElementById("myBtn2");
+            var btn = document.getElementById("myBtn" + i.toString());
             // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
+            var span = document.getElementsByClassName("close" + i.toString())[0];
             // When the user clicks the button, open the modal 
+            console.log(modal,btn,span);
             btn.onmouseenter = function() {
                 modal.style.display = "block";
             }
-            btn2.onmouseenter = function() {
-                modal2.style.display = "block";
-            }
-
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
                 modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
                 }
             }
-        </script>
+        }
+    </script> -->
 
-    <!--- !-->
     <script>
         var HIDDEN_CLASS_NAME = 'hidden'
         var TARGET_CLASS_NAME = 'target'
@@ -483,8 +940,6 @@
         main()
     </script>
 
-            </div>
-        </footer> -->
 </body>
 
 </html>

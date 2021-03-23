@@ -299,7 +299,8 @@
 	background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-	/* padding-top: 41px; */
+	padding: 41px 0;
+	
 }
 .h3_border {
 	content: "";

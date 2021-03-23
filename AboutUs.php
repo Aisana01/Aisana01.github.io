@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="basket">
-                    <a href="" class="basket_link">Закупки</a>
+                    <a href="AboutUs.php" class="basket_link">Главная страница</a>
                 </div>
             </div>
             <div class="header_left">
@@ -52,13 +52,13 @@
                 <div class="dropdown">
                     <a href="shop.php" class="categories">Фундамент и бетон</a>
                     <div class="dropdown_content">
-                        <a href="#">Расчет фундаментной плиты</a>
-                        <a href="#">Расчет ленточного фундамента</a>
-                        <a href="#">Расчет ленточного фундамента(2 секции)</a>
-                        <a href="#">Расчет ленточного фундамента(3 секции)</a>
-                        <a href="#">Расчет ленточного фундамента(4 секции)</a>
-                        <a href="#">Расчет состава бетона</a>
-                        <a href="#">Количество материала для бетонных колец</a>
+                        <a href="index.php#block1">Расчет фундаментной плиты</a>
+                        <a href="index.php#block2">Расчет ленточного фундамента</a>
+                        <a href="index.php#block3">Расчет ленточного фундамента(2 секции)</a>
+                        <a href="index.php#block4">Расчет ленточного фундамента(3 секции)</a>
+                        <a href="index.php#block5">Расчет ленточного фундамента(4 секции)</a>
+                        <a href="index.php#block6">Расчет состава бетона</a>
+                        <a href="index.php#block7">Количество материала для бетонных колец</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -139,106 +139,6 @@
         </div>
     </section>
 
-    <!-- <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper">
-                    <a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                </div>
-                <div class="container_block_landing">
-                    <div class="landing_main">
-                        <div class="landing_large">IBUILD – <b>Cтроительный калькулятор онлайн №1</b>
-                        </div>
-                        <div class="landing_small">
-                            <h6>Мы направляем все возможные усилия, чтобы конструкции получались прочными,
-                                надежными и безопасными!</h6>
-                        </div>
-                        <div class="landing_large_img">
-
-                            <div class="img_figure"><img src="image/index-5-533x362.jpg" alt="" width="533" height="362">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="landing_main_left">
-                        <div class="landing_container">
-                            <div class="landing_block_left">
-                                <div class="icon_block">
-                                    <div class="icon"> <img src="image/icon/building.png" alt="" width="50px" height="50px">
-                                        <div class="box_icon"></div>
-                                    </div>
-                                    <h6 class="icon_text">Архитектура</h6>
-                                </div>
-                                <div class="landing_content">
-                                    <p>
-                                        Архитектура постоянно развивается на основе изменений в нашей культуре, обществе и
-                                        окружающей среде.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="landing_block_left">
-                                <div class="icon_block">
-                                    <div class="icon"><img src="image/icon/blueprint.png" alt="" width="50px" height="50px">
-                                        <div class="box_icon"></div>
-                                    </div>
-                                    <h6 class="icon_text">Конструкции</h6>
-                                </div>
-                                <div class="landing_content">
-                                    <p>
-                                        Просматривая наши недавние впечатляющие проекты, мы решили узнать мнение архитекторов.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="landing_block_left">
-                                <div class="icon_block">
-                                    <div class="icon"> <img src="image/icon/crane.png" alt="" width="50px" height="50px">
-                                        <div class="box_icon"></div>
-                                    </div>
-                                    <h6 class="icon_text">Матералы</h6>
-                                </div>
-                                <div class="landing_content">
-                                    <p>
-                                        В процессе строительства, эксплуатации и ремонта зданий и сооружений строительные
-                                        изделия и конструкции, из которых они возводятся, подвергаются различным
-                                        физико-механическим, физическим и технологическим воздействиям.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper">
-                    <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                </div>
-                <div class="our_team_block">
-                    <h3 class="our_team_title" style="visibility: visible; animation-name: fadeInLeft;">Наша Команда</h3>
-                    <h6 class="title-style-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">Люди, стоящие за нашим успехом</h6>
-                    <div class="container_block_landing">
-                        <div class="card">
-                        </div>
-                        <div class="card">
-                        </div>
-                        <div class="card">
-                        </div>
-                    </div>
-                </div>
-
-            </li>
-            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper">
-                    <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                    <a href="#carousel__slide1" class="carousel__next">Go to next slide</a>
-                </div>
-            </li>
-        </ol>
-        asdasd
-    </section> -->
 
     <div class="slider">
         <div class="slider__wrapper">
