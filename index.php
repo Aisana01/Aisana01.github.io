@@ -193,7 +193,6 @@
                                 <p>Стоимость бетона:</p>
                             </div>
                             <div class="result_calc_words_parameters">
-<<<<<<< HEAD
                                 <p><output id="a"></output> м2</p>
                                 <p><output id="b"></output> метров³</p>
                                 <p><output id="c"></output> метров</p>
@@ -201,15 +200,6 @@
                                 <p><output id="e"></output> кг</p>
                                 <p><output id="f"></output> кг/см2</p>
                                 <p><output id="g"></output> тенге</p>
-=======
-                                <p><output id="beton_volume"></output> м2</p>
-                                <p><output id="perimetr_vneshni"></output> м³</p>
-                                <p><output id="obshaya_dlina"></output> м</p>
-                                <p><output id="ploshad_podoshva"></output> м2</p>
-                                <p><output id="vneshni_bokovoi"></output> кг</p>
-                                <p><output id="ves_beton"></output> кг/см2</p>
-                                <p><output id="nagruzka"></output> тенге</p>
->>>>>>> 682f5d7d78bbdd103752663f78a0baa9135c1ed0
                             </div>
                         </div>
                     </div>
