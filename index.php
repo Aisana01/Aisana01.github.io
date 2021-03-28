@@ -67,38 +67,38 @@
                     <div class="dropdown">
                         <a href="shop.php" class="categories">Стены</a>
                         <div class="dropdown_content">
-                            <a href="#">Расчет кирпичных стен</a>
-                            <a href="#">Расчет стен из блоков</a>
-                            <a href="#">Расчет стен из блоков по своим размерам</a>
-                            <a href="#">Объем блоков/кирпича в м3</a>
-                            <a href="#">Объем блоков/кирпича в ярде3</a>
-                            <a href="#">Параметры стеновых блоков</a>
+                            <a href="index2.php#block8">Расчет кирпичных стен</a>
+                            <a href="index2.php#block9">Расчет стен из блоков</a>
+                            <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
+                            <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
+                            <!-- <a href="index2.php#block4">Объем блоков/кирпича в ярде3</a> -->
+                            <!-- <a href="index2.php#block4">Параметры стеновых блоков</a> -->
                         </div>
                     </div>
                     <div class="dropdown">
                         <a href="shop.php" class="categories">Отделка</a>
                         <div class="dropdown_content">
-                            <a href="#">Количество утеплителя для стен и фундаментов</a>
-                            <a href="#">Расчет настила из досок/перекрытий</a>
-                            <a href="#">Расчет количества плитки</a>
-                            <a href="#">Расчет напольного покрытия</a>
-                            <a href="#">Расчет количества вагонки на поверхность</a>
-                            <a href="#">Расход грунтовки</a>
-                            <a href="#">Расход краски</a>
-                            <a href="#">Расход штукатурки</a>
-                            <a href="#">Расход шпаклевки</a>
-                            <a href="#">Расход стяжки</a>
-                            <a href="#">Расход ровнителя/наливных полов</a>
-                            <a href="#">Расход плиточного клея</a>
-                            <a href="#">Расход обоев</a>
-                            <a href="#">Плинтус</a>
+                            <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
+                            <a href="index5.php#block17">Расчет настила из досок/перекрытий</a>
+                            <a href="index5.php#block18">Расчет количества плитки</a>
+                            <a href="index5.php#block19">Расчет напольного покрытия</a>
+                            <a href="index5.php#block20">Расчет количества вагонки на поверхность</a>
+                            <a href="index5.php#block21">Расход грунтовки</a>
+                            <a href="index5.php#block22">Расход краски</a>
+                            <a href="index5.php#block23">Расход штукатурки</a>
+                            <a href="index5.php#block24">Расход шпаклевки</a>
+                            <a href="index5.php#block25">Расход стяжки</a>
+                            <a href="index5.php#block26">Расход ровнителя/наливных полов</a>
+                            <a href="index5.php#block27">Расход плиточного клея</a>
+                            <a href="index5.php#block28">Расход обоев</a>
+                            <a href="index5.php#block29">Плинтус</a>
                         </div>
                     </div>
                     <div class="dropdown">
                         <a href="shop.php" class="categories">Пиломатериалы</a>
                         <div class="dropdown_content">
-                            <a href="#">Объем пиломатериалов по количеству</a>
-                            <a href="#">Количество пиломатериалов по объему</a>
+                            <a href="index3.php#block11">Объем пиломатериалов по количеству</a>
+                            <a href="index3.php#block12">Количество пиломатериалов по объему</a>
                         </div>
                     </div>
                     <div class="dropdown">
@@ -120,9 +120,9 @@
                     <div class="dropdown">
                         <a href="shop.php" class="categories">Земляные работы</a>
                         <div class="dropdown_content">
-                            <a href="#">Расчет подушки из сыпучих материалов</a>
-                            <a href="#">Объем земленых работ(вертикальные стены)</a>
-                            <a href="#">Объем земленых работ(Уклон)</a>
+                            <a href="index4.php#block13">Расчет подушки из сыпучих материалов</a>
+                            <a href="index4.php#block14">Объем земленых работ(вертикальные стены)</a>
+                            <a href="index4.php#block15">Объем земленых работ(уклон)</a>
                         </div>
                     </div>
                 </div>
@@ -195,8 +195,8 @@
                             </div>
                             <div class="result_calc_words_parameters">
                                 <p><output id="beton_volume"></output> м2</p>
-                                <p><output id="perimetr_vneshni"></output> метров³</p>
-                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="perimetr_vneshni"></output> м³</p>
+                                <p><output id="obshaya_dlina"></output> м</p>
                                 <p><output id="ploshad_podoshva"></output> м2</p>
                                 <p><output id="vneshni_bokovoi"></output> кг</p>
                                 <p><output id="ves_beton"></output> кг/см2</p>
@@ -277,8 +277,8 @@
                             </div>
                             <div class="result_calc_words_parameters">
                                 <p><output id="beton_volume"></output> м2</p>
-                                <p><output id="perimetr_vneshni"></output> метров³</p>
-                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="perimetr_vneshni"></output> м³</p>
+                                <p><output id="obshaya_dlina"></output> м</p>
                                 <p><output id="ploshad_podoshva"></output> м2</p>
                                 <p><output id="vneshni_bokovoi"></output> кг</p>
                                 <p><output id="ves_beton"></output> кг/см2</p>
@@ -359,8 +359,8 @@
                             </div>
                             <div class="result_calc_words_parameters">
                                 <p><output id="beton_volume"></output> м2</p>
-                                <p><output id="perimetr_vneshni"></output> метров³</p>
-                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="perimetr_vneshni"></output> м³</p>
+                                <p><output id="obshaya_dlina"></output> м</p>
                                 <p><output id="ploshad_podoshva"></output> м2</p>
                                 <p><output id="vneshni_bokovoi"></output> кг</p>
                                 <p><output id="ves_beton"></output> кг/см2</p>
@@ -446,8 +446,8 @@
                             </div>
                             <div class="result_calc_words_parameters">
                                 <p><output id="beton_volume"></output> м2</p>
-                                <p><output id="perimetr_vneshni"></output> метров³</p>
-                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="perimetr_vneshni"></output> м³</p>
+                                <p><output id="obshaya_dlina"></output> м</p>
                                 <p><output id="ploshad_podoshva"></output> м2</p>
                                 <p><output id="vneshni_bokovoi"></output> кг</p>
                                 <p><output id="ves_beton"></output> кг/см2</p>
@@ -528,8 +528,8 @@
                             </div>
                             <div class="result_calc_words_parameters">
                                 <p><output id="beton_volume"></output> м2</p>
-                                <p><output id="perimetr_vneshni"></output> метров³</p>
-                                <p><output id="obshaya_dlina"></output> метров</p>
+                                <p><output id="perimetr_vneshni"></output> м³</p>
+                                <p><output id="obshaya_dlina"></output> м</p>
                                 <p><output id="ploshad_podoshva"></output> м2</p>
                                 <p><output id="vneshni_bokovoi"></output> кг</p>
                                 <p><output id="ves_beton"></output> кг/см2</p>
@@ -715,8 +715,8 @@
                             </div>
                             <div class="result_calc_words_parameters">
                                 <p><output id="beton_volume"></output> мм</p>
-                                <p><output id="perimetr_vneshni"></output> метров³</p>
-                                <p><output id="obshaya_dlina"></output> метров³</p>
+                                <p><output id="perimetr_vneshni"></output> м³</p>
+                                <p><output id="obshaya_dlina"></output> м³</p>
                                 <p><output id="ploshad_podoshva"></output> мм</p>
                                 <p><output id="vneshni_bokovoi"></output> мм</p>
                                 <p><output id="ves_beton"></output> м2</p>

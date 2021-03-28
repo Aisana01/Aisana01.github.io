@@ -96,7 +96,7 @@
 .bottom_header_in {
 	width: 80%;
 	display: flex;
-	height: 100%;
+	height: 35%;
 	margin: 0 auto;
 	justify-content: center;
 }
