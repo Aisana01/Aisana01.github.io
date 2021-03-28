@@ -275,7 +275,7 @@
     font-family: 'Montserrat',sans-serif;
     width: 86%;
     z-index: 1;
-    height: 600px;
+    /* height: 600px; */
     margin: 60px auto;
 	
 }
@@ -300,6 +300,10 @@
     background-repeat: no-repeat !important;
     background-size: cover !important;
 	padding: 41px 0;
+	/* -webkit-animation-name: animatetop;
+   -webkit-animation-duration: 0.8s;
+   animation-name: animatetop;
+   animation-duration: 0.8s; */
 	
 }
 .h3_border {
@@ -712,4 +716,8 @@
 
 .hidden{
 	display: none;
+  }
+.label_title{
+	margin: 20px 0;
+
   }
