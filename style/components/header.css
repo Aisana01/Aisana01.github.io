@@ -206,14 +206,15 @@
   }
   .header-nav ul li a:hover 
   {
-	  /* border-top: 5px solid #9bcfcc; */
+	  border-top: 5px solid #C4956A;
 	  text-shadow: none;
-	  /* color: #9bcfcc; */
+	  color: #C4956A;
   
   
   }
   #current{
-		  border-bottom: 3px solid #2D426D;
+		  border-bottom: 3px solid #C4956A;
+		  color: #C4956A;
 	  }
   .header_pr{
 	  width: 100%;
@@ -259,9 +260,9 @@
   
   .header-nav1 ul li a:hover 
   {
-	  /* border-bottom: 3px solid #9bcfcc; */
+	  border-bottom: 3px solid #C4956A;
 	  text-shadow: none;
-	  /* color: #9bcfcc; */
+	  color: #C4956A;
   
   
   }
@@ -409,9 +410,9 @@
   
   .header-nav1_rec ul li a:hover 
   {
-	  /* border-bottom: 3px solid #9bcfcc; */
+	  border-bottom: 3px solid #C4956A;
 	  text-shadow: none;
-	  /* color: #9bcfcc; */
+	  color: #C4956A;
   
   
   }

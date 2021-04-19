@@ -32,14 +32,14 @@
         <div class="container">
             <div class="header-inner1">
                 <div class="header-logo1">
-                    <a href="index.php" class="logo_link" style="color: #2D426D;">iBuild</a>
+                    <a href="AboutUS.php" class="logo_link" style="color: #2D426D;">iBuild</a>
                 </div>
                 <div class="header-nav1">
 
                     <ul>
-                        <li><a id="current" href="AboutUS.php">Профиль</a></li>
+                        <li><a id="current" href="profile.php">Профиль</a></li>
 
-                        <li><a href="rec.php">Сохраненные</a></li>
+                        <li><a href="Saved.php">Сохраненные</a></li>
 
                     </ul>
 
@@ -81,7 +81,8 @@
                             <div class="form_wrap">
                                 <!-- <label class="input_label" >Номер-телефона</label> -->
                                 <input class="form_control" type="password" name="" name placeholder="Пароль"><span class="form_validation"></span>
-                           <a href="">Сменить пароль...</a>
+                           <div class="change_passwd"><a href="changePasswd.php">Сменить пароль...</a></div>
+                                
                             </div>
                             
                         </form>
@@ -95,7 +96,7 @@
 
 
     </section>
-    <footer class="content_blog_footer_about">
+    <!-- <footer class="content_blog_footer_about">
         <div class="content_footer_container">
             <div class="content_blog">
                 <div class="top_footer">
@@ -129,7 +130,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

@@ -39,7 +39,7 @@
             </div>
             <div class="header_left">
                 <div class="icons">
-                    <a class="messages_href" href="conversation_page.php">Сообщения</a>
+                    <a class="messages_href" href="profile.php">Профиль</a>
                 </div>
                 <div class="auth_button_about">
                     <a href="Log.php" class="btn_SignIn"><?php //echo $user->full_name; 
@@ -133,7 +133,7 @@
                     складе,<br>а покупатели выбирают лучшие предложения.</p>
             </div>
             <div class="transition_img">
-                <img class="layer_wrap_transition" src="image/house2.png">
+                <img class="layer_wrap_transition" src="image/house2.png" width="800px" height="550px">
             </div>
         </div>
     </section>
