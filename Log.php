@@ -7,9 +7,16 @@
     <meta name="description" content="Key Slova do 200 slov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/all.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
 
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="javascript/authentication.js"></script>
     <link rel="shortcut icon" href="../favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap' rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap'
+        rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
 
 </head>
@@ -22,27 +29,29 @@
                     <!-- <img src="image/template_index.png"
                     width="200px;"><!-->
                     <div class="target target-1" id="">
-                    <div class="card_log-item">
-                        <h5 class="card_log-item--title">
-                            Войти
-                        </h5>
-                        <div class="alert_block">
-                            <h6 class="alert_text">Впервые в Ibuild?</h6>
-                            <a class="signup_log" href="Register.php">Завеси аккаунт</a>
-                        </div>
-                        <div class="form-group">
-                            <form class="ps-form--subscribe-offer" action="api/authentication/sign_in.php" method="POST">
-                                <h6>Имя пользователя или адрес электронной почты</h6><input class="form_log-control" type="text" name="login" placeholder="Еmail...">
-                                <h6>Пароль</h6><input class="form_log-password" type="password" name="password" placeholder="Пароль...">
+                        <div class="card_log-item">
+                            <h5 class="card_log-item--title">
+                                Войти
+                            </h5>
+                            <div class="alert_block">
+                                <h6 class="alert_text">Впервые в Ibuild?</h6>
+                                <a class="signup_log" href="Register.php">Завеси аккаунт</a>
+                            </div>
+                            <div class="form-group">
+                                <form class="ps-form--subscribe-offer" action="api/authentication/sign_in.php"
+                                    method="POST">
+                                    <h6>Имя пользователя или адрес электронной почты</h6><input class="form_log-control"
+                                        type="text" id="login" placeholder="Еmail...">
+                                    <h6>Пароль</h6><input class="form_log-password" type="password" id="password"
+                                        placeholder="Пароль...">
+                                </form>
+                                <button onclick="login()" class="btn">Вход</button>
+                            </div>
+                            <p class="login-footer_log">
+                                <a class="forgot_log source source-2" href="#">Забыли пароль?</a> <br>
 
-                            </form>
-                            <button type="submit" class="btn">Вход</button>
+                            </p>
                         </div>
-                        <p class="login-footer_log">
-                            <a class="forgot_log source source-2" href="#">Забыли пароль?</a> <br>
-
-                        </p>
-                    </div>
                     </div>
                     <div class="target target-2" id="">
                         <div class="card_log-item">
@@ -50,12 +59,14 @@
                                 Восстановление доступа к странице
                             </h5>
                             <div class="form-group">
-                                <form class="ps-form--subscribe-offer" action="api/authentication/sign_in.php" method="POST">
-                                    <h6>Введите адрес электронной почты</h6><input class="form_log-control" type="text" name="login" placeholder="Еmail...">
+                                <form class="ps-form--subscribe-offer" action="api/authentication/sign_in.php"
+                                    method="POST">
+                                    <h6>Введите адрес электронной почты</h6><input class="form_log-control" type="text"
+                                        name="login" placeholder="Еmail...">
                                 </form>
                                 <button type="submit" class="btn">Отправить</button>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -100,6 +111,8 @@
         </footer>
     </div>
 </body>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
 
 <script>
     var HIDDEN_CLASS_NAME = 'hidden'
@@ -111,9 +124,9 @@
     function main() {
         var targets = getElements(TARGET_CLASS_NAME)
         var sources = getElements(SOURCE_CLASS_NAME)
-        sources.forEach(function(sourceNode) {
+        sources.forEach(function (sourceNode) {
             var sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME)
-            sourceNode.addEventListener('click', function() {
+            sourceNode.addEventListener('click', function () {
                 showTarget(targets, sourceNodeId)
             })
         })
@@ -121,7 +134,7 @@
     }
 
     function getElements(type) {
-        return [].slice.call(document.querySelectorAll('.' + type)).sort(function(targetNode1, targetNode2) {
+        return [].slice.call(document.querySelectorAll('.' + type)).sort(function (targetNode1, targetNode2) {
             var target1Num = extractId(targetNode1, TARGET_CLASS_NAME)
             var target2Num = extractId(targetNode2, TARGET_CLASS_NAME)
             return target1Num > target2Num
@@ -144,7 +157,7 @@
     }
 
     function showTarget(targets, targetId) {
-        targets.forEach(function(targetNode, targetIndex) {
+        targets.forEach(function (targetNode, targetIndex) {
             var currentTargetNodeId = extractId(targetNode, TARGET_CLASS_NAME)
             if (currentTargetNodeId === targetId) {
                 targetNode.classList.remove(HIDDEN_CLASS_NAME)

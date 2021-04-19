@@ -7,6 +7,12 @@
     <meta name="description" content="Key Slova do 200 slov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/all.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="javascript/authentication.js"></script>
     <link rel="shortcut icon" href="../favicon.ico">
     <link
         href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap'
@@ -67,37 +73,13 @@
                             <a class="signup_log" href="Log.php">Войти</a>
                         </div>
                         <div class="form-group">
-                            <form class="form_contact" action="api/authentication/sign_up.php" method="POST">
-                                <input class="form_log-control" type="text" name="full_name"
-                                    placeholder="Полное имя...">
-                                <input class="form_log-control" type="text" name="login" placeholder="Email...">
-                                <input class="form_log-password" type="password" name="password"
-                                    placeholder="Пароль...">
-                                <input class="form_log-password" type="password" name="password2"
-                                    placeholder="Повторите пароль...">
-
-                                    <h6>Выберите категорию:</h6>
-                                <div class="user_type">
-                                    <div class = "radio_block">
-                                        <input type="radio" class="foundation_type" name="user_type"
-                                            value="Покупатель" id="foundation1">
-                                        <label for="foundation1">Покупатель</label>
-                                    </div>
-                                    <br>
-                                    <div class = "radio_block">
-                                        <input type="radio" class="foundation_type" name="user_type" value="Работник"
-                                            id="foundation2">
-                                        <label for="foundation2">Работник</label>
-                                    </div>
-                                    <br>
-                                    <div class = "radio_block">
-                                        <input type="radio" class="foundation_type" name="user_type" value="Продавец"
-                                            id="foundation3">
-                                        <label for="foundation3">Продавец</label>
-                                    </div>
-                                </div>
-                                <button type="submit" class="btn">Регистрация</button>
+                            <form class="form_contact">
+                                <input class="form_log-control" type="text" id="full_name" placeholder="Полное имя...">
+                                <input class="form_log-control" type="text" id="login" placeholder="Email...">
+                                <input class="form_log-password" type="password" id="password" placeholder="Пароль...">
+                                <input class="form_log-password" type="password" id="password2"placeholder="Повторите пароль...">
                             </form>
+                            <button onclick="registration()" class="btn">Регистрация</button>
                         </div>
                         <p class="login-footer_log">
                         </p>
