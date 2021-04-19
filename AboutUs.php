@@ -50,7 +50,7 @@
         <div class="bottom_header">
             <div class="bottom_header_in">
                 <div class="dropdown">
-                    <a href="shop.php" class="categories">Фундамент и бетон</a>
+                    <a href="index.php" class="categories">Фундамент и бетон</a>
                     <div class="dropdown_content">
                         <a href="index.php#block1">Расчет фундаментной плиты</a>
                         <a href="index.php#block2">Расчет ленточного фундамента</a>
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="shop.php" class="categories">Стены</a>
+                    <a href="index2.php" class="categories">Стены</a>
                     <div class="dropdown_content">
                         <a href="index2.php#block8">Расчет кирпичных стен</a>
                         <a href="index2.php#block9">Расчет стен из блоков</a>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="shop.php" class="categories">Отделка</a>
+                    <a href="index5.php" class="categories">Отделка</a>
                     <div class="dropdown_content">
                             <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
                             <a href="index5.php#block17">Расчет настила из досок/перекрытий</a>
@@ -92,34 +92,33 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="shop.php" class="categories">Пиломатериалы</a>
+                    <a href="index3.php" class="categories">Пиломатериалы</a>
                     <div class="dropdown_content">
                         <a href="index3.php#block11">Объем пиломатериалов по количеству</a>
                         <a href="index3.php#block12">Количество пиломатериалов по объему</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="shop.php" class="categories">Кровли</a>
+                    <a href="index6.php" class="categories">Кровли</a>
                     <div class="dropdown_content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                            <a href="index6.php#block30">Односкатная</a>
+                            <a href="index6.php#block31">Двускатная</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="shop.php" class="categories">Объемы</a>
-                    <div class="dropdown_content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a> 
+                        <a href="index7.php" class="categories">Арматура</a>
+                        <div class="dropdown_content">
+                            <a href="index7.php#block32">Вес арматуры по количеству</a>
+                            <a href="index7.php#block33">Количество арматуры по весу</a>
+                            <a href="index7.php#block34">Арматура ГОСТ 5781-82</a>
+                        </div>
                     </div>
-                </div>
                 <div class="dropdown">
-                    <a href="shop.php" class="categories">Земляные работы</a>
+                    <a href="index4.php" class="categories">Земляные работы</a>
                     <div class="dropdown_content">
-                        <a href="#">Расчет подушки из сыпучих материалов</a>
-                        <a href="#">Объем земленых работ(вертикальные стены)</a>
-                        <a href="#">Объем земленых работ(уклон)</a>
+                        <a href="index4.php#block13">Расчет подушки из сыпучих материалов</a>
+                        <a href="index4.php#block14">Объем земленых работ(вертикальные стены)</a>
+                        <a href="index4.php#block15">Объем земленых работ(уклон)</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,123 @@
+<!-- <?php
+
+        // include "config/db.php" ;
+        // include "config/config.php" ;
+        // session_start();
+        // if(isset($_SESSION["user_id"])){
+        // 	$id = $_SESSION["user_id"];
+        // 	$query = $db->query("SELECT * FROM pocket_users WHERE id = $id");
+
+
+        // 	if($query->num_rows>0){
+        // 		$user = $query->fetch_object();
+
+        ?> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="descroption" content="Key Slova do 200 slov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/all.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="rainbow"></div>
+    <header class="header_pr">
+        <div class="container">
+            <div class="header-inner1">
+                <div class="header-logo1">
+                    <a href="index.php" class="logo_link" style="color: #2D426D;">iBuild</a>
+                </div>
+                <div class="header-nav1">
+
+                    <ul>
+                        <li><a href="AboutUS.php">Профиль</a></li>
+
+                        <li><a id="current" href="rec.php">Сохраненные</a></li>
+
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+
+
+
+    <section class="general">
+        <div class="container1">
+            <div class="sidenav_left">
+
+
+
+                <div class="left_menu ">
+                    <div class="date_sidenav">02.04.2021ж</div>
+                    <ul>
+                        <a href="#about">Расчет ленточного фундамента(2 секции)</a>
+                        <a href="#services">Состав бетона</a>
+                        <a href="#clients">Количество материала для бетонных колец</a>
+                        <!-- <li id="pagenav" class="pagenav">
+            <a href="#"></a>
+        </li>
+        <a href="#art">Shop</a>
+        <a href="#art">Basket</a> -->
+
+                </div>
+
+            </div>
+            <div class = "main_section">
+            <h1 class="title_left_main">Расчет ленточного фундамента(2 секции)</h1>
+                <div class="left_words_main">
+                    <div class="left_words_titles">
+                        <p>Площадь основания плиты:</p>
+                        <p>Объем бетона:</p>
+                        <p>Периметр плиты:</p>
+                        <p>Площадь боковой поверхности:</p>
+                        <p>Вес бетона:</p>
+                        <p>Нагрузка на почву:</p>
+                        <p>Стоимость бетона:</p>
+                    </div>
+                    <div class="left_words_titles_parameters">
+                        <p><output id=""></output> м2</p>
+                        <p><output id=""></output> м³</p>
+                        <p><output id=""></output> м</p>
+                        <p><output id=""></output> м2</p>
+                        <p><output id=""></output> кг</p>
+                        <p><output id=""></output> кг/см2</p>
+                        <p><output id=""></output> тенге</p>
+                    </div>
+                </div>
+                <button class="button_primary" type="submit"><a href="#">Распечатать</a>
+                 </button>
+                </div>
+            
+        </div>
+
+
+
+    </section>
+
+</body>
+
+</html>
+<?php
+// } else {
+// 	header("Location:$base_url/Log.php?error=4");
+// } 
+
+// }else{
+// 	header("Location:$base_url/Log.php?error=5");
+// }
+?>

@@ -20,6 +20,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Kluchevie slova, do 200 simvolov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/calculations.js"></script>
     <link rel="stylesheet" type="text/css" href="style/all.css">
 </head>
 
@@ -37,7 +38,7 @@
                         </div>
                     </div>
                     <div class="basket">
-                        <a href="" class="basket_link">Закупки</a>
+                        <a href="AboutUs.php" class="basket_link">Главная страница</a>
                     </div>
                 </div>
                 <div class="header_left">
@@ -45,332 +46,469 @@
                         <a class="messages_href" href="conversation_page.php">Сообщения</a>
                     </div>
                     <div class="auth_button_about">
-                        <a href="Log.php" class="btn_SignIn"><?php //echo $user->full_name; 
-                                                                ?></a>
+                        <a href="Log.php" class="btn_SignIn"></a>
                     </div>
                 </div>
             </div>
             <div class="bottom_header">
                 <div class="bottom_header_in">
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Фундамент и бетон</a>
+                        <a href="index.php" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
                         <div class="dropdown_content">
-                            <a href="#">Расчет фундаментной плиты</a>
-                            <a href="#">Расчет ленточного фундамента</a>
-                            <a href="#">Расчет ленточного фундамента(2 секции)</a>
-                            <a href="#">Расчет ленточного фундамента(3 секции)</a>
-                            <a href="#">Расчет ленточного фундамента(4 секции)</a>
-                            <a href="#">Расчет состава бетона</a>
-                            <a href="#">Количество материала для бетонных колец</a>
+                            <a href="index.php#block1">Расчет фундаментной плиты</a>
+                            <a href="index.php#block2">Расчет ленточного фундамента</a>
+                            <a href="index.php#block3">Расчет ленточного фундамента(2 секции)</a>
+                            <a href="index.php#block4">Расчет ленточного фундамента(3 секции)</a>
+                            <a href="index.php#block5">Расчет ленточного фундамента(4 секции)</a>
+                            <a href="index.php#block6">Расчет состава бетона</a>
+                            <a href="index.php#block7">Количество материала для бетонных колец</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Стены</a>
+                        <a href="index2.php" class="categories">Стены</a>
                         <div class="dropdown_content">
-                            <a href="#">Расчет кирпичных стен</a>
-                            <a href="#">Расчет стен из блоков</a>
-                            <a href="#">Расчет стен из блоков по своим размерам</a>
-                            <a href="#">Объем блоков/кирпича в м3</a>
-                            <a href="#">Объем блоков/кирпича в ярде3</a>
-                            <a href="#">Параметры стеновых блоков</a>
+                            <a href="index2.php#block8">Расчет кирпичных стен</a>
+                            <a href="index2.php#block9">Расчет стен из блоков</a>
+                            <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
+                            <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
+                            <!-- <a href="index2.php#block4">Объем блоков/кирпича в ярде3</a> -->
+                            <!-- <a href="index2.php#block4">Параметры стеновых блоков</a> -->
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Отделка</a>
+                        <a href="index5.php" class="categories">Отделка</a>
                         <div class="dropdown_content">
-                            <a href="#">Количество утеплителя для стен и фундаментов</a>
-                            <a href="#">Расчет настила из досок/перекрытий</a>
-                            <a href="#">Расчет количества плитки</a>
-                            <a href="#">Расчет напольного покрытия</a>
-                            <a href="#">Расчет количества вагонки на поверхность</a>
-                            <a href="#">Расход грунтовки</a>
-                            <a href="#">Расход краски</a>
-                            <a href="#">Расход штукатурки</a>
-                            <a href="#">Расход шпаклевки</a>
-                            <a href="#">Расход стяжки</a>
-                            <a href="#">Расход ровнителя/наливных полов</a>
-                            <a href="#">Расход плиточного клея</a>
-                            <a href="#">Расход обоев</a>
-                            <a href="#">Плинтус</a>
+                            <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
+                            <a href="index5.php#block17">Расчет настила из досок/перекрытий</a>
+                            <a href="index5.php#block18">Расчет количества плитки</a>
+                            <a href="index5.php#block19">Расчет напольного покрытия</a>
+                            <a href="index5.php#block20">Расчет количества вагонки на поверхность</a>
+                            <a href="index5.php#block21">Расход грунтовки</a>
+                            <a href="index5.php#block22">Расход краски</a>
+                            <a href="index5.php#block23">Расход штукатурки</a>
+                            <a href="index5.php#block24">Расход шпаклевки</a>
+                            <a href="index5.php#block25">Расход стяжки</a>
+                            <a href="index5.php#block26">Расход ровнителя/наливных полов</a>
+                            <a href="index5.php#block27">Расход плиточного клея</a>
+                            <a href="index5.php#block28">Расход обоев</a>
+                            <a href="index5.php#block29">Плинтус</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Пиломатериалы</a>
+                        <a href="index3.php" class="categories">Пиломатериалы</a>
                         <div class="dropdown_content">
-                            <a href="#">Объем пиломатериалов по количеству</a>
-                            <a href="#">Количество пиломатериалов по объему</a>
+                            <a href="index3.php#block11">Объем пиломатериалов по количеству</a>
+                            <a href="index3.php#block12">Количество пиломатериалов по объему</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Кровли</a>
+                        <a href="index6.php" class="categories">Кровли</a>
                         <div class="dropdown_content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="#block30" class="source source-1">Односкатная</a>
+                            <a href="#block31" class="source source-2">Двускатная</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Объемы</a>
+                        <a href="index7.php" class="categories">Арматура</a>
                         <div class="dropdown_content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="index7.php#block32">Вес арматуры по количеству</a>
+                            <a href="index7.php#block33">Количество арматуры по весу</a>
+                            <a href="index7.php#block34">Арматура ГОСТ 5781-82</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Земляные работы</a>
+                        <a href="index4.php" class="categories">Земляные работы</a>
                         <div class="dropdown_content">
-                            <a href="#">Расчет подушки из сыпучих материалов</a>
-                            <a href="#">Объем земленых работ(вертикальные стены)</a>
-                            <a href="#">Объем земленых работ(Уклон)</a>
+                            <a href="index4.php#block13">Расчет подушки из сыпучих материалов</a>
+                            <a href="index4.php#block14">Объем земленых работ(вертикальные стены)</a>
+                            <a href="index4.php#block15">Объем земленых работ(уклон)</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- <div class="wpb_wrapper">
-            <h3 style="color:#ffffff; padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;" class="   nd_options_first_font ">Фундамент и Бетон</h3>
-            <h1 style="color:#ffffff; padding:px; text-align:center; font-size:50px; line-height:60px;">Расчет материалов</h1>
-        </div> -->
+
 
         <div class="landing_main_calc">
-
             <div class="landing_large_form_calc">
-                <script type="text/javascript">
-                    function changeText0() {
+                <div class="target target-1" id="block30">
+                    <div class="landing_large_calc">
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Односкатная кровля<div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <img id="myBtn1" src="image/question-mark.svg" alt="">
+                            </div>
+                        </div>
 
-                        var a = parseFloat(document.getElementById('A').value);
-                        var b = parseFloat(document.getElementById('B').value);
-                        var c = parseFloat(document.getElementById('C').value) / 1000;
-                        var d = parseFloat(document.getElementById('D').value) / 1000;
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[А]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[B]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[Н]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <div class="label_title_block">
+                                <div class="titleAndImg">
+                                    <p class="label_title">Учесть свесы</p>
+                                    <div class="expand_img_svg">
+                                        <img id="myBtn2" src="image/question-mark.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="toggle_block">
+                                    <div class="toggle-btn" onclick="this.classList.toggle('active');openbox('box');">
+                                        <div class="inner-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset class="fields" id="box" style="display: none;">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[a]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[b]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[c]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[d]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <div class="label_title_block">
+                                <div class="titleAndImg">
+                                    <p class="label_title">Посчитать стропила</p>
+                                    <div class="expand_img_svg">
+                                        <img id="myBtn3" src="image/question-mark.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="toggle_block">
+                                    <div class="toggle-btn" onclick="this.classList.toggle('active');openbox('box2');">
+                                        <div class="inner-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset class="fields" id="box2" style="display: none;">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[a]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[b]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[c]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[d]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <div class="label_title_block">
+                                <div class="titleAndImg">
+                                    <p class="label_title">Посчитать обрешетку</p>
+                                    <div class="expand_img_svg">
+                                        <img id="myBtn4" src="image/question-mark.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="toggle_block">
+                                    <div class="toggle-btn" onclick="this.classList.toggle('active');openbox('box3');">
+                                        <div class="inner-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset class="fields" id="box3" style="display: none;">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[a]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[b]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[c]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[d]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
 
-                        var beton_volume = a * b * c - (a - 2 * d) * (b - 2 * d) * c
-                        var perimetr_vneshni = (a + b) * 2
-                        var obshaya_dlina = ((a - d) + (b - d)) * 2
-                        var ploshad_podoshva = (a * b) - (a - (2 * d) * (b - (2 * d)))
-                        var vneshni_bokovoi = ((a - d) + (b - d)) * 2
-                        var ves_beton = (beton_volume * 2348) / 1000
-                        var nagruzka = (beton_volume * 2348) / (ploshad_podoshva * 10000)
 
-                        var a_min_tolsh = 44
-                        var h = 700
-                        var objem_pilomat = 700 * 44 * obshaya_dlina
-                        var kolichestvo_dosok = objem_pilomat / 1000000 * 33
 
-                        document.getElementById('beton_volume').innerHTML = Math.round((beton_volume) * 10) / 10;
-                        document.getElementById('perimetr_vneshni').innerHTML = Math.round((perimetr_vneshni) * 10) / 10;
-                        document.getElementById('obshaya_dlina').innerHTML = Math.round((obshaya_dlina) * 10) / 10;
-                        document.getElementById('ploshad_podoshva').innerHTML = Math.round((ploshad_podoshva) * 10) / 10;
-                        document.getElementById('vneshni_bokovoi').innerHTML = Math.round((vneshni_bokovoi) * 10) / 10;
-                        document.getElementById('ves_beton').innerHTML = Math.round((ves_beton) * 10) / 10;
-                        document.getElementById('nagruzka').innerHTML = Math.round(nagruzka);
-
-                        document.getElementById('a_min_tolsh').innerHTML = Math.round(a_min_tolsh);
-                        document.getElementById('objem_pilomat').innerHTML = Math.round(objem_pilomat);
-                        document.getElementById('kolichestvo_dosok').innerHTML = Math.round(kolichestvo_dosok);
-
-                    }
-                </script>
-                <div class="landing_large_calc">
-
-                    <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
-                    <!-- <img id = "myBtn" src="image/expand.svg" alt="" > -->
-
-                    <div class="expand_img">
-                        <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Состав бетона <div class="h3_border"></div>
-                        </h3>
-                        <div class="expand_img_svg">
-                            <!-- <img id = "myBtn" src="image/question.svg" alt=""> -->
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="15" height="15" x="0" y="0" viewBox="0 0 973.1 973.1" style="enable-background:new 0 0 512 512" xml:space="preserve" id="myBtn" class="">
-                                <circle r="486.55" cx="486.55" cy="486.55" fill="#2D426D" shape="circle" transform="matrix(1,0,0,1,0,0)" />
-                                <g transform="matrix(0.7,0,0,0.7,145.9651016235352,145.964852142334)">
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M502.29,788.199h-47c-33.1,0-60,26.9-60,60v64.9c0,33.1,26.9,60,60,60h47c33.101,0,60-26.9,60-60v-64.9   C562.29,815,535.391,788.199,502.29,788.199z" fill="#ffffff" data-original="#000000" style="" class="" />
-                                        <path d="M170.89,285.8l86.7,10.8c27.5,3.4,53.6-12.4,63.5-38.3c12.5-32.7,29.9-58.5,52.2-77.3c31.601-26.6,70.9-40,117.9-40   c48.7,0,87.5,12.8,116.3,38.3c28.8,25.6,43.1,56.2,43.1,92.1c0,25.8-8.1,49.4-24.3,70.8c-10.5,13.6-42.8,42.2-96.7,85.9   c-54,43.7-89.899,83.099-107.899,118.099c-18.4,35.801-24.8,75.5-26.4,115.301c-1.399,34.1,25.8,62.5,60,62.5h49   c31.2,0,57-23.9,59.8-54.9c2-22.299,5.7-39.199,11.301-50.699c9.399-19.701,33.699-45.701,72.699-78.1   C723.59,477.8,772.79,428.4,795.891,392c23-36.3,34.6-74.8,34.6-115.5c0-73.5-31.3-138-94-193.4c-62.6-55.4-147-83.1-253-83.1   c-100.8,0-182.1,27.3-244.1,82c-52.8,46.6-84.9,101.8-96.2,165.5C139.69,266.1,152.39,283.5,170.89,285.8z" fill="#ffffff" data-original="#000000" style="" class="" />
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                    <g xmlns="http://www.w3.org/2000/svg">
-                                    </g>
-                                </g>
-                            </svg>
+                            <div class="form_wrap_calc">
+                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="myModal1" class="modal modal1">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content1">
+                                <span class="close close1">&times;</span>
+                                <img src="image/Group 35.png" alt="" width="600px" height="400px">
+                            </div>
+                        </div>
+                        <div id="myModal2" class="modal modal2">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content2">
+                                <span class="close close2">&times;</span>
+                                <img src="image/Group 38.png" alt="" width="600px" height="400px">
+                            </div>
+                        </div>
+                        <div id="myModal3" class="modal modal3">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content3">
+                                <span class="close close3">&times;</span>
+                                <img src="image/Group 39.png" alt="" width="600px" height="400px">
+                            </div>
+                        </div>
+                        <div id="myModal4" class="modal modal4">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content4">
+                                <span class="close close4">&times;</span>
+                                <img src="image/Group 41.png" alt="" width="600px" height="400px">
+                            </div>
                         </div>
                     </div>
-
-
-                    <form class="landing_form_input_calc">
-                        <fieldset class="fields">
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Объем бетона:</label>
-                                <input class="form_control_calc" type="number" name="name" placeholder="м3" id="A"><span class="form_validation"></span>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Площадь кровли:</p>
+                                <p>Угол наклона:</p>
+                                <p>Длина ската:</p>
+                                <p>Площадь фронтона:</p>
+                                <p>Длина стропил:</p>
+                                <p>Необходимо досок:</p>
+                                <p>Объем доски:</p>
+                                <p>Объем всего:</p>
+                                <p>Шаг:</p>
+                                <p>Нахлест:</p>
                             </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Влажность песка:</label>
-                                <input class="form_control_calc" type="number" name="email" placeholder="%" id="B"><span class="form_validation"></span>
+                            <div class="result_calc_words_parameters">
+                                <p><output id=""></output> м2</p>
+                                <p><output id=""></output> %</p>
+                                <p><output id=""></output> мм</p>
+                                <p><output id=""></output> м2</p>
+                                <p><output id=""></output> мм</p>
+                                <p><output id=""></output> шт</p>
+                                <p><output id=""></output> шт</p>
+                                <p><output id=""></output> м3</p>
+                                <p><output id=""></output> м3</p>
+                                <p><output id=""></output> мм</p>
                             </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Влажность щебня:</label>
-                                <input class="form_control_calc" type="number" name="phone" placeholder="%" id="C"><span class="form_validation"></span>
-                            </div>
-                        </fieldset>
-                        <fieldset class="fields">
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Марка бетона:</label>
-                                <select class="select_calc" id="mark">
-                                    <option value="first">M-100=B 7.5</option>
-                                    <option value="second">M-150=B 10</option>
-                                    <option value="third">M-200=B 15</option>
-                                    <option value="fourth">M-250=B 20</option>
-                                    <option value="fifth">M-300=B 25</option>
-                                </select>
-                            </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Марка цемента:</label>
-                                <select class="select_calc" id="mark">
-                                    <option value="first">M-400</option>
-                                    <option value="second">M-500</option>
-                                </select>
-                            </div>
-                        </fieldset>
-                        <fieldset class="fields">
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Подвижность бетонной смеси:</label>
-                                <select class="select_calc" id="mark">
-                                    <option value="first">П-1</option>
-                                    <option value="second">П-2</option>
-                                    <option value="third">П-3</option>
-                                    <option value="fourth">П-4</option>
-                                    <option value="fifth">П-5</option>
-                                </select>
-                            </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Фракция песка:</label>
-                                <select class="select_calc" id="mark">
-                                    <option value="first">0,7мм-1мм</option>
-                                    <option value="second">1мм-1,5мм</option>
-                                    <option value="third">1,5мм-2мм</option>
-                                    <option value="fourth">2мм-2,5мм</option>
-                                    <option value="fifth">2,5мм-3мм</option>
-                                </select>
-                            </div>
-                            <div class="form_wrap_calc">
-                                <label class="input_label">Фракция щебня:</label>
-                                <select class="select_calc" id="mark">
-                                    <option value="first">5мм-10мм</option>
-                                    <option value="second">5мм-15мм</option>
-                                    <option value="third">5мм-20мм</option>
-                                    <option value="fourth">5мм-30мм</option>
-                                    <option value="fifth">5мм-40мм</option>
-                                </select>
-                            </div>
-                        </fieldset>
-
-                        <div class="form_wrap_calc">
-                            <button class="button_primary" type="submit"><a href="#">Сохранить</a>
-                            </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
-                <div class="result_calc_words">
-                    <div class="result_calc_title"></div>
-                    <div class="result_calc_words_main">
-                        <div class="result_calc_words_titles">
-                            <p>Цемент:</p>
-                            <p>Песок:</p>
-                            <p>Щебень:</p>
-                            <p>Вода:</p>
+                <!--2block!-->
+                <div class="target target-2" id="block31">
+                    <div class="landing_large_calc">
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет материалов</h1>
+                        <div class="expand_img">
+                            <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Двускатная кровля<div class="h3_border"></div>
+                            </h3>
+                            <div class="expand_img_svg">
+                                <img id="myBtn5" src="image/question-mark.svg" alt="">
+                            </div>
                         </div>
-                        <div class="result_calc_words_parameters">
-                            <p><output id="beton_volume"></output> кг</p>
-                            <p><output id="perimetr_vneshni"></output> кг</p>
-                            <p><output id="obshaya_dlina"></output> кг</p>
-                            <p><output id="ploshad_podoshva"></output> л</p>
+
+                        <form class="landing_form_input_calc">
+                            <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[А]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[B]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[Н]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <div class="label_title_block">
+                                <div class="titleAndImg">
+                                    <p class="label_title">Учесть свесы</p>
+                                    <div class="expand_img_svg">
+                                        <img id="myBtn6" src="image/question-mark.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="toggle_block">
+                                    <div class="toggle-btn" onclick="this.classList.toggle('active');openbox('box4');">
+                                        <div class="inner-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset class="fields" id="box4" style="display: none;">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[a]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[b]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[c]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <div class="label_title_block">
+                                <div class="titleAndImg">
+                                    <p class="label_title">Посчитать стропила</p>
+                                    <div class="expand_img_svg">
+                                        <img id="myBtn7" src="image/question-mark.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="toggle_block">
+                                    <div class="toggle-btn" onclick="this.classList.toggle('active');openbox('box5');">
+                                        <div class="inner-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset class="fields" id="box5" style="display: none;">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[a]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[b]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[c]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[d]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+                            <div class="label_title_block">
+                                <div class="titleAndImg">
+                                    <p class="label_title">Посчитать обрешетку</p>
+                                    <div class="expand_img_svg">
+                                        <img id="myBtn8" src="image/question-mark.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="toggle_block">
+                                    <div class="toggle-btn" onclick="this.classList.toggle('active');openbox('box6');">
+                                        <div class="inner-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <fieldset class="fields" id="box6" style="display: none;">
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[a]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[b]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[c]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                                <div class="form_wrap_calc">
+                                    <label class="input_label">Размер[d]:</label>
+                                    <input class="form_control_calc" type="number" name="" placeholder="мм" id=""><span class="form_validation"></span>
+                                </div>
+                            </fieldset>
+
+
+
+                            <div class="form_wrap_calc">
+                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="myModal5" class="modal modal5">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content5">
+                                <span class="close close5">&times;</span>
+                                <img src="image/Group 36.png" alt="" width="600px" height="400px">
+                            </div>
+                        </div>
+                        <div id="myModal6" class="modal modal6">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content6">
+                                <span class="close close6">&times;</span>
+                                <img src="image/Group 42.png" alt="" width="600px" height="400px">
+                            </div>
+                        </div>
+                        <div id="myModal7" class="modal modal7">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content7">
+                                <span class="close close7">&times;</span>
+                                <img src="image/Group 43.png" alt="" width="600px" height="400px">
+                            </div>
+                        </div>
+                        <div id="myModal8" class="modal modal8">
+                            <!-- Modal content -->
+                            <div class="modal-content modal-content8">
+                                <span class="close close8">&times;</span>
+                                <img src="image/Group 41.png" alt="" width="600px" height="400px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result_calc_words">
+                        <div class="result_calc_title"></div>
+                        <div class="result_calc_words_main">
+                            <div class="result_calc_words_titles">
+                                <p>Площадь кровли:</p>
+                                <p>Угол наклона:</p>
+                                <p>Длина ската:</p>
+                                <p>Площадь фронтона:</p>
+                                <p>Длина стропил:</p>
+                                <p>Необходимо досок:</p>
+                                <p>Объем доски:</p>
+                                <p>Объем всего:</p>
+                                <p>Шаг:</p>
+                                <p>Нахлест:</p>
+                            </div>
+                            <div class="result_calc_words_parameters">
+                                <p><output id=""></output> м2</p>
+                                <p><output id=""></output> %</p>
+                                <p><output id=""></output> мм</p>
+                                <p><output id=""></output> м2</p>
+                                <p><output id=""></output> мм</p>
+                                <p><output id=""></output> шт</p>
+                                <p><output id=""></output> шт</p>
+                                <p><output id=""></output> м3</p>
+                                <p><output id=""></output> м3</p>
+                                <p><output id=""></output> мм</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-        <!-- <button id="myBtn">Open Modal</button> -->
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <img src="image/бетон.jpg" alt="" width="510px" height="510px">
-
-                <!-- <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2>Modal Header</h2>
-                </div>
-                <div class="modal-body">
-                    <p>Some text in the Modal Body</p>
-                    <p>Some other text...</p>
-                </div>
-                <div class="modal-footer">
-                    <h3>Modal Footer</h3>
-                </div> -->
-            </div>
-
-        </div>
-
-        <!-- Script modal !-->
-        <script>
-            // Get the modal
-            var modal = document.getElementById("myModal");
-
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-
-            // When the user clicks the button, open the modal 
-            btn.onmouseenter = function() {
-                modal.style.display = "block";
-            }
-
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        </script>
-
 
 
         <footer>
@@ -410,7 +548,186 @@
 
             </div>
         </footer>
+
+
     </section>
+
+
+
+
+    <!-- Script modal !-->
+    <script>
+        // Get the modal
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+        var modal5 = document.getElementById("myModal5");
+        var modal6 = document.getElementById("myModal6");
+        var modal7 = document.getElementById("myModal7");
+        var modal8 = document.getElementById("myModal8");
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("myBtn1");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("myBtn4");
+        var btn5 = document.getElementById("myBtn5");
+        var btn6 = document.getElementById("myBtn6");
+        var btn7 = document.getElementById("myBtn7");
+        var btn8 = document.getElementById("myBtn8");
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
+        var span4 = document.getElementsByClassName("close4")[0];
+        var span5 = document.getElementsByClassName("close5")[0];
+        var span6 = document.getElementsByClassName("close6")[0];
+        var span7 = document.getElementsByClassName("close7")[0];
+        var span8 = document.getElementsByClassName("close8")[0];
+        // When the user clicks the button, open the modal 
+        btn1.onmouseenter = function() {
+            modal1.style.display = "block";
+        }
+        btn2.onmouseenter = function() {
+            modal2.style.display = "block";
+        }
+        btn3.onmouseenter = function() {
+            modal3.style.display = "block";
+        }
+        btn4.onmouseenter = function() {
+            modal4.style.display = "block";
+        }
+        btn5.onmouseenter = function() {
+            modal5.style.display = "block";
+        }
+        btn6.onmouseenter = function() {
+            modal6.style.display = "block";
+        }
+        btn7.onmouseenter = function() {
+            modal7.style.display = "block";
+        }
+        btn8.onmouseenter = function() {
+            modal8.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
+            modal1.style.display = "none";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+        span3.onclick = function() {
+            modal3.style.display = "none";
+        }
+        span4.onclick = function() {
+            modal4.style.display = "none";
+        }
+        span5.onclick = function() {
+            modal5.style.display = "none";
+        }
+        span6.onclick = function() {
+            modal6.style.display = "none";
+        }
+        span7.onclick = function() {
+            modal7.style.display = "none";
+        }
+        span8.onclick = function() {
+            modal8.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target == modal4 || event.target == modal5 || event.target == modal6 || event.target == modal7 || event.target == modal8) {
+                modal1.style.display = "none";
+                modal2.style.display = "none";
+                modal3.style.display = "none";
+                modal4.style.display = "none";
+                modal5.style.display = "none";
+                modal6.style.display = "none";
+                modal7.style.display = "none";
+                modal8.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        var HIDDEN_CLASS_NAME = 'hidden'
+        var TARGET_CLASS_NAME = 'target'
+        var SOURCE_CLASS_NAME = 'source'
+
+        var targetIdToShow = 1
+
+        function main() {
+            var targets = getElements(TARGET_CLASS_NAME)
+            var sources = getElements(SOURCE_CLASS_NAME)
+            console.log(targets);
+            sources.forEach(function(sourceNode) {
+                var sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME)
+                sourceNode.addEventListener('click', function() {
+                    showTarget(targets, sourceNodeId)
+                })
+            })
+            showTarget(targets, targetIdToShow)
+        }
+
+        function getElements(type) {
+            return [].slice.call(document.querySelectorAll('.' + type)).sort(function(targetNode1, targetNode2) {
+                var target1Num = extractId(targetNode1, TARGET_CLASS_NAME)
+                var target2Num = extractId(targetNode2, TARGET_CLASS_NAME)
+                return target1Num > target2Num
+            })
+        }
+
+        function extractId(targetNode, baseClass) {
+            var currentClassIndex = targetNode.classList.length
+            while (currentClassIndex--) {
+                var currentClass = targetNode.classList.item(currentClassIndex)
+                var maybeIdNum = parseInt(currentClass.split('-')[1])
+                if (isNaN(maybeIdNum)) {
+                    continue
+                }
+                var classStrinToValidate = baseClass + '-' + maybeIdNum
+                if (classStrinToValidate === currentClass) {
+                    return maybeIdNum
+                }
+            }
+        }
+
+        function showTarget(targets, targetId) {
+            targets.forEach(function(targetNode, targetIndex) {
+                var currentTargetNodeId = extractId(targetNode, TARGET_CLASS_NAME)
+                if (currentTargetNodeId === targetId) {
+                    targetNode.classList.remove(HIDDEN_CLASS_NAME)
+                } else {
+                    targetNode.classList.add(HIDDEN_CLASS_NAME)
+                }
+            })
+        }
+
+        main()
+    </script>
+
+
+
+    <script type="text/javascript">
+        function openbox(id) {
+            display = document.getElementById(id).style.display;
+            if (display == 'none') {
+                document.getElementById(id).style.display = 'flex';
+            } else {
+                document.getElementById(id).style.display = 'none';
+            }
+        }
+    </script>
+
+
+<script> //отображение блока где вызываешь из другой страницы
+            var hash = window.location.hash.substr(1);
+            classDiv = document.getElementById(hash);
+            IDblock_hash = extractId(classDiv, TARGET_CLASS_NAME);
+            // hash_targets = getElements('target-' + IDblock_hash.toString());
+            targetsBlock = getElements(TARGET_CLASS_NAME); 
+            showTarget(targetsBlock, IDblock_hash); 
+</script>
 
 </body>
 

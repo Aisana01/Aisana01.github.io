@@ -149,7 +149,7 @@
 
 .general {
   position: relative;
-  height: 1000px;
+  /* height: 1000px; */
 }
 .flexbox .item_content_actionscontainer {
     align-items: center;
@@ -221,6 +221,7 @@
 .modal-content {
   position: relative;
   text-align: center;
+  padding: 20px 0;
   background-color: #fefefe;
   margin: 0 auto;
   width: 57%;
@@ -259,8 +260,10 @@
   cursor: pointer;
 }
 .expand_img{
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  margin: 0 auto;
 }
 .expand_img_svg {
   width: 21px;
