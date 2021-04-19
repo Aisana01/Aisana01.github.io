@@ -149,26 +149,25 @@
                             <fieldset class="fields">
                                 <div class="form_wrap_calc">
                                     <label class="input_label">Размер[А]:</label>
-                                    <input class="form_control_calc" type="number" name="name" placeholder="м" id="A"><span class="form_validation"></span>
+                                    <input class="form_control_calc" type="number" placeholder="м" id="a_length"><span class="form_validation"></span>
                                 </div>
                                 <div class="form_wrap_calc">
                                     <label class="input_label">Размер[B]:</label>
-                                    <input class="form_control_calc" type="number" name="email" placeholder="м" id="B"><span class="form_validation"></span>
+                                    <input class="form_control_calc" type="number" placeholder="м" id="b_length"><span class="form_validation"></span>
                                 </div>
                             </fieldset>
                             <fieldset class="fields">
                                 <div class="form_wrap_calc">
                                     <label class="input_label">Размер[C]:</label>
-                                    <input class="form_control_calc" type="number" name="phone" placeholder="см" id="C"><span class="form_validation"></span>
+                                    <input class="form_control_calc" type="number" placeholder="см" id="c_length"><span class="form_validation"></span>
                                 </div>
                                 <div class="form_wrap_calc">
                                     <label class="input_label">Стоимость бетона за м3:</label>
-                                    <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
+                                    <input class="form_control_calc" type="number" placeholder="тенге" id="cost"><span class="form_validation"></span>
                                 </div>
                             </fieldset>
                             <div class="form_wrap_calc">
-                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
-                                </button>
+                                <button class="button_primary" type="button" onclick="Calculate('slab_fund')"><a href="#">Расчитать</a></button>
                             </div>
                         </form>
                         <div id="myModal1" class="modal modal1">
@@ -194,13 +193,13 @@
                                 <p>Стоимость бетона:</p>
                             </div>
                             <div class="result_calc_words_parameters">
-                                <p><output id="beton_volume"></output> м2</p>
-                                <p><output id="perimetr_vneshni"></output> м³</p>
-                                <p><output id="obshaya_dlina"></output> м</p>
-                                <p><output id="ploshad_podoshva"></output> м2</p>
-                                <p><output id="vneshni_bokovoi"></output> кг</p>
-                                <p><output id="ves_beton"></output> кг/см2</p>
-                                <p><output id="nagruzka"></output> тенге</p>
+                                <p><output id="a"></output> м2</p>
+                                <p><output id="b"></output> метров³</p>
+                                <p><output id="c"></output> метров</p>
+                                <p><output id="d"></output> м2</p>
+                                <p><output id="e"></output> кг</p>
+                                <p><output id="f"></output> кг/см2</p>
+                                <p><output id="g"></output> тенге</p>
                             </div>
                         </div>
                     </div>
@@ -845,15 +844,13 @@
         }
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-            if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target == modal4 || event.target == modal5 || event.target == modal6 || event.target == modal7) {
-                modal1.style.display = "none";
-                modal2.style.display = "none";
-                modal3.style.display = "none";
-                modal4.style.display = "none";
-                modal5.style.display = "none";
-                modal6.style.display = "none";
-                modal7.style.display = "none";
-            }
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            modal4.style.display = "none";
+            modal5.style.display = "none";
+            modal6.style.display = "none";
+            modal7.style.display = "none";
         }
     </script>
     <!-- <script>
