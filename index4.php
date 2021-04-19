@@ -43,7 +43,7 @@
                 </div>
                 <div class="header_left">
                     <div class="icons">
-                        <a class="messages_href" href="conversation_page.php">Сообщения</a>
+                        <a class="messages_href" href="profile.php">Профиль</a>
                     </div>
                     <div class="auth_button_about">
                         <a href="Log.php" class="btn_SignIn"></a>
@@ -53,7 +53,7 @@
             <div class="bottom_header">
                 <div class="bottom_header_in">
                     <div class="dropdown">
-                        <a href="shop.php" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
+                        <a href="index.php" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
                         <div class="dropdown_content">
                             <a href="index.php#block1">Расчет фундаментной плиты</a>
                             <a href="index.php#block2">Расчет ленточного фундамента</a>
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Стены</a>
+                        <a href="index2.php" class="categories">Стены</a>
                         <div class="dropdown_content">
                             <a href="index2.php#block8">Расчет кирпичных стен</a>
                             <a href="index2.php#block9">Расчет стен из блоков</a>
@@ -76,9 +76,9 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Отделка</a>
+                        <a href="index5.php" class="categories">Отделка</a>
                         <div class="dropdown_content">
-                        <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
+                            <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
                             <a href="index5.php#block17">Расчет настила из досок/перекрытий</a>
                             <a href="index5.php#block18">Расчет количества плитки</a>
                             <a href="index5.php#block19">Расчет напольного покрытия</a>
@@ -95,30 +95,29 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Пиломатериалы</a>
+                        <a href="index3.php" class="categories">Пиломатериалы</a>
                         <div class="dropdown_content">
                             <a href="index3.php#block11">Объем пиломатериалов по количеству</a>
                             <a href="index3.php#block12">Количество пиломатериалов по объему</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Кровли</a>
+                        <a href="index6.php" class="categories">Кровли</a>
                         <div class="dropdown_content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="index6.php#block30">Односкатная</a>
+                            <a href="index6.php#block31">Двускатная</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Объемы</a>
+                        <a href="index7.php" class="categories">Арматура</a>
                         <div class="dropdown_content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
+                            <a href="index7.php#block32">Вес арматуры по количеству</a>
+                            <a href="index7.php#block33">Количество арматуры по весу</a>
+                            <a href="index7.php#block34">Арматура ГОСТ 5781-82</a>
                         </div>
                     </div>
                     <div class="dropdown">
-                        <a href="shop.php" class="categories">Земляные работы</a>
+                        <a href="index4.php" class="categories">Земляные работы</a>
                         <div class="dropdown_content">
                             <a href="#block13" class="source source-1">Расчет подушки из сыпучих материалов</a>
                             <a href="#block14" class="source source-2">Объем земленых работ(вертикальные стены)</a>
@@ -147,7 +146,7 @@
 
                         <form class="landing_form_input_calc">
                             <fieldset class="fields">
-                            <div class="form_wrap_calc">
+                                <div class="form_wrap_calc">
                                     <label class="input_label">Вид материала:</label>
                                     <select class="select_calc">
                                         <option value="">Песок строительный</option>
@@ -162,8 +161,8 @@
                                         <option value="">Цемент</option>
                                         <option value="">Вермикулит вспученный</option>
                                     </select>
-                                </div> 
-                            <div class="form_wrap_calc">
+                                </div>
+                                <div class="form_wrap_calc">
                                     <label class="input_label">В 1м³:</label>
                                     <input class="form_control_calc" type="number" name="" placeholder="кг" id=""><span class="form_validation"></span>
                                 </div>
@@ -257,7 +256,7 @@
                                     <label class="input_label">Плотность грунта:</label>
                                     <input class="form_control_calc" type="number" name="" placeholder="кг/м³" id=""><span class="form_validation"></span>
                                 </div>
-                                
+
                             </fieldset>
 
                             <div class="form_wrap_calc">
@@ -271,7 +270,7 @@
                             <!-- Modal content -->
                             <div class="modal-content modal-content2">
                                 <span class="close close2">&times;</span>
-                                <img src="image/котлована.png" alt="">
+                                <img src="image/Group 56.png" alt="" width="500px" height="440px">
                             </div>
 
                         </div>
@@ -330,7 +329,7 @@
                                     <label class="input_label">Плотность грунта:</label>
                                     <input class="form_control_calc" type="number" name="" placeholder="кг/м³" id=""><span class="form_validation"></span>
                                 </div>
-                                
+
                             </fieldset>
 
                             <div class="form_wrap_calc">
@@ -344,7 +343,7 @@
                             <!-- Modal content -->
                             <div class="modal-content modal-content3">
                                 <span class="close close3">&times;</span>
-                                <img src="image/котлована2.png" alt="">
+                                <img src="image/Group 57.png" alt="" width="500px" height="440px">
                             </div>
 
                         </div>
@@ -417,7 +416,7 @@
         var modal2 = document.getElementById("myModal2");
         var modal3 = document.getElementById("myModal3");
 
-  
+
         var btn2 = document.getElementById("myBtn2");
         var btn3 = document.getElementById("myBtn3");
 
@@ -432,25 +431,25 @@
         btn3.onmouseenter = function() {
             modal3.style.display = "block";
         }
-       
+
         // When the user clicks on <span> (x), close the modal
- 
+
         span2.onclick = function() {
             modal2.style.display = "none";
         }
         span3.onclick = function() {
             modal3.style.display = "none";
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if ( event.target == modal2 || event.target == modal3) {
-               
-                modal2.style.display = "none";
-                modal3.style.display = "none";
-           
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal2 || event.target == modal3) {
+
+                    modal2.style.display = "none";
+                    modal3.style.display = "none";
+
+                }
             }
         }
-    }
     </script>
     <!-- <script>
         // Get the modal
@@ -535,6 +534,15 @@
 
         main()
     </script>
+
+<script> //отображение блока где вызываешь из другой страницы
+            var hash = window.location.hash.substr(1);
+            classDiv = document.getElementById(hash);
+            IDblock_hash = extractId(classDiv, TARGET_CLASS_NAME);
+            // hash_targets = getElements('target-' + IDblock_hash.toString());
+            targetsBlock = getElements(TARGET_CLASS_NAME); 
+            showTarget(targetsBlock, IDblock_hash); 
+</script>
 
 </body>
 

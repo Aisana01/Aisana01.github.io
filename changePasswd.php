@@ -67,24 +67,18 @@
                     <div class="user_inform_form">
                         <form class="landing_form_input">
                             <div class="form_wrap">
-                                <!-- <label class="input_label" >Имя</label> -->
-                                <input class="form_control" type="text" name="" name placeholder="Имя"><span class="form_validation"></span>
+                                <input class="form_control" type="password" name="" name placeholder="Введите старый пароль"><span class="form_validation"></span>  
                             </div>
                             <div class="form_wrap">
-                                <!-- <label class="input_label">Email</label> -->
-                                <input class="form_control" type="email" name="" name placeholder="Email"><span class="form_validation"></span>
+                                <input class="form_control" type="password" name="" name placeholder="Введите новый пароль"><span class="form_validation"></span>  
                             </div>
                             <div class="form_wrap">
-                                <!-- <label class="input_label" >Номер-телефона</label> -->
-                                <input class="form_control" type="text" name="" name placeholder="Номер-телефона"><span class="form_validation"></span>
+                                <input class="form_control" type="password" name="" name placeholder="Подтвердите новый пароль"><span class="form_validation"></span>  
                             </div>
-                            <div class="form_wrap">
-                                <!-- <label class="input_label" >Номер-телефона</label> -->
-                                <input class="form_control" type="password" name="" name placeholder="Пароль"><span class="form_validation"></span>
-                           <div class="change_passwd"><a href="changePasswd.php">Сменить пароль...</a></div>
-                                
+                            <div class="form_wrap_calc">
+                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                </button>
                             </div>
-                            
                         </form>
                     </div>
                 </div>

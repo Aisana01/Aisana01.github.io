@@ -11,6 +11,9 @@
 	margin: 0 auto;
 	position: relative;
 }
+.landing_large_calc{
+	width: 50%;
+}
 .landing_pages {
 	height: 76px;
 	width: 100%;
@@ -72,8 +75,8 @@
 }
 .transition_img{
 	position: absolute;
-    top: 30%;
-    left: 105%;
+    top: 39%;
+    left: 100%;
 	transform: translate3d(-50%, -50%, 0);
     
 

@@ -38,7 +38,7 @@
             </div>
             <div class="header_left">
                 <div class="icons">
-                    <a class="messages_href" href="conversation_page.php">Сообщения</a>
+                    <a class="messages_href" href="conversation_page.php">Профиль</a>
                 </div>
                 <div class="auth_button">
                     <a href="Log.php" class="btn_SignIn">ВХОД</a>
