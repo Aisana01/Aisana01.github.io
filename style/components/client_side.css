@@ -107,13 +107,6 @@
 	display: flex;
 	width: 100%;
 }
-.result_calc_title {
-	/* font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	font-weight: 600;  */
-	height: 30px;
-	content: "" ;
-}
 .result_calc_words_titles {
 	width: 70%;
 	text-align: left;

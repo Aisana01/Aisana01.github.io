@@ -171,3 +171,21 @@
 	font-weight: bold;
 	color: #FFFFFF;
 }
+.result_calc_title {
+	height: 30px;
+    content: "";
+    text-align: end;
+    padding: 0 20px;
+}
+
+.save_svg{
+  fill: #2D426D;
+}
+.save_svg:hover{
+  fill: #C4956A;
+
+}
+.result_calc_svg:active{
+  fill: #C4956A;
+
+}

@@ -232,7 +232,7 @@
                                 </div>
                                 <div class="card_item_about">
                                     <div class="card">
-                                        <img src="image/team2.jpg" alt="">
+                                        <img src="image/Elya.jpeg" width="290px" height="280px" alt="">
                                         <h5 class="team-classic-name"><a href="#">Uisynbaiyev Yelaman</a></h5>
                                     </div>
                                     <div class="card_item">
