@@ -18,15 +18,21 @@
     <meta charset="utf-8">
     <meta name="description" content="Kluchevie slova, do 200 simvolov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/parallax.js"></script>
+    <script src="javascript/jquery-3.1.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="javascript/animate_plugin/animate.css">
     <link rel="stylesheet" type="text/css" href="style/all.css">
 </head>
 
 <body class="about">
-    <header class = "aboutUs_header">
+    <header class="aboutUs_header">
         <div class="top_header">
             <div class="header_right">
                 <div class="logo">
-                    <a href="index.php" class="logo_link">iBuild</a>
+                    <a href="AboutUs.php" class="logo_link">iBuild</a>
                 </div>
                 <div class="search_field">
                     <div class="field_in">
@@ -34,12 +40,12 @@
                     </div>
                 </div>
                 <div class="basket">
-                    <a href="AboutUs.php" class="basket_link">Главная страница</a>
+                    <a href="AboutUs.php" class="logo_link basket_link">Главная страница</a>
                 </div>
             </div>
             <div class="header_left">
                 <div class="icons">
-                    <a class="messages_href" href="profile.php">Профиль</a>
+                    <a href="profile.php" class="logo_link basket_link">Профиль</a>
                 </div>
                 <div class="auth_button_about">
                     <a href="Log.php" class="btn_SignIn"><?php //echo $user->full_name; 
@@ -75,20 +81,20 @@
                 <div class="dropdown">
                     <a href="index5.php" class="categories">Отделка</a>
                     <div class="dropdown_content">
-                            <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
-                            <a href="index5.php#block17">Расчет настила из досок/перекрытий</a>
-                            <a href="index5.php#block18">Расчет количества плитки</a>
-                            <a href="index5.php#block19">Расчет напольного покрытия</a>
-                            <a href="index5.php#block20">Расчет количества вагонки на поверхность</a>
-                            <a href="index5.php#block21">Расход грунтовки</a>
-                            <a href="index5.php#block22">Расход краски</a>
-                            <a href="index5.php#block23">Расход штукатурки</a>
-                            <a href="index5.php#block24">Расход шпаклевки</a>
-                            <a href="index5.php#block25">Расход стяжки</a>
-                            <a href="index5.php#block26">Расход ровнителя/наливных полов</a>
-                            <a href="index5.php#block27">Расход плиточного клея</a>
-                            <a href="index5.php#block28">Расход обоев</a>
-                            <a href="index5.php#block29">Плинтус</a>
+                        <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
+                        <a href="index5.php#block17">Расчет настила из досок/перекрытий</a>
+                        <a href="index5.php#block18">Расчет количества плитки</a>
+                        <a href="index5.php#block19">Расчет напольного покрытия</a>
+                        <a href="index5.php#block20">Расчет количества вагонки на поверхность</a>
+                        <a href="index5.php#block21">Расход грунтовки</a>
+                        <a href="index5.php#block22">Расход краски</a>
+                        <a href="index5.php#block23">Расход штукатурки</a>
+                        <a href="index5.php#block24">Расход шпаклевки</a>
+                        <a href="index5.php#block25">Расход стяжки</a>
+                        <a href="index5.php#block26">Расход ровнителя/наливных полов</a>
+                        <a href="index5.php#block27">Расход плиточного клея</a>
+                        <a href="index5.php#block28">Расход обоев</a>
+                        <a href="index5.php#block29">Плинтус</a>
                     </div>
                 </div>
                 <div class="dropdown">
@@ -101,18 +107,18 @@
                 <div class="dropdown">
                     <a href="index6.php" class="categories">Кровли</a>
                     <div class="dropdown_content">
-                            <a href="index6.php#block30">Односкатная</a>
-                            <a href="index6.php#block31">Двускатная</a>
+                        <a href="index6.php#block30">Односкатная</a>
+                        <a href="index6.php#block31">Двускатная</a>
                     </div>
                 </div>
                 <div class="dropdown">
-                        <a href="index7.php" class="categories">Арматура</a>
-                        <div class="dropdown_content">
-                            <a href="index7.php#block32">Вес арматуры по количеству</a>
-                            <a href="index7.php#block33">Количество арматуры по весу</a>
-                            <a href="index7.php#block34">Арматура ГОСТ 5781-82</a>
-                        </div>
+                    <a href="index7.php" class="categories">Арматура</a>
+                    <div class="dropdown_content">
+                        <a href="index7.php#block32">Вес арматуры по количеству</a>
+                        <a href="index7.php#block33">Количество арматуры по весу</a>
+                        <a href="index7.php#block34">Арматура ГОСТ 5781-82</a>
                     </div>
+                </div>
                 <div class="dropdown">
                     <a href="index4.php" class="categories">Земляные работы</a>
                     <div class="dropdown_content">
@@ -128,9 +134,8 @@
         <div class="landing_contaner">
             <div class="landing_text">
                 <p>Строй самостоятельно</p>
-                <p class="middle_landing_text">Выбирай лучшее! Нанимай лучших! Создай лучшее!</p>
-                <p class="small_landing_text">Производители загружают каталоги,<br>продавцы добавляют цены и остатки на
-                    складе,<br>а покупатели выбирают лучшие предложения.</p>
+                <p class="middle_landing_text">Выбирай лучшее! Пользуйся лучшим! Создай лучшее!</p>
+                <p class="small_landing_text">Пользователь вводит данные,<br>калькулятор для расчета вычислить материал,<br>а вот IBOT подскажет .</p>
             </div>
             <div class="transition_img">
                 <img class="layer_wrap_transition" src="image/house2.png" width="800px" height="550px">
@@ -217,7 +222,7 @@
                             <div class="container_block_landing_about">
                                 <div class="card_item_about">
                                     <div class="card">
-                                        <img src="image/team1.jpg" alt="">
+                                        <img src="image/Ais.jpg" width="290px" height="280px">
                                         <h5 class="team-classic-name"><a href="#">Olpan Aisana</a></h5>
                                     </div>
                                     <div class="card_item">
@@ -237,7 +242,7 @@
                                 </div>
                                 <div class="card_item_about">
                                     <div class="card">
-                                        <img src="image/team3.jpg" alt="">
+                                        <img src="image/Aiko.jpg" width="290px" height="280px" alt="">
                                         <h5 class="team-classic-name"><a href="#">Auganbekova Ayaulym</a></h5>
                                     </div>
                                     <div class="card_item">
@@ -258,8 +263,8 @@
                                 <div class="landing_container">
 
                                     <div class="layer_wrap">
-                                        <div class="layer_wrap_img" data-depth="0.4">
-                                            <img src="image/index_7.png" alt="" width="700" height="531">
+                                        <div id="scene" class="layer_wrap_img" data-hover-only="true" data-relative-input="true">
+                                            <img src="image/index_7.png" data-depth="0.4" alt="" width="700" height="531">
                                         </div>
                                     </div>
 
@@ -345,7 +350,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="javascript/parallaxByID.js"></script>
     <script>
         'use strict';
         var slideShow = (function() {
@@ -571,8 +576,10 @@
         });
     </script>
 
-</body>
 
+</body>
+<script src="javascript/animate_plugin/animate-css.js"></script>
+<script src="javascript/common.js"></script>
 </html>
 <?php
 /*  } else {

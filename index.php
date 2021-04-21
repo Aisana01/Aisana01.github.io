@@ -22,35 +22,41 @@
     <meta name="description" content="Kluchevie slova, do 200 simvolov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript/calculations.js"></script>
+    <script src="javascript/jquery-3.1.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="javascript/animate_plugin/animate.css">
     <link rel="stylesheet" type="text/css" href="style/all.css">
 </head>
 
 <body>
     <section class="top_block">
         <header class="index_header">
-            <div class="top_header">
-                <div class="header_right">
-                    <div class="logo">
-                        <a href="index.php" class="logo_link">iBuild</a>
-                    </div>
-                    <div class="search_field">
-                        <div class="field_in">
-                            <input type="text" name="search_text" placeholder="Поиск..." style="padding-left: 10px;">
-                        </div>
-                    </div>
-                    <div class="basket">
-                        <a href="AboutUs.php" class="basket_link">Главная страница</a>
+        <div class="top_header">
+            <div class="header_right">
+                <div class="logo">
+                    <a href="AboutUs.php" class="logo_link">iBuild</a>
+                </div>
+                <div class="search_field">
+                    <div class="field_in">
+                        <input type="text" name="search_text" placeholder="Поиск..." style="padding-left: 10px;">
                     </div>
                 </div>
-                <div class="header_left">
-                    <div class="icons">
-                        <a class="messages_href" href="profile.php">Профиль</a>
-                    </div>
-                    <div class="auth_button_about">
-                        <a href="Log.php" class="btn_SignIn"></a>
-                    </div>
+                <div class="basket">
+                    <a href="AboutUs.php" class="logo_link basket_link">Главная страница</a>
                 </div>
             </div>
+            <div class="header_left">
+                <div class="icons">
+                    <a href="profile.php" class="logo_link basket_link">Профиль</a>
+                </div>
+                <div class="auth_button_about">
+                    <a href="Log.php" class="btn_SignIn"><?php //echo $user->full_name; 
+                                                            ?></a>
+                </div>
+            </div>
+        </div>
             <div class="bottom_header">
                 <div class="bottom_header_in">
                     <div class="dropdown">
@@ -167,7 +173,7 @@
                                 </div>
                             </fieldset>
                             <div class="form_wrap_calc">
-                                <button class="button_primary" type="button" onclick="Calculate('slab_fund')"><a href="#">Расчитать</a></button>
+                                <button class="button_primary" type="button" onclick="Calculate('slab_fund')"><a href="#">Рассчитать</a></button>
                             </div>
                         </form>
                         <div id="myModal1" class="modal modal1">
@@ -247,9 +253,9 @@
                             </fieldset>
 
                             <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button> -->
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
                             </div>
                         </form>
                         <div id="myModal2" class="modal modal2">
@@ -329,9 +335,9 @@
                             </fieldset>
 
                             <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button> -->
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
                             </div>
                         </form>
                         <div id="myModal3" class="modal modal3">
@@ -416,9 +422,9 @@
                             </fieldset>
 
                             <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button> -->
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
                             </div>
                         </form>
                         <div id="myModal4" class="modal modal4">
@@ -498,9 +504,9 @@
                             </fieldset>
 
                             <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button> -->
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Расчитать</a></button>
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
                             </div>
                         </form>
                         <div id="myModal5" class="modal modal5">
@@ -621,7 +627,7 @@
                             </fieldset>
 
                             <div class="form_wrap_calc">
-                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
                             </div>
                         </form>
@@ -686,7 +692,7 @@
                             </fieldset>
 
 
-                            <button class="button_primary" type="submit"><a href="#">Сохранить</a>
+                            <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                             </button>
 
                         </form>
@@ -853,33 +859,7 @@
             modal7.style.display = "none";
         }
     </script>
-    <!-- <script>
-        // Get the modal
-        var i;
-        for (i = 1; i < 7; i++) {
-
-            var modal = document.getElementById("myModal" + i.toString());
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn" + i.toString());
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close" + i.toString())[0];
-            // When the user clicks the button, open the modal 
-            console.log(modal,btn,span);
-            btn.onmouseenter = function() {
-                modal.style.display = "block";
-            }
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-            }
-        }
-    </script> -->
+    
 
     <script>
         var HIDDEN_CLASS_NAME = 'hidden'
@@ -945,6 +925,9 @@
             targetsBlock = getElements(TARGET_CLASS_NAME); 
             showTarget(targetsBlock, IDblock_hash); 
 </script>
+
+<script src="javascript/animate_plugin/animate-css.js"></script>
+<script src="javascript/common.js"></script>
 
 </body>
 

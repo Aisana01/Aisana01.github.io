@@ -387,6 +387,9 @@
     transform: translate3d(-50%, -50%, 0);
     
 }
+.layer_wrap_img{
+    margin-bottom: 10px;
+}
 
 .layer_wrap_img2 {
 	position: absolute;

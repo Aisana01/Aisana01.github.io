@@ -19,7 +19,7 @@ footer {
 .content_blog_footer_about{
 	width: 100%;
 	height: 300px;
-	background-image: url(https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://demo.farost.net/karion/wp-content/themes/construct/assets/images/bg-footer.jpg);
+	background-image: url(../../image/bg-footer.jpg); 
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	background-color: rgba(23, 20, 54, 0.384);

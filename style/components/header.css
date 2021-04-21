@@ -8,18 +8,12 @@
 	width: auto;
 	max-width: 1400px;
 	margin: auto;
-	
 }
-.messages_href {
-	font-family: 'Montserrat', sans-serif;
-	margin-top: 10px;
-    font-size: 21px;
-    font-weight: bold;
-    color: #FFFFFF;
-}
+
 .top_header {
 	display: flex;
 	height: 44px;
+	font-family: 'Montserrat', sans-serif;
 }
 .header_right {
 	height: 100%;
@@ -37,12 +31,48 @@
 	width: 28%;
 	text-align: center;
 }
+
 .logo_link {
 	color: #FFFFFF;
 	padding-left: 10px;
 	font-weight: 600;
 	font-size: 34px;
+	position: relative;
+	text-decoration: none;
+	
 }
+
+  .logo_link:before,
+  .logo_link:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	left: 53%;
+	height: 2px;
+	background: #fff;
+	transition: all 600ms ease;
+  }
+  .inner_logo:before,
+  .inner_logo:after {
+	content: '';
+    position: absolute;
+    width: 0;
+    top: 58px;
+    left: 53%;
+    height: 4px;
+    background: #2D426D;
+    transition: all 600ms ease;
+  }
+  .logo_link:hover:before,
+  .logo_link:hover:after {
+	width: 50%;
+  }
+  .logo_link:hover:before {
+	transform: translateX(-100%);
+  }
+
+
 .search_field {
 	margin: auto 0;
 	width: 50%;
@@ -137,7 +167,11 @@
 	z-index: 1;
   }
   
-  .dropdown_content a:hover {background-color: #f1f1f1}
+  .dropdown_content a:hover {
+	  background-color: #C4956A;
+	  color: #fff;
+	  transition: all 200ms ease-in-out;
+}
   
   .dropdown:hover .dropdown_content {
 	display: block;
@@ -227,21 +261,17 @@
   
   }
   
-  
+  /*  */
   .header-inner1{
 	  display: flex;
 	  justify-content:left;
 	  width: 50%;
-	  /* float: left; */
+	  font-family: 'Montserrat', sans-serif;
   }
   .header-logo1 {
-		  color: #777;
 	  line-height: 59.5px;
 	  position: relative;
-	  padding-top: 10px;
 	  padding-left: 20px;
-  
-  
   
   }
   .header-nav1 {
@@ -263,9 +293,11 @@
 	  border-bottom: 3px solid #C4956A;
 	  text-shadow: none;
 	  color: #C4956A;
+	  transition: all 50ms ease;
   
   
   }
+  /*  */
   .header-inner2{
 	  display: flex;
   justify-content: flex-end;
@@ -298,74 +330,9 @@
   
   }
   
-  @media (max-width: 700px){
   
-  .header-nav2 {
-	  position: fixed;
-	  width: 10%;
-	  right: -100%;
+ 
   
-  
-  }
-  
-  .header-logo1 {
-	  position: fixed;
-	  width: 10%;
-	  right: -100%;
-  }
-  .header-nav2 ul{
-	  flex-direction: column;
-	  align-items: flex-end;
-  
-  }
-  
-  }
-  @media (max-width: 867px){
-  
-  .header-nav {
-	  position: fixed;
-	  width: 100%;
-	  right: -100%;
-  
-  
-  }
-  .header-logo1 {
-	  position: fixed;
-	  width: 10%;
-	  right: -100%;
-  }
-  .header-nav1 {
-	  margin: 0  ;
-  }
-  
-  
-  .header-nav ul{
-	  flex-direction: column;
-	  align-items: flex-end;
-  
-  }
-  
-  
-  }
-  @media (max-width: 350px){
-  
-  
-  .header_pr{
-	  width: 140%;
-  
-  }
-  .rainbow{
-	  width: 140%;
-  }
-  
-  .header-nav1{
-  
-	  margin: 0 ;
-  
-  }
-  
-  
-  }
   /**/
   .header_rec{
 	  width: 100%;
@@ -395,122 +362,4 @@
   
   
   }
-  .header-nav1_rec {
-	  margin: 0 64px ;
-  }
-  .header-nav1_rec ul {
-	  display: flex;
-  }
-  .header-nav1_rec ul li a {
-  padding: 28px 1.333em;
-  line-height: 65px;
-  color: #777;
-	  font-weight: 600;
-  }
   
-  .header-nav1_rec ul li a:hover 
-  {
-	  border-bottom: 3px solid #C4956A;
-	  text-shadow: none;
-	  color: #C4956A;
-  
-  
-  }
-  .header-inner2_rec{
-	  display: flex;
-  justify-content: flex-end;
-	  width: 50%;
-  }
-  
-  .header-nav2_rec {
-	  margin: 0 64px ;
-  }
-  .header-nav2_rec ul {
-	  display: flex;
-  }
-  .header-nav2_rec a{
-	  width: 20px;
-  }
-  .header-nav2_rec ul li a {
-  padding: 28px 10px;
-  line-height: 65px;
-  color: #777;
-	  font-weight: 600;
-  }
-  
-  #pagenav_optionsdivider {
-	  border-left: 3px solid #e6e6e8;
-	  display: none;
-	  width: 1px;
-	  display: block;
-	  height: 27px;
-	margin: 17px 0;
-  
-  }
-  
-  @media (max-width: 700px){
-  
-  .header-nav2_rec {
-	  position: fixed;
-	  width: 10%;
-	  right: -100%;
-  
-  
-  }
-  
-  .header-logo1_rec {
-	  position: fixed;
-	  width: 10%;
-	  right: -100%;
-  }
-  .header-nav2_rec ul{
-	  flex-direction: column;
-	  align-items: flex-end;
-  
-  }
-  
-  }
-  @media (max-width: 867px){
-  
-  .header-nav_rec {
-	  position: fixed;
-	  width: 100%;
-	  right: -100%;
-  
-  
-  }
-  .header-logo1_rec {
-	  position: fixed;
-	  width: 10%;
-	  right: -100%;
-  }
-  .header-nav1_rec {
-	  margin: 0  ;
-  }
-  
-  
-  .header-nav_rec ul{
-	  flex-direction: column;
-	  align-items: flex-end;
-  
-  }
-  
-  
-  }
-  @media (max-width: 350px){
-  
-  
-  .header_rec{
-	  width: 140%;
-  
-  }
-  .rainbow{
-	  width: 140%;
-  }
-  
-  .header-nav1_rec{
-  
-	  margin: 0 ;
-  
-  }
-  }  

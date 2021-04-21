@@ -21,9 +21,9 @@
     <meta name="descroption" content="Key Slova do 200 slov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/all.css">
-    <link rel="shortcut icon" href="../favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <script src="javascript/parallax.js"></script>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
         <div class="container">
             <div class="header-inner1">
                 <div class="header-logo1">
-                    <a href="AboutUS.php" class="logo_link" style="color: #2D426D;">iBuild</a>
+                    <a href="AboutUS.php" class="inner_logo logo_link" style="color: #2D426D;">iBuild</a>
                 </div>
                 <div class="header-nav1">
 
@@ -59,7 +59,9 @@
     <section class="general">
         <div class="container1">
             <div class="main_section">
-            <div class="background_profile"><img src="image/background_4.png" width="1000px" height="1000px" alt=""></div>
+            <div id="scene" class="background_profile" data-hover-only="true" data-relative-input="true">
+                <img src="image/background_4.png" data-depth="0.4" width="1000px" height="1000px" alt="">
+            </div>
                 <div class="profile_block">
                     <div class="img_user_block">
                         <img src="image/team2.jpg" alt="">
@@ -94,8 +96,8 @@
         </div>
 
 
-
     </section>
+    <script src="javascript/parallaxByID.js"></script>
     <!-- <footer class="content_blog_footer_about">
         <div class="content_footer_container">
             <div class="content_blog">

@@ -1,6 +1,6 @@
 
 .block_img_container{
-    background-image: url(https://livedemo00.template-help.com/wt_prod-20819/images/slide-2-1339x729.jpg);
+    background-image: url(../../image/house.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -74,12 +74,10 @@
     border-radius: 4px;
     display: block;
     font-family: 'Montserrat', sans-serif;
-   /* margin:  auto;*/
     min-width: 19.375em;
     font-size: 16px;
-    padding: 1em;
-    
-    outline-color: #fff;
+    padding: 1em; 
+    outline-color: #f5f5f5;
     outline-style: solid;
     outline-width: thin;
     
@@ -95,12 +93,16 @@
     padding: 0 1em;
     font-family: 'Montserrat', sans-serif;
 }
-.signup_log {
+.link_style {
     border-bottom: 1px solid #2D426D;
     color: #2D426D;
     font-size: 15px;
-  
     
+}
+.link_style:hover {
+    color: #C4956A;
+    border-bottom: 1px solid #C4956A;
+    transition: all 200ms ease-in-out;
 }
 .form_log-password {
     border: 1px solid #fff;
@@ -111,13 +113,15 @@
     min-width: 19.375em;
     font-size: 16px;
     padding: 1em;
-    outline-color: #fff;
+    outline-color: #f5f5f5;
     outline-style: solid;
     outline-width: thin;
 
 }
 
-
+.form_rec{
+    outline-color: #fff;
+}
 
 .form-group {
 	/*padding: 50px 0;*/
@@ -266,92 +270,6 @@
 
 
 /**/
-
-/*header.css*/
-.logPage_header {
-	width: auto;
-	/*background-color: #1a85f1;*/
-	max-width: 1350px;
-	margin: auto;
-}
-.top_header {
-	display: flex;
-	height: 44px;
-}
-.header_right{
-	height: 100%;
-	width: 72%;
-	border-right: 1px solid #FFFFFF;
-	display: flex;
-}
-.header_left{
-	height: 100%;
-	width: 28%;
-	display: flex;
-}
-.logo {
-	margin: auto 0;
-	width: 28%;
-	text-align: center;
-}
-.logo_link {
-	color: #FFFFFF;
-	padding-left: 10px;
-	font-weight: 600;
-	font-size: 34px;
-}
-.search_field {
-	margin: auto 0;
-	width: 50%;
-}
-.field_in {
-	margin: 0 auto;
-}
-.search_field input {
-	margin: 0 auto;
-	width: 100%;
-	height: 30px;
-	border-radius: 4px;
-	border-width: 0;
-}
-.basket {
-	height: auto;
-	width: 25%;
-	margin: auto 0;
-	text-align: center;
-}
-.basket_link {
-	color: #FFFFFF;
-	font-weight: bold;
-	font-size: 19px;
-	margin: 0 auto;
-	font-family: 'Roboto', sans-serif;
-}
-.icons {
-	height: 100%;
-	width: 50%;
-}
-
-.bottom_header {
-	height: 100px;
-
-}
-.bottom_header_in {
-	width: 75%;
-	display: flex;
-	height: 100%;
-	margin: 0 auto;
-}
-.bottom_header_in a {
-	width: 12.5%;
-	text-align: center;
-	color: #FFFFFF;
-	font-size: 14px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	font-weight: 500;
-	font-family: 'Montserrat', sans-serif;
-}
 
 
 

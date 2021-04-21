@@ -32,7 +32,7 @@
         <div class="container">
             <div class="header-inner1">
                 <div class="header-logo1">
-                    <a href="AboutUS.php" class="logo_link" style="color: #2D426D;">iBuild</a>
+                    <a href="AboutUS.php" class="inner_logo logo_link" style="color: #2D426D;">iBuild</a>
                 </div>
                 <div class="header-nav1">
 

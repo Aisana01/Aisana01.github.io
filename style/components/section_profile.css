@@ -28,6 +28,7 @@
 
 .sidenav_left a:hover {
   color: #C4956A;
+  transition: all 200ms ease-in-out;
 }
 #pagenav {
     border-bottom: 2px solid #e6e6e8;
@@ -182,4 +183,5 @@ margin: 5px 15px;
 }
 .change_passwd a:hover{
     color: #C4956A;
+    transition: all 200ms ease-in-out;
 }

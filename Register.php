@@ -12,6 +12,11 @@
     <!-- Add Firebase products that you want to use -->
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="javascript/jquery-3.1.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="javascript/animate_plugin/animate.css">
     <script src="javascript/authentication.js"></script>
     <link rel="shortcut icon" href="../favicon.ico">
     <link
@@ -70,14 +75,14 @@
                         </h5>
                         <div class="alert_block">
                             <h6 class="alert_text">Уже есть аккаунт?</h6>
-                            <a class="signup_log" href="Log.php">Войти</a>
+                            <a class="link_style" href="Log.php">Войти</a>
                         </div>
                         <div class="form-group">
                             <form class="form_contact">
-                                <input class="form_log-control" type="text" id="full_name" placeholder="Полное имя...">
-                                <input class="form_log-control" type="text" id="login" placeholder="Email...">
-                                <input class="form_log-password" type="password" id="password" placeholder="Пароль...">
-                                <input class="form_log-password" type="password" id="password2"placeholder="Повторите пароль...">
+                                <input class="form_log-control form_rec" type="text" id="full_name" placeholder="Полное имя...">
+                                <input class="form_log-control form_rec" type="text" id="login" placeholder="Email...">
+                                <input class="form_log-password form_rec" type="password" id="password" placeholder="Пароль...">
+                                <input class="form_log-password form_rec" type="password" id="password2"placeholder="Повторите пароль...">
                             </form>
                             <button onclick="registration()" class="btn">Регистрация</button>
                         </div>
@@ -126,5 +131,6 @@
         </footer>
     </div>
 </body>
-
+<script src="javascript/animate_plugin/animate-css.js"></script>
+<script src="javascript/common.js"></script>
 </html>
