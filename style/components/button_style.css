@@ -189,7 +189,24 @@
   fill: #C4956A;
 
 }
-
+.btn_modal{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #2D426D;
+  border-width: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 600;
+  outline: none;
+}
+.btn_modal:hover{
+  background-color: #C4956A;
+}
+.btn_modal.active{
+  background-color: #C4956A;
+}
 .result_calc_svg:active{
   fill: #C4956A;
 

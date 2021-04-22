@@ -206,6 +206,7 @@
                                 <div class="form_wrap_modal">
                                     <label class="input_label">Наименование:</label>
                                     <input class="form_control_modal" type="text" name="" placeholder="" id=""><span class="form_validation"></span>
+                                    <button class="btn_modal">OK</button>
                                 </div>
                             </fieldset>
                         </div>
