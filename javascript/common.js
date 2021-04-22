@@ -9,4 +9,6 @@ $(document).ready(function() {
     $(".bottom_footer").animated("slideInLeft");
     $(".landing_large_form_calc").animated("slideInLeft");
     $(".card_log-item").animated("slideInLeft");
+    $(".form_wrap_modal").animated("slideInDown");
+    
 })

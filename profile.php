@@ -64,7 +64,7 @@
             </div>
                 <div class="profile_block">
                     <div class="img_user_block">
-                        <img src="image/team2.jpg" alt="">
+                        <img src="image/Elya.jpeg" alt="">
                     </div>
                     <div class="user_inform_form">
                         <form class="landing_form_input">
