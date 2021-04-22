@@ -1,4 +1,20 @@
+var firebaseConfig = {
+    apiKey: "AIzaSyBU--GVpn2IAuPzpf3s4kY_-U0g64fFLLM",
+    authDomain: "ibuild-diploma.firebaseapp.com",
+    projectId: "ibuild-diploma",
+    storageBucket: "ibuild-diploma.appspot.com",
+    messagingSenderId: "443480308247",
+    appId: "1:443480308247:web:7be535d0f1db6002ad3a52"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+var db = firebase.firestore();
+
 function Calculate(id) {
+    var userId = firebase.auth().uid
+    alert(userId)
+
     var host = "https://ibuild-api.herokuapp.com/"
     if(id == "slab_fund"){
         var a_length = parseFloat(document.getElementById('a_length').value)
@@ -22,13 +38,13 @@ function Calculate(id) {
             res => res.json()
         ).then(
             data => {
-                document.getElementById('a').innerHTML = Math.round(data.slab_area * 100) / 100
-                document.getElementById('b').innerHTML = Math.round(data.concrete_volume * 100) / 100
-                document.getElementById('c').innerHTML = Math.round(data.perimeter * 100) / 100
-                document.getElementById('d').innerHTML = Math.round(data.side_plate_area * 100) / 100
-                document.getElementById('e').innerHTML = Math.round(data.weight * 100) / 100
-                document.getElementById('f').innerHTML = Math.round(data.soil_load * 100) / 100
-                document.getElementById('g').innerHTML = Math.round(data.total_cost * 100) / 100
+                document.getElementById('a').innerHTML = data.slab_area
+                document.getElementById('b').innerHTML = data.concrete_volume
+                document.getElementById('c').innerHTML = data.perimeter
+                document.getElementById('d').innerHTML = data.side_plate_area
+                document.getElementById('e').innerHTML = data.weight
+                document.getElementById('f').innerHTML = data.soil_load
+                document.getElementById('g').innerHTML = data.total_cost
             }
         );
     }
