@@ -185,6 +185,11 @@
   fill: #C4956A;
 
 }
+.save_svg.active{
+  fill: #C4956A;
+
+}
+
 .result_calc_svg:active{
   fill: #C4956A;
 
