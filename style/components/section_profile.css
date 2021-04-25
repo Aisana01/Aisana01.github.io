@@ -85,9 +85,7 @@ margin: 5px 15px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 50px 50px;
+
 }
 .general {
   position: relative;
