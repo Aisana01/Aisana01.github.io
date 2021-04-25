@@ -7,6 +7,7 @@
     <meta name="description" content="Key Slova do 200 slov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
 
     <!-- Add Firebase products that you want to use -->
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="javascript/animate_plugin/animate.css">
     <script src="javascript/authentication.js"></script>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" href="../favicon.ico">
     <link
         href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap'
@@ -25,45 +27,9 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <div class="block_img_container">
-        <!-- <header>
-        <div class="top_header">
-            <div class="header_right">
-                <div class="logo">
-                    <a href="index.php" class="logo_link">iBuild</a>
-                </div>
-                <div class="search_field">
-                    <div class="field_in">
-                        <input type="text" name="search_text" placeholder="Поиск..." style="padding-left: 10px;">
-                    </div>
-                </div>
-                <div class="basket">
-                    <a href="" class="basket_link">Закупки</a>
-                </div>
-            </div>
-            <div class="header_left">
-                <div class="icons">
-                    <a class="messages_href" href="conversation_page.php">Профиль</a>
-                </div>
-                <div class="auth_button">
-                    <a href="Log.php" class="btn_SignIn">ВХОД</a>
-                </div>
-            </div>
-        </div>
-        <div class="bottom_header">
-            <div class="bottom_header_in">
-                <a href="" class="categories">Фундамент</a>
-                <a href="" class="categories">Электрика</a>
-                <a href="" class="categories">Кровля</a>
-                <a href="" class="categories">Теплотехника</a>
-                <a href="" class="categories">Стены</a>
-                <a href="" class="categories">Матералы</a>
-                <a href="" class="categories">Заборы</a>
-                <a href="AboutUs.php" class="categories">О Нас</a>
-            </div>
-        </div>
-
-    </header><!-->
+    
         <section class="section_log">
             <div class="container">
                 <div class="cards_log">
@@ -79,10 +45,19 @@
                         </div>
                         <div class="form-group">
                             <form class="form_contact">
-                                <input class="form_log-control form_rec" type="text" id="full_name" placeholder="Полное имя...">
+                                <input class="form_log-control form_rec" type="text" id="name" placeholder="Имя">
+                                <input class="form_log-control form_rec" type="text" id="last_name" placeholder="Фамилия">
                                 <input class="form_log-control form_rec" type="text" id="login" placeholder="Email...">
+                                <div class="passw_block">
                                 <input class="form_log-password form_rec" type="password" id="password" placeholder="Пароль...">
+                                        <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+
+                                </div>
+                                <div class="passw_block">
                                 <input class="form_log-password form_rec" type="password" id="password2"placeholder="Повторите пароль...">
+                                        <span toggle="#password2" class="fa fa-fw fa-eye field-icon toggle-password2"></span>
+
+                                </div>
                             </form>
                             <button onclick="registration()" class="btn">Регистрация</button>
                         </div>
@@ -130,7 +105,29 @@
             </div>
         </footer>
     </div>
+    </div>
 </body>
+<script>
+    $('.toggle-password').on('click', function() {
+        $(this).toggleClass('fa-eye fa-eye-slash');
+        var input = document.getElementById('password');
+        if (input.type == 'password') {
+            input.type = 'text';
+        } else {
+            input.type = 'password';
+        }
+        
+    });
+    $('.toggle-password2').on('click', function() {
+        $(this).toggleClass('fa-eye fa-eye-slash');
+        var input2 = document.getElementById('password2');
+        if (input2.type == 'password') {
+            input2.type = 'text';
+        } else {
+            input2.type = 'password';
+        }
+    });
+</script>
 <script src="javascript/animate_plugin/animate-css.js"></script>
 <script src="javascript/common.js"></script>
 </html>

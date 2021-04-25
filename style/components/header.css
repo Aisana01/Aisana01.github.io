@@ -102,9 +102,9 @@
 }
 .icons {
 	height: 100%;
-	width: 50%;
-	text-align: center;
-	padding-top: 9px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
 }
 .auth_button {
 	height: 100%;
@@ -358,8 +358,15 @@
 	  position: relative;
 	  padding-top: 10px;
 	  padding-left: 20px;
-  
-  
-  
+
   }
   
+  .logo_icon{
+	  margin: 15px;
+  }
+  .header_logo{
+	  fill: #fff;
+  }
+  .header_logo:hover{
+	fill:#C4956A
+  }

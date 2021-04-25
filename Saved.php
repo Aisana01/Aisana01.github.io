@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <div class="rainbow"></div>
     <header class="header_pr">
         <div class="container">
@@ -144,7 +145,7 @@
             </div>
         </div>
     </footer> -->
-
+    </div>
 </body>
 
 </html>

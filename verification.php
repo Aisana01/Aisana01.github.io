@@ -26,57 +26,29 @@
 </head>
 
 <body>
-    <div class = "wrapper">
     <div class="block_img_container">
         <section class="section_log">
             <div class="container">
                 <div class="cards_log">
                     <!-- <img src="image/template_index.png"
-                    width="200px;"><!-->
-                    <div class="target target-1" id="">
-                        <div class="card_log-item">
-                            <h5 class="card_log-item--title">
-                                Войти
-                            </h5>
-                            <div class="alert_block">
-                                <h6 class="alert_text">Впервые в Ibuild?</h6>
-                                <a class="link_style" href="Register.php">Завести аккаунт</a>
-                            </div>
-                            <div class="form-group">
-                                <form class="ps-form--subscribe-offer" action="api/authentication/sign_in.php" method="POST">
-                                    <h6>Имя пользователя или адрес электронной почты</h6><input class="form_log-control" type="text" id="login" placeholder="Еmail...">
-                                    <h6>Пароль</h6>
-                                    <div class="passw_block">
-                                        <input id="password" type="password" class="form_log-password" value="secret" placeholder="Пароль...">
-                                        <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-
-                                    </div>
-                                </form>
-                                <button onclick="login()" class="btn">Вход</button>
-                            </div>
-                            <p class="login-footer_log">
-                                <a class="link_style source source-2" href="#">Забыли пароль?</a> <br>
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="target target-2" id="">
+                    width="200px;"><!-->    
                         <div class="card_log-item">
                             <h5 class="card_log-item--title">
                                 Восстановление доступа к странице
                             </h5>
                             <div class="form-group">
-                                <form class="ps-form--subscribe-offer" action="api/authentication/sign_in.php" method="POST" >
-                                    <h6>Введите адрес электронной почты</h6><input class="form_log-control" type="text" name="login" placeholder="Еmail...">
+                                <form class="ps-form--subscribe-offer" action="<?= $_SERVER['SCRIPT_NAME'] ?>" method="post">
+                                    <h6>Введите адрес электронной почты</h6><input class="form_log-control" type="email" name="login" placeholder="Еmail...">
+                                    <p><input type="submit" value="Отправить" name="doGo"></p>
                                 </form>
-                                <button type="submit" class="btn">Отправить</button>
+                                <!-- <button type="submit" class="btn">Отправить</button> -->
                                 <p class="login-footer_log">
                                     <a class="link_style source source-1" href="#">Отмена</a> <br>
                                 </p>
                             </div>
 
                         </div>
-                    </div>
+                   
                 </div>
             </div>
         </section>
@@ -118,66 +90,8 @@
             </div>
         </footer>
     </div>
-    </div>
 </body>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-    var HIDDEN_CLASS_NAME = 'hidden'
-    var TARGET_CLASS_NAME = 'target'
-    var SOURCE_CLASS_NAME = 'source'
-
-    var targetIdToShow = 1
-
-    function main() {
-        var targets = getElements(TARGET_CLASS_NAME)
-        var sources = getElements(SOURCE_CLASS_NAME)
-        sources.forEach(function(sourceNode) {
-            var sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME)
-            sourceNode.addEventListener('click', function() {
-                showTarget(targets, sourceNodeId)
-            })
-        })
-        showTarget(targets, targetIdToShow)
-    }
-
-    function getElements(type) {
-        return [].slice.call(document.querySelectorAll('.' + type)).sort(function(targetNode1, targetNode2) {
-            var target1Num = extractId(targetNode1, TARGET_CLASS_NAME)
-            var target2Num = extractId(targetNode2, TARGET_CLASS_NAME)
-            return target1Num > target2Num
-        })
-    }
-
-    function extractId(targetNode, baseClass) {
-        var currentClassIndex = targetNode.classList.length
-        while (currentClassIndex--) {
-            var currentClass = targetNode.classList.item(currentClassIndex)
-            var maybeIdNum = parseInt(currentClass.split('-')[1])
-            if (isNaN(maybeIdNum)) {
-                continue
-            }
-            var classStrinToValidate = baseClass + '-' + maybeIdNum
-            if (classStrinToValidate === currentClass) {
-                return maybeIdNum
-            }
-        }
-    }
-
-    function showTarget(targets, targetId) {
-        targets.forEach(function(targetNode, targetIndex) {
-            var currentTargetNodeId = extractId(targetNode, TARGET_CLASS_NAME)
-            if (currentTargetNodeId === targetId) {
-                targetNode.classList.remove(HIDDEN_CLASS_NAME)
-            } else {
-                targetNode.classList.add(HIDDEN_CLASS_NAME)
-            }
-        })
-    }
-
-    main()
-</script>
 <script>
     $('.toggle-password').on('click', function() {
         $(this).toggleClass('fa-eye fa-eye-slash');
@@ -196,3 +110,55 @@
 <script src="javascript/common.js"></script>
 
 </html>
+
+
+
+
+<?php
+// Подключаем к БД
+require_once 'db.php';
+
+// Проверяем нажата ли кнопка отправки формы
+if (isset($_REQUEST['doGo'])) {
+// Проверка что email введён
+if ($_REQUEST['email']) {
+$email = $_REQUEST['email'];
+
+// хешируем хеш, который состоит из email и времени
+$hash = md5($email . time());
+
+// Переменная $headers нужна для Email заголовка
+$headers = "MIME-Version: 1.0\r\n";
+$headers .= "Content-type: text/html; charset=utf-8\r\n";
+$headers .= "To: <$email>\r\n";
+    $headers .= "From: <mail@example.com>\r\n";
+        // Сообщение для Email
+        $message = '
+        <html>
+
+        <head>
+            <title>Подтвердите Email</title>
+        </head>
+
+        <body>
+            <p>Что бы восстановить пароль перейдите по <a href="http://example.com/newpass.php?hash=' . $hash . '">ссылка</a></p>
+        </body>
+
+        </html>
+        ';
+
+        // Меняем хеш в БД
+        mysqli_query($db, "UPDATE `user` SET hash='$hash' WHERE email='$email'");
+        // проверка отправилась ли почта
+        if (mail($email, "Восстановление пароля через Email", $message, $headers)) {
+        // Если да, то выводит сообщение
+        echo 'Ссылка для восстановления пароля отправленная на вашу почту';
+        } else {
+        echo 'Произошла какая то ошибка, письмо отправилось';
+        }
+        } else {
+        // Если ошибка есть, то выводить её
+        echo "Вы не ввели Email";
+        }
+        }
+        ?>
