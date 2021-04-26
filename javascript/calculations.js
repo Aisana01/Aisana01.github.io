@@ -1,20 +1,4 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyBU--GVpn2IAuPzpf3s4kY_-U0g64fFLLM",
-    authDomain: "ibuild-diploma.firebaseapp.com",
-    projectId: "ibuild-diploma",
-    storageBucket: "ibuild-diploma.appspot.com",
-    messagingSenderId: "443480308247",
-    appId: "1:443480308247:web:7be535d0f1db6002ad3a52"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-var db = firebase.firestore();
-
 function Calculate(id) {
-    var userId = firebase.auth().uid
-    alert(userId)
-
     var host = "https://ibuild-api.herokuapp.com/"
     if(id == "slab_fund"){
         var a_length = parseFloat(document.getElementById('a_length').value)

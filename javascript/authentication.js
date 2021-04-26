@@ -11,6 +11,15 @@ firebase.initializeApp(firebaseConfig);
 
 var db = firebase.firestore();
 
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      console.log("User signed in")
+      localStorage.setItem("userID", user.uid);
+    } else {
+        console.log("No user is signed in.")
+    }
+  });
+
 function login() {
     var email = document.getElementById("login").value
     var password = document.getElementById("password").value
@@ -30,7 +39,8 @@ function login() {
 }
 
 function registration() {
-    var fullname = document.getElementById("full_name").value
+    var name = document.getElementById("name").value
+    var lastname = document.getElementById("lastname").value
     var email = document.getElementById("login").value
     var password = document.getElementById("password").value
     var password2 = document.getElementById("password2").value
@@ -43,8 +53,8 @@ function registration() {
             alert(user.uid)
             db.collection("users").doc(user.uid).add({
                 email: email,
-                name: fullname,
-                surname: "Teeeст",
+                name: name,
+                surname: lastname,
                 uid: user.uid
             })
             .then((docRef) => {
@@ -65,4 +75,12 @@ function registration() {
     } else {
         alert("Пароли не совпадают!")
     }
+}
+
+function logout(){
+    firebase.auth().signOut().then(() => {
+        // Sign-out successful.
+      }).catch((error) => {
+        // An error happened.
+      });
 }

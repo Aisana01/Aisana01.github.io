@@ -1,17 +1,3 @@
-<!-- <?php
-
-        // include "config/db.php" ;
-        // include "config/config.php" ;
-        // session_start();
-        // if(isset($_SESSION["user_id"])){
-        // 	$id = $_SESSION["user_id"];
-        // 	$query = $db->query("SELECT * FROM pocket_users WHERE id = $id");
-
-
-        // 	if($query->num_rows>0){
-        // 		$user = $query->fetch_object();
-
-        ?> -->
 <!DOCTYPE html>
 <html>
 
@@ -20,6 +6,13 @@
     <meta charset="utf-8">
     <meta name="descroption" content="Key Slova do 200 slov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="javascript/authentication.js"></script>
+    <script src="javascript/get_saves.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style/all.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
@@ -35,21 +28,13 @@
                     <a href="AboutUS.php" class="inner_logo logo_link" style="color: #2D426D;">iBuild</a>
                 </div>
                 <div class="header-nav1">
-
                     <ul>
                         <li><a href="profile.php">Профиль</a></li>
-
                         <li><a id="current" href="Saved.php">Сохраненные</a></li>
-
                     </ul>
-
-
                 </div>
-
             </div>
-
         </div>
-
 
     </header>
 
@@ -59,26 +44,13 @@
     <section class="general">
         <div class="container1">
             <div class="sidenav_left">
-
-
-
                 <div class="left_menu ">
                     <div class="date_sidenav">02.04.2021ж</div>
-                    <ul>
-                        <a href="#about">Расчет ленточного фундамента(2 секции)</a>
-                        <a href="#services">Состав бетона</a>
-                        <a href="#clients">Количество материала для бетонных колец</a>
-                        <!-- <li id="pagenav" class="pagenav">
-            <a href="#"></a>
-        </li>
-        <a href="#art">Shop</a>
-        <a href="#art">Basket</a> -->
-
+                    <ul id="saves_title"> </ul>
                 </div>
-
             </div>
-            <div class = "main_section">
-            <h1 class="title_left_main">Расчет ленточного фундамента(2 секции)</h1>
+            <div class="main_section">
+                <h1 class="title_left_main">Расчет ленточного фундамента(2 секции)</h1>
                 <div class="left_words_main">
                     <div class="left_words_titles">
                         <p>Площадь основания плиты:</p>
@@ -100,9 +72,8 @@
                     </div>
                 </div>
                 <button class="button_primary" type="submit"><a href="#">Распечатать</a>
-                 </button>
-                </div>
-            
+                </button>
+            </div>
         </div>
 
 
@@ -148,12 +119,3 @@
 </body>
 
 </html>
-<?php
-// } else {
-// 	header("Location:$base_url/Log.php?error=4");
-// } 
-
-// }else{
-// 	header("Location:$base_url/Log.php?error=5");
-// }
-?>

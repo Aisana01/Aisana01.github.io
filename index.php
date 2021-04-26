@@ -21,9 +21,14 @@
     <meta charset="utf-8">
     <meta name="description" content="Kluchevie slova, do 200 simvolov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="javascript/authentication.js"></script>
     <script src="javascript/calculations.js"></script>
+    <script src="javascript/save_calc.js"></script>
+    
     <script src="javascript/jquery-3.1.0.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript"></script>
@@ -207,8 +212,8 @@
                             <fieldset class="fields_modal" id="box_modal" style="display: none;">
                                 <div class="form_wrap_modal">
                                     <label class="input_label">Наименование:</label>
-                                    <input class="form_control_modal" type="text" name="" placeholder="" id=""><span class="form_validation"></span>
-                                    <button class="btn_modal">OK</button>
+                                    <input class="form_control_modal" type="text" name="" placeholder="" id="save_title"><span class="form_validation"></span>
+                                    <button class="btn_modal" onclick="save_calculation(document.getElementById('save_title').value, 'fundamentFirst')">OK</button>
                                 </div>
                             </fieldset>
                         </div>
