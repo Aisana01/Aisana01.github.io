@@ -258,6 +258,9 @@
     margin: 5px;
 }
 
+.passw_block{
+    display: flex;
+}
 
 
 @media (max-width: 449px){
