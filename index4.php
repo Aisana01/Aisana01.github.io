@@ -38,11 +38,24 @@
                 <div class="logo">
                     <a href="AboutUs.php" class="logo_link">iBuild</a>
                 </div>
-                <div class="search_field">
-                    <div class="field_in">
-                        <input type="text" name="search_text" placeholder="Поиск..." style="padding-left: 10px;">
+                <div class="dropdown_search">
+                        <div class="search_field">
+                            <div class="field_in">
+                                <input id="elastic" type="text" name="search_text" placeholder="Поиск...">
+                            </div>
+                        </div>
+                        <div id = 'drop_dwn' class="dropdown_content_search">
+                            <ul class="elastic">
+                                <li>Расчет фундаментной плиты</li>
+                                <li>Расчет ленточного фундамента</li>
+                                <li>Расчет ленточного фундамента(2 секции)</li>
+                                <li>Расчет ленточного фундамента(3 секции)</li>
+                                <li>Расчет ленточного фундамента(4 секции)</li>
+                                <li>Расчет состава бетона</li>
+                                <li>Количество материала для бетонных колец</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 <div class="basket">
                     <a href="AboutUs.php" class="logo_link basket_link">Главная страница</a>
                 </div>
@@ -261,6 +274,7 @@
                                 <div class="form_wrap_modal">
                                     <label class="input_label">Наименование:</label>
                                     <input class="form_control_modal" type="text" name="" placeholder="" id=""><span class="form_validation"></span>
+                                    <button class="btn_modal">OK</button>
                                 </div>
                             </fieldset>
                         </div>
@@ -357,6 +371,7 @@
                                 <div class="form_wrap_modal">
                                     <label class="input_label">Наименование:</label>
                                     <input class="form_control_modal" type="text" name="" placeholder="" id=""><span class="form_validation"></span>
+                                    <button class="btn_modal">OK</button>
                                 </div>
                             </fieldset>
                         </div>
@@ -451,6 +466,7 @@
                                 <div class="form_wrap_modal">
                                     <label class="input_label">Наименование:</label>
                                     <input class="form_control_modal" type="text" name="" placeholder="" id=""><span class="form_validation"></span>
+                                    <button class="btn_modal">OK</button>
                                 </div>
                             </fieldset>
                         </div>
@@ -555,112 +571,14 @@
             }
         }
     </script>
-    <!-- <script>
-        // Get the modal
-        var i;
-        for (i = 1; i < 7; i++) {
 
-            var modal = document.getElementById("myModal" + i.toString());
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn" + i.toString());
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close" + i.toString())[0];
-            // When the user clicks the button, open the modal 
-            console.log(modal,btn,span);
-            btn.onmouseenter = function() {
-                modal.style.display = "block";
-            }
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
-                modal.style.display = "none";
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-            }
-        }
-    </script> -->
-
-    <script>
-        var HIDDEN_CLASS_NAME = 'hidden'
-        var TARGET_CLASS_NAME = 'target'
-        var SOURCE_CLASS_NAME = 'source'
-
-        var targetIdToShow = 1
-
-        function main() {
-            var targets = getElements(TARGET_CLASS_NAME)
-            var sources = getElements(SOURCE_CLASS_NAME)
-            sources.forEach(function(sourceNode) {
-                var sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME)
-                sourceNode.addEventListener('click', function() {
-                    showTarget(targets, sourceNodeId)
-                })
-            })
-            showTarget(targets, targetIdToShow)
-        }
-
-        function getElements(type) {
-            return [].slice.call(document.querySelectorAll('.' + type)).sort(function(targetNode1, targetNode2) {
-                var target1Num = extractId(targetNode1, TARGET_CLASS_NAME)
-                var target2Num = extractId(targetNode2, TARGET_CLASS_NAME)
-                return target1Num > target2Num
-            })
-        }
-
-        function extractId(targetNode, baseClass) {
-            var currentClassIndex = targetNode.classList.length
-            while (currentClassIndex--) {
-                var currentClass = targetNode.classList.item(currentClassIndex)
-                var maybeIdNum = parseInt(currentClass.split('-')[1])
-                if (isNaN(maybeIdNum)) {
-                    continue
-                }
-                var classStrinToValidate = baseClass + '-' + maybeIdNum
-                if (classStrinToValidate === currentClass) {
-                    return maybeIdNum
-                }
-            }
-        }
-
-        function showTarget(targets, targetId) {
-            targets.forEach(function(targetNode, targetIndex) {
-                var currentTargetNodeId = extractId(targetNode, TARGET_CLASS_NAME)
-                if (currentTargetNodeId === targetId) {
-                    targetNode.classList.remove(HIDDEN_CLASS_NAME)
-                } else {
-                    targetNode.classList.add(HIDDEN_CLASS_NAME)
-                }
-            })
-        }
-
-        main()
-    </script>
-
-<script> //отображение блока где вызываешь из другой страницы
-            var hash = window.location.hash.substr(1);
-            classDiv = document.getElementById(hash);
-            IDblock_hash = extractId(classDiv, TARGET_CLASS_NAME);
-            // hash_targets = getElements('target-' + IDblock_hash.toString());
-            targetsBlock = getElements(TARGET_CLASS_NAME); 
-            showTarget(targetsBlock, IDblock_hash); 
-</script>
-<script type="text/javascript">
-        function openbox(id) {
-            display = document.getElementById(id).style.display;
-            if (display == 'none') {
-                document.getElementById(id).style.display = 'flex';
-            } else {
-                document.getElementById(id).style.display = 'none';
-            }
-        }
-    </script>
     </div>
 </body>
+<script src="javascript/open_box.js"> </script>
+<script src="javascript/change_block.js"></script>
 <script src="javascript/animate_plugin/animate-css.js"></script>
 <script src="javascript/common.js"></script>
+<script src="javascript/live_search.js"></script>
 </html>
 
 <?php
