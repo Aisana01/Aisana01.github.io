@@ -1,3 +1,13 @@
+var ul = document.getElementById("search_list");
+db.collection("calculations").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        console.log(doc.id, " => ", doc.data());
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(doc.data().calc_title));
+        ul.appendChild(li);
+    });
+});
+
 document.querySelector('#elastic').oninput = function(){
     let val = this.value.trim();
     let elasticItems = document.querySelectorAll('.elastic li');

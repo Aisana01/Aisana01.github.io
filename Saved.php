@@ -13,6 +13,9 @@
     <script src="javascript/authentication.js"></script>
     <script src="javascript/get_saves.js"></script>
 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style/all.css">
     <link rel="shortcut icon" href="../favicon.ico">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,500,600' rel='stylesheet' type='text/css'>
@@ -71,87 +74,22 @@
         <section class="general">
             <div class="container1">
                 <div class="sidenav_left">
-
-                <div class="left_menu ">
-                    <div class="date_sidenav">02.04.2021ж</div>
-                    <ul id="saves_title"> </ul>
-                </div>
-
-                </div>
-                <div class="main_section">
-                    <div class="expand_img" style="margin-top: 40px;">
-                        <h3 style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">Ленточный фундамент (III секция) <div class="h3_border"></div>
-                        </h3>
-                        <div class="expand_img_svg">
-                            <img id="myBtn1" src="image/question-mark.svg" alt="">
-                        </div>
+                    <div class="left_menu ">
+                        <div class="date_sidenav">Название</div>
+                        <ul id="saves_title"> </ul>
                     </div>
-
-                    <div id="myModal1" class="modal modal11">
-                        <!-- Modal content -->
-                        <div class="modal-content modal-content1">
-                            <span class="close close1">&times;</span>
-                            <img src="image/3s.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="target target-1" id="block1">
-                        <div class="landing_large_calc">
-                            <form class="landing_form_input_calc">
-                                <fieldset class="fields">
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[А]:</label>
-                                        <input class="form_control_calc" type="number" placeholder="м" id="a_length"><span class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[B]:</label>
-                                        <input class="form_control_calc" type="number" placeholder="м" id="b_length"><span class="form_validation"></span>
-                                    </div>
-                                </fieldset>
-                                <fieldset class="fields">
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[C]:</label>
-                                        <input class="form_control_calc" type="number" placeholder="см" id="c_length"><span class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Стоимость бетона за м3:</label>
-                                        <input class="form_control_calc" type="number" placeholder="тенге" id="cost"><span class="form_validation"></span>
-                                    </div>
-                                </fieldset>
-
-                            </form>
-
-                        </div>
-                        <div class="result_calc_svd">
-                            <div class="result_calc_words_main">
-                                <div class="result_calc_words_titles">
-                                    <p>Площадь основания плиты:</p>
-                                    <p>Объем бетона:</p>
-                                    <p>Периметр плиты:</p>
-                                    <p>Площадь боковой поверхности:</p>
-                                    <p>Вес бетона:</p>
-                                    <p>Нагрузка на почву:</p>
-                                    <p>Стоимость бетона:</p>
-                                </div>
-                                <div class="result_calc_words_parameters">
-                                    <p><output id="a"></output> м2</p>
-                                    <p><output id="b"></output> метров³</p>
-                                    <p><output id="c"></output> метров</p>
-                                    <p><output id="d"></output> м2</p>
-                                    <p><output id="e"></output> кг</p>
-                                    <p><output id="f"></output> кг/см2</p>
-                                    <p><output id="g"></output> тенге</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="button_primary" type="submit"><a href="#">Распечатать</a>
-                    </button>
                 </div>
-
+                <div class="main_section" id="asdasdasd"></div>
+                <script>
+                        $( "#asdasdasd" ).load( "http://localhost/ibuild-web/index.php #block1", function() {
+                        
+                            // var qwe = document.getElementById("button_primary");
+                            // console.log(qwe)
+                            document.getElementsByClassName("button_primary")[0].style.display = "none";
+                        });
+                        
+                    </script>
             </div>
-
-
-
         </section>
     </div>
 </body>

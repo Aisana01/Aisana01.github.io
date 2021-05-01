@@ -26,6 +26,12 @@
     <meta charset="utf-8">
     <meta name="description" content="Kluchevie slova, do 200 simvolov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="javascript/authentication.js"></script>
+    
     <script src="javascript/calculations.js"></script>
     <script src="javascript/jquery-3.1.0.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -51,15 +57,7 @@
                             </div>
                         </div>
                         <div id = 'drop_dwn' class="dropdown_content_search">
-                            <ul class="elastic">
-                                <li>Расчет фундаментной плиты</li>
-                                <li>Расчет ленточного фундамента</li>
-                                <li>Расчет ленточного фундамента(2 секции)</li>
-                                <li>Расчет ленточного фундамента(3 секции)</li>
-                                <li>Расчет ленточного фундамента(4 секции)</li>
-                                <li>Расчет состава бетона</li>
-                                <li>Количество материала для бетонных колец</li>
-                            </ul>
+                            <ul class="elastic" id="search_list"></ul>
                         </div>
                     </div>
                 <div class="basket">
