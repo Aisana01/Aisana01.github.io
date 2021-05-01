@@ -79,17 +79,18 @@
                         <ul id="saves_title"> </ul>
                     </div>
                 </div>
-                <div class="main_section" id="asdasdasd"></div>
+                <div class="main_section" id="apend">
+                
+                </div>
                 <script>
-                        $( "#asdasdasd" ).load( "http://localhost/ibuild-web/index.php #block1", function() {
-                        
-                            // var qwe = document.getElementById("button_primary");
-                            // console.log(qwe)
+                        $( "#apend" ).load( "http://localhost/ibuild-web/index.php #block1", function() {
                             document.getElementsByClassName("button_primary")[0].style.display = "none";
+                            document.getElementsByClassName("result_calc_title")[0].style.display = "none";
                         });
                         
                     </script>
             </div>
+            
         </section>
     </div>
 </body>
