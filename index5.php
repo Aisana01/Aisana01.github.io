@@ -227,10 +227,10 @@
                                     <input class="form_control_calc" type="number" name="" placeholder="" id=""><span class="form_validation"></span>
                                 </div>
                             </fieldset>
-                            <div class="form_wrap_calc">
+                           
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
-                            </div>
+                           
                         </form>
                         <div id="myModal1" class="modal modal1">
 
@@ -328,11 +328,9 @@
                                 </div>
                             </fieldset>
 
-                            <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
-                                </button> -->
+                            
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
-                            </div>
+                           
                         </form>
                         <div id="myModal2" class="modal modal2">
 
@@ -432,11 +430,9 @@
                                 </div>
                             </fieldset>
 
-                            <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
-                                </button> -->
+                           
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
-                            </div>
+                            
                         </form>
                         <div id="myModal3" class="modal modal3">
 
@@ -538,11 +534,9 @@
                                 </div>
                             </fieldset>
 
-                            <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
-                                </button> -->
+                            
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
-                            </div>
+                           
                         </form>
                         <div id="myModal4" class="modal modal4">
 
@@ -640,11 +634,9 @@
                             </fieldset>
                            
 
-                            <div class="form_wrap_calc">
-                                <!-- <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
-                                </button> -->
+                            
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
-                            </div>
+                            
                         </form>
                         <div id="myModal5" class="modal modal5">
 
@@ -770,10 +762,10 @@
                                 </div>
                             </fieldset>
 
-                            <div class="form_wrap_calc">
+                           
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
-                            </div>
+                            
                         </form>
                         <div id="myModal6" class="modal modal6">
 

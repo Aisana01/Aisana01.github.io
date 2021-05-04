@@ -12,7 +12,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <script src="javascript/authentication.js"></script>
     <script src="javascript/get_saves.js"></script>
-
+    <script type="text/javascript" src="javascript/jspdf.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
@@ -80,20 +81,39 @@
                     </div>
                 </div>
                 <div class="main_section" id="apend">
-                
+                    <div class="title_section" style="display: block;">
+                        <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Пустой!!!</h1>
+                    </div>
                 </div>
                 <script>
-                        $( "#apend" ).load( "http://localhost/ibuild-web/index.php #block1", function() {
-                            document.getElementsByClassName("button_primary")[0].style.display = "none";
-                            document.getElementsByClassName("result_calc_title")[0].style.display = "none";
-                        });
-                        
-                    </script>
+                    $("#apend").load("http://localhost/ibuild-web/index.php #block1", function() {
+                        document.getElementsByClassName("button_primary")[0].remove();
+                        document.getElementsByClassName("result_calc_title")[0].style.display = "none";
+                        var Divbtn = document.getElementsByClassName("main_section")[0];
+                        var btn = document.createElement('button');
+                        btn.setAttribute("id", "button_primary");
+                        btn.classList.add("button_primary");
+                        btn.appendChild(document.createTextNode("Расспечатать"));
+                        btn.setAttribute("onclick","demoFromHTML();");
+                        Divbtn.appendChild(btn);
+                        // console.log(btn);
+                        btn.style = "margin-top: 0;";
+                        var target = document.getElementsByClassName("target")[0];
+                        target.style = "padding: 41px; display:block;";
+                        var trg_d = document.getElementsByClassName("title_section")[0];
+                        var landing_right = document.getElementsByClassName("landing_large_calc")[0];
+                        landing_right.style = "width:100%;";
+                        var landing_left = document.getElementsByClassName("result_calc_words")[0];
+                        landing_left.style = "width:100%;";
+                        // trg_d.style.display = "none";
+                    });
+                </script>
             </div>
-            
+
         </section>
     </div>
 </body>
+<script src="javascript/printPDF.js"></script>
 <script>
     var modal1 = document.getElementById("myModal1");
     var btn1 = document.getElementById("myBtn1");
