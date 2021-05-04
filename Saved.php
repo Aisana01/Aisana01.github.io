@@ -93,7 +93,7 @@
                         var btn = document.createElement('button');
                         btn.setAttribute("id", "button_primary");
                         btn.classList.add("button_primary");
-                        btn.appendChild(document.createTextNode("Расспечатать"));
+                        btn.appendChild(document.createTextNode("Распечатать"));
                         btn.setAttribute("onclick","demoFromHTML();");
                         Divbtn.appendChild(btn);
                         // console.log(btn);
