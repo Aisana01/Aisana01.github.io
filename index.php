@@ -31,8 +31,7 @@
 
     <script src="javascript/jquery-3.1.0.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="javascript/animate_plugin/animate.css">
     <link rel="stylesheet" type="text/css" href="style/all.css">
@@ -243,24 +242,24 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" placeholder="м"
-                                            id="a_length"><span class="form_validation"></span>
+                                            id="a"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" placeholder="м"
-                                            id="b_length"><span class="form_validation"></span>
+                                            id="b"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" placeholder="см"
-                                            id="c_length"><span class="form_validation"></span>
+                                            id="c"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
                                         <input class="form_control_calc" type="number" placeholder="тенге"
-                                            id="cost"><span class="form_validation"></span>
+                                            id="d"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <div class="form_wrap_calc">
@@ -328,13 +327,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="a"></output> м2</p>
-                                    <p><output id="b"></output> метров³</p>
-                                    <p><output id="c"></output> метров</p>
-                                    <p><output id="d"></output> м2</p>
-                                    <p><output id="e"></output> кг</p>
-                                    <p><output id="f"></output> кг/см2</p>
-                                    <p><output id="g"></output> тенге</p>
+                                    <p><output id="res_a"></output> м2</p>
+                                    <p><output id="res_b"></output> метров³</p>
+                                    <p><output id="res_c"></output> метров</p>
+                                    <p><output id="res_d"></output> м2</p>
+                                    <p><output id="res_e"></output> кг</p>
+                                    <p><output id="res_f"></output> кг/см2</p>
+                                    <p><output id="res_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -363,29 +362,29 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="A"><span class="form_validation"></span>
+                                            id="a"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="B"><span class="form_validation"></span>
+                                            id="b"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="c"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="d"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
                                         <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге"><span class="form_validation"></span>
+                                            placeholder="тенге" id="e"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
@@ -455,13 +454,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> м2</p>
-                                    <p><output id="perimetr_vneshni"></output> м³</p>
-                                    <p><output id="obshaya_dlina"></output> м</p>
-                                    <p><output id="ploshad_podoshva"></output> м2</p>
-                                    <p><output id="vneshni_bokovoi"></output> кг</p>
-                                    <p><output id="ves_beton"></output> кг/см2</p>
-                                    <p><output id="nagruzka"></output> тенге</p>
+                                    <p><output id="res_a"></output> м2</p>
+                                    <p><output id="res_b"></output> м³</p>
+                                    <p><output id="res_c"></output> м</p>
+                                    <p><output id="res_d"></output> м2</p>
+                                    <p><output id="res_e"></output> кг</p>
+                                    <p><output id="res_f"></output> кг/см2</p>
+                                    <p><output id="res_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -490,29 +489,29 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="A"><span class="form_validation"></span>
+                                            id="a"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="B"><span class="form_validation"></span>
+                                            id="b"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="c"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="d"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
                                         <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге"><span class="form_validation"></span>
+                                            placeholder="тенге" id="e"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
@@ -582,13 +581,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> м2</p>
-                                    <p><output id="perimetr_vneshni"></output> м³</p>
-                                    <p><output id="obshaya_dlina"></output> м</p>
-                                    <p><output id="ploshad_podoshva"></output> м2</p>
-                                    <p><output id="vneshni_bokovoi"></output> кг</p>
-                                    <p><output id="ves_beton"></output> кг/см2</p>
-                                    <p><output id="nagruzka"></output> тенге</p>
+                                    <p><output id="res_a"></output> м2</p>
+                                    <p><output id="res_b"></output> м³</p>
+                                    <p><output id="res_c"></output> м</p>
+                                    <p><output id="res_d"></output> м2</p>
+                                    <p><output id="res_e"></output> кг</p>
+                                    <p><output id="res_f"></output> кг/см2</p>
+                                    <p><output id="res_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -617,17 +616,17 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="A"><span class="form_validation"></span>
+                                            id="a"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="B"><span class="form_validation"></span>
+                                            id="b"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="c"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
@@ -635,17 +634,17 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="d"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[E]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="м"
-                                            id="C"><span class="form_validation"></span>
+                                            id="e"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
                                         <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге"><span class="form_validation"></span>
+                                            placeholder="тенге" id="f"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
@@ -715,13 +714,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> м2</p>
-                                    <p><output id="perimetr_vneshni"></output> м³</p>
-                                    <p><output id="obshaya_dlina"></output> м</p>
-                                    <p><output id="ploshad_podoshva"></output> м2</p>
-                                    <p><output id="vneshni_bokovoi"></output> кг</p>
-                                    <p><output id="ves_beton"></output> кг/см2</p>
-                                    <p><output id="nagruzka"></output> тенге</p>
+                                    <p><output id="res_a"></output> м2</p>
+                                    <p><output id="res_b"></output> м³</p>
+                                    <p><output id="res_c"></output> м</p>
+                                    <p><output id="res_d"></output> м2</p>
+                                    <p><output id="res_e"></output> кг</p>
+                                    <p><output id="res_f"></output> кг/см2</p>
+                                    <p><output id="res_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -750,29 +749,29 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="A"><span class="form_validation"></span>
+                                            id="a"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="B"><span class="form_validation"></span>
+                                            id="b"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="c"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="C"><span class="form_validation"></span>
+                                            id="d"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
                                         <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге"><span class="form_validation"></span>
+                                            placeholder="тенге" id="e"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
@@ -842,13 +841,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> м2</p>
-                                    <p><output id="perimetr_vneshni"></output> м³</p>
-                                    <p><output id="obshaya_dlina"></output> м</p>
-                                    <p><output id="ploshad_podoshva"></output> м2</p>
-                                    <p><output id="vneshni_bokovoi"></output> кг</p>
-                                    <p><output id="ves_beton"></output> кг/см2</p>
-                                    <p><output id="nagruzka"></output> тенге</p>
+                                    <p><output id="res_a"></output> м2</p>
+                                    <p><output id="res_b"></output> м³</p>
+                                    <p><output id="res_c"></output> м</p>
+                                    <p><output id="res_d"></output> м2</p>
+                                    <p><output id="res_e"></output> кг</p>
+                                    <p><output id="res_f"></output> кг/см2</p>
+                                    <p><output id="res_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -877,17 +876,17 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Объем бетона:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м3"
-                                            id="A"><span class="form_validation"></span>
+                                            id="a"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Влажность песка:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="%"
-                                            id="B"><span class="form_validation"></span>
+                                            id="b"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Влажность щебня:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="%"
-                                            id="C"><span class="form_validation"></span>
+                                            id="c"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
@@ -1003,10 +1002,10 @@
                                     <p>Вода:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> кг</p>
-                                    <p><output id="perimetr_vneshni"></output> кг</p>
-                                    <p><output id="obshaya_dlina"></output> кг</p>
-                                    <p><output id="ploshad_podoshva"></output> л</p>
+                                    <p><output id="res_a"></output> кг</p>
+                                    <p><output id="res_b"></output> кг</p>
+                                    <p><output id="res_c"></output> кг</p>
+                                    <p><output id="res_d"></output> л</p>
                                 </div>
                             </div>
                         </div>
@@ -1035,17 +1034,17 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Диаметр[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="м"
-                                            id="C"><span class="form_validation"></span>
+                                            id="a"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Высота[Н]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="м"
-                                            id="C"><span class="form_validation"></span>
+                                            id="b"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Толщина(А):</label>
                                         <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="см"><span class="form_validation"></span>
+                                            placeholder="см" id="c"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
@@ -1113,13 +1112,13 @@
                                     <p>Приблизительный вес:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> мм</p>
-                                    <p><output id="perimetr_vneshni"></output> м³</p>
-                                    <p><output id="obshaya_dlina"></output> м³</p>
-                                    <p><output id="ploshad_podoshva"></output> мм</p>
-                                    <p><output id="vneshni_bokovoi"></output> мм</p>
-                                    <p><output id="ves_beton"></output> м2</p>
-                                    <p><output id="nagruzka"></output> кг</p>
+                                    <p><output id="res_a"></output> мм</p>
+                                    <p><output id="res_b"></output> м³</p>
+                                    <p><output id="res_c"></output> м³</p>
+                                    <p><output id="res_d"></output> мм</p>
+                                    <p><output id="res_e"></output> мм</p>
+                                    <p><output id="res_f"></output> м2</p>
+                                    <p><output id="res_g"></output> кг</p>
                                 </div>
                             </div>
                         </div>

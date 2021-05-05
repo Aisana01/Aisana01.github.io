@@ -83,7 +83,7 @@
                 
                 </div>
                 <script>
-                    $( "#apend" ).load( "http://localhost/ibuild-web/index.php #block1", function() {
+                    $( "#apend" ).load( "http://localhost/ibuild-web/index.php #block7", function() {
                         document.getElementsByClassName("button_primary")[0].style.display = "none";
                         document.getElementsByClassName("result_calc_title")[0].style.display = "none";
                     });
