@@ -309,10 +309,10 @@
 
 
 
-                            <div class="form_wrap_calc">
+                        
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
-                            </div>
+                        
                         </form>
                         <div id="myModal1" class="modal modal1">
                             <!-- Modal content -->
@@ -517,10 +517,10 @@
 
 
 
-                            <div class="form_wrap_calc">
+                            
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
-                            </div>
+                           
                         </form>
                         <div id="myModal5" class="modal modal5">
                             <!-- Modal content -->

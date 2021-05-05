@@ -221,10 +221,10 @@
                                     <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
                                 </div>
                             </fieldset>
-                            <div class="form_wrap_calc">
+                            
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
-                            </div>
+                            
                         </form>
                         <div id="myModal1" class="modal modal1">
 
@@ -319,10 +319,10 @@
                                     <input class="form_control_calc" type="number" name="phone" placeholder="тенге"><span class="form_validation"></span>
                                 </div>
                             </fieldset>
-                            <div class="form_wrap_calc">
+                            
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
-                            </div>
+                            
                         </form>
                         <div id="myModal2" class="modal modal2">
 
