@@ -1,36 +1,42 @@
 function Calculate(id) {
     var host = "https://ibuild-api.herokuapp.com/"
     if(id == "slab_fund"){
-        var a_length = parseFloat(document.getElementById('a_length').value)
-        var b_length = parseFloat(document.getElementById('b_length').value)
-        var c_length = parseFloat(document.getElementById('c_length').value)
-        var cost = parseFloat(document.getElementById('cost').value)
-
-        var myBody = JSON.stringify({
-            "a_length": a_length,
-            "b_length": b_length,
-            "c_length": c_length,
-            "cost": cost});
         var url = host + "api/calculations/foundation/slab";
-        fetch(url, {
-            method : "POST",
-            body: myBody,
-            headers:{
-                "Content-Type":"application/json; charset=UTF-8"
+        
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url);
+        
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                console.log(xhr.status);
+                var data = JSON.parse(xhr.responseText);
+
+                document.getElementById('res_a').innerHTML = data.slab_area
+                document.getElementById('res_b').innerHTML = data.concrete_volume
+                document.getElementById('res_c').innerHTML = data.perimeter
+                document.getElementById('res_d').innerHTML = data.side_plate_area
+                document.getElementById('res_e').innerHTML = data.weight
+                document.getElementById('res_f').innerHTML = data.soil_load
+                document.getElementById('res_g').innerHTML = data.total_cost
             }
-        }).then(
-            res => res.json()
-        ).then(
-            data => {
-                document.getElementById('a').innerHTML = data.slab_area
-                document.getElementById('b').innerHTML = data.concrete_volume
-                document.getElementById('c').innerHTML = data.perimeter
-                document.getElementById('d').innerHTML = data.side_plate_area
-                document.getElementById('e').innerHTML = data.weight
-                document.getElementById('f').innerHTML = data.soil_load
-                document.getElementById('g').innerHTML = data.total_cost
-            }
-        );
+        };
+
+        var a = parseFloat(document.getElementById('a').value)
+        var b = parseFloat(document.getElementById('b').value)
+        var c = parseFloat(document.getElementById('c').value)
+        var d = parseFloat(document.getElementById('d').value)
+
+        var myBody = `{
+            "a_length": ${a},
+            "b_length": ${b},
+            "c_length": ${c},
+            "cost": ${d}
+        }`;
+        
+        xhr.send(myBody);
     }
     else if (id == "brick_wall"){
         var myBody = JSON.stringify({
