@@ -13,6 +13,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <script src="javascript/authentication.js"></script>
+    <script src="javascript/reset_password.js"></script>
     
     <script src="javascript/jquery-3.1.0.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -66,12 +67,13 @@
                                 Восстановление доступа к странице
                             </h5>
                             <div class="form-group">
-                                <form class="ps-form--subscribe-offer" action="api/authentication/sign_in.php" method="POST" >
-                                    <h6>Введите адрес электронной почты</h6><input class="form_log-control" type="text" name="login" placeholder="Еmail...">
+                                <form class="ps-form--subscribe-offer">
+                                    <h6>Введите адрес электронной почты</h6>
+                                    <input class="form_log-control" type="text" name="login" id="user_email" placeholder="Еmail...">
                                 </form>
-                                <button type="submit" class="btn">Отправить</button>
+                                <button type="button" class="btn" onclick="resetPassword()">Отправить</button>
                                 <p class="login-footer_log">
-                                    <a class="link_style source source-1" href="#">Отмена</a> <br>
+                                    <a class="link_style source source-1" href="Log.php">Отмена</a> <br>
                                 </p>
                             </div>
 

@@ -46,7 +46,7 @@
                         <div class="form-group">
                             <form class="form_contact">
                                 <input class="form_log-control form_rec" type="text" id="name" placeholder="Имя">
-                                <input class="form_log-control form_rec" type="text" id="last_name" placeholder="Фамилия">
+                                <input class="form_log-control form_rec" type="text" id="lastname" placeholder="Фамилия">
                                 <input class="form_log-control form_rec" type="text" id="login" placeholder="Email...">
                                 <div class="passw_block">
                                 <input class="form_log-password form_rec" type="password" id="password" placeholder="Пароль...">

@@ -12,6 +12,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <script src="javascript/authentication.js"></script>
     <script src="javascript/get_saves.js"></script>
+
     <script type="text/javascript" src="javascript/jspdf.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -47,7 +48,7 @@
                 </div>
                 <div class="header_left_inner1">
                     <div class="icons" style="display: flex;">
-                        <a href="Log.php" class="logo_icon" style="margin: 25px;">
+                        <a href="index.php" class="logo_icon" onClick="logout()" style="margin: 25px;">
                             <svg class="header_logo_svd" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="23" height="23" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
                                 <g>
                                     <g xmlns="http://www.w3.org/2000/svg">
@@ -85,29 +86,6 @@
                         <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Пустой!!!</h1>
                     </div>
                 </div>
-                <script>
-                    $("#apend").load("http://localhost/ibuild-web/index.php #block1", function() {
-                        document.getElementsByClassName("button_primary")[0].remove();
-                        document.getElementsByClassName("result_calc_title")[0].style.display = "none";
-                        var Divbtn = document.getElementsByClassName("main_section")[0];
-                        var btn = document.createElement('button');
-                        btn.setAttribute("id", "button_primary");
-                        btn.classList.add("button_primary");
-                        btn.appendChild(document.createTextNode("Распечатать"));
-                        btn.setAttribute("onclick","demoFromHTML();");
-                        Divbtn.appendChild(btn);
-                        // console.log(btn);
-                        btn.style = "margin-top: 0;";
-                        var target = document.getElementsByClassName("target")[0];
-                        target.style = "padding: 41px; display:block;";
-                        var trg_d = document.getElementsByClassName("title_section")[0];
-                        var landing_right = document.getElementsByClassName("landing_large_calc")[0];
-                        landing_right.style = "width:100%;";
-                        var landing_left = document.getElementsByClassName("result_calc_words")[0];
-                        landing_left.style = "width:100%;";
-                        // trg_d.style.display = "none";
-                    });
-                </script>
             </div>
 
         </section>

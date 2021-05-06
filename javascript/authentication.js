@@ -13,9 +13,21 @@ var db = firebase.firestore();
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      console.log("User signed in")
-      localStorage.setItem("userID", user.uid);
+        var signedIn = document.getElementById("signedIn");
+        var signedOut = document.getElementById("signedOut");
+        if (signedIn != null){
+            signedIn.style.display = "flex";
+            signedOut.style.display = "none";
+        }
+        console.log("User signed in")
+        localStorage.setItem("userID", user.uid);
     } else {
+        var signedIn = document.getElementById("signedIn");
+        var signedOut = document.getElementById("signedOut");
+        if (signedIn != null){
+            signedIn.style.display = "none";
+            signedOut.style.display = "block";
+        }
         console.log("No user is signed in.")
     }
   });
@@ -50,15 +62,13 @@ function registration() {
         .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
-            alert(user.uid)
-            db.collection("users").doc(user.uid).add({
+            db.collection("users").doc(user.uid).set({
                 email: email,
                 name: name,
                 surname: lastname,
                 uid: user.uid
             })
             .then((docRef) => {
-                console.log("Document written with ID: ", docRef.id);
                 window.location.href = "index.php";
             })
             .catch((error) => {
@@ -79,7 +89,8 @@ function registration() {
 
 function logout(){
     firebase.auth().signOut().then(() => {
-        // Sign-out successful.
+        localStorage.clear();
+        console.log("User signed out")
       }).catch((error) => {
         // An error happened.
       });

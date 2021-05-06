@@ -1,17 +1,3 @@
-<?php
-
-// include "config/db.php" ;
-// include "config/config.php" ;
-// session_start();
-// if(isset($_SESSION["user_id"])){
-// 	$id = $_SESSION["user_id"];
-// 	$query = $db->query("SELECT * FROM ibuild_users WHERE id=$id");
-
-// 	if($query->num_rows>0){
-// 		$user = $query->fetch_object();
-
-?>
-
 <!DOCTYPE html>
 
 <html>
@@ -30,8 +16,10 @@
     <script src="javascript/save_calc.js"></script>
 
     <script src="javascript/jquery-3.1.0.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" type="text/javascript">
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="javascript/animate_plugin/animate.css">
     <link rel="stylesheet" type="text/css" href="style/all.css">
@@ -61,7 +49,7 @@
                         </div>
                     </div>
                     <div class="header_left">
-                        <div class="icons" style="display: flex;">
+                        <div class="icons" id="signedIn">
                             <a href="profile.php" class="logo_icon">
                                 <svg class="header_logo" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -112,7 +100,7 @@
                                 </svg>
 
                             </a>
-                            <a href="Log.php" class="logo_icon">
+                            <a href="#" class="logo_icon" onClick="logout()">
                                 <svg class="header_logo" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                     version="1.1" width="23" height="23" x="0" y="0" viewBox="0 0 512 512"
@@ -134,9 +122,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="auth_button_about">
-                            <a href="Log.php" class="btn_SignIn"><?php //echo $user->full_name; 
-                                                                ?></a>
+                        <div class="auth_button_about" id="signedOut">
+                            <a href="Log.php" class="btn_SignIn">Войти</a>
                         </div>
                     </div>
                 </div>
@@ -228,7 +215,7 @@
                             <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет
                                 материалов</h1>
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title1"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Плита фундамента<div class="h3_border"></div>
                                 </h3>
@@ -241,31 +228,31 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
-                                        <input class="form_control_calc" type="number" placeholder="м"
-                                            id="a"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" placeholder="м" id="aa"><span
+                                            class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
-                                        <input class="form_control_calc" type="number" placeholder="м"
-                                            id="b"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" placeholder="м" id="ab"><span
+                                            class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
-                                        <input class="form_control_calc" type="number" placeholder="см"
-                                            id="c"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" placeholder="см" id="ac"><span
+                                            class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
-                                        <input class="form_control_calc" type="number" placeholder="тенге"
-                                            id="d"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" placeholder="тенге" id="ad"><span
+                                            class="form_validation"></span>
                                     </div>
                                 </fieldset>
-                                
-                                    <button class="button_primary" type="button" onclick="Calculate('slab_fund')"><a
-                                            href="#">Рассчитать</a></button>
-                    
+
+                                <button class="button_primary" type="button" onclick="Calculate('foundation/slab')"><a
+                                        href="#">Рассчитать</a></button>
+
                             </form>
                             <div id="myModal1" class="modal modal1">
 
@@ -310,9 +297,9 @@
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
                                         <input class="form_control_modal" type="text" name="" placeholder=""
-                                            id="save_title"><span class="form_validation"></span>
+                                            id="save_title1"><span class="form_validation"></span>
                                         <button class="btn_modal"
-                                            onclick="save_calculation(document.getElementById('save_title').value, 'fundamentFirst')">OK</button>
+                                            onclick="save_calculation(document.getElementById('save_title1').value, 'fundamentFirst')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -327,13 +314,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="res_a"></output> м2</p>
-                                    <p><output id="res_b"></output> метров³</p>
-                                    <p><output id="res_c"></output> метров</p>
-                                    <p><output id="res_d"></output> м2</p>
-                                    <p><output id="res_e"></output> кг</p>
-                                    <p><output id="res_f"></output> кг/см2</p>
-                                    <p><output id="res_g"></output> тенге</p>
+                                    <p><output id="ares_a"></output> м2</p>
+                                    <p><output id="ares_b"></output> метров³</p>
+                                    <p><output id="ares_c"></output> метров</p>
+                                    <p><output id="ares_d"></output> м2</p>
+                                    <p><output id="ares_e"></output> кг</p>
+                                    <p><output id="ares_f"></output> кг/см2</p>
+                                    <p><output id="ares_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +334,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title2"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Ленточный фундамент (I секция) <div class="h3_border"></div>
                                 </h3>
@@ -362,36 +349,36 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="a"><span class="form_validation"></span>
+                                            id="ba"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="b"><span class="form_validation"></span>
+                                            id="bb"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="c"><span class="form_validation"></span>
+                                            id="bc"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="d"><span class="form_validation"></span>
+                                            id="bd"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
-                                        <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге" id="e"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" name="phone" placeholder="тенге"
+                                            id="be"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
 
-                                    <button class="button_primary" onclick="Calculate()"><a
-                                            href="#">Рассчитать</a></button>
-                               
+                                <button class="button_primary" type="button" onclick="Calculate('foundation/lunar')"><a
+                                        href="#">Рассчитать</a></button>
+
                             </form>
                             <div id="myModal2" class="modal modal2">
 
@@ -435,9 +422,10 @@
                                 <fieldset class="fields_modal" id="box_modal2" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
-                                            class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <input class="form_control_modal" type="text" name="" placeholder=""
+                                            id="save_title2"><span class="form_validation"></span>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title2').value, 'fundamentSecond')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -452,13 +440,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="res_a"></output> м2</p>
-                                    <p><output id="res_b"></output> м³</p>
-                                    <p><output id="res_c"></output> м</p>
-                                    <p><output id="res_d"></output> м2</p>
-                                    <p><output id="res_e"></output> кг</p>
-                                    <p><output id="res_f"></output> кг/см2</p>
-                                    <p><output id="res_g"></output> тенге</p>
+                                    <p><output id="bres_a"></output> м2</p>
+                                    <p><output id="bres_b"></output> м³</p>
+                                    <p><output id="bres_c"></output> м</p>
+                                    <p><output id="bres_d"></output> м2</p>
+                                    <p><output id="bres_e"></output> кг</p>
+                                    <p><output id="bres_f"></output> кг/см2</p>
+                                    <p><output id="bres_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -472,7 +460,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title3"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Ленточный фундамент (II секция) <div class="h3_border"></div>
                                 </h3>
@@ -487,36 +475,36 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="a"><span class="form_validation"></span>
+                                            id="ca"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="b"><span class="form_validation"></span>
+                                            id="cb"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="c"><span class="form_validation"></span>
+                                            id="cc"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="d"><span class="form_validation"></span>
+                                            id="cd"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
-                                        <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге" id="e"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" name="phone" placeholder="тенге"
+                                            id="ce"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
-                            
-                                    <button class="button_primary" onclick="Calculate()"><a
-                                            href="#">Рассчитать</a></button>
-                              
+
+                                <button class="button_primary" type="button"
+                                    onclick="Calculate('foundation/strip-two')"><a href="#">Рассчитать</a></button>
+
                             </form>
                             <div id="myModal3" class="modal modal3">
 
@@ -560,9 +548,10 @@
                                 <fieldset class="fields_modal" id="box_modal3" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
-                                            class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <input class="form_control_modal" type="text" name="" placeholder=""
+                                            id="save_title3"><span class="form_validation"></span>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title3').value, 'fundamentThird')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -577,13 +566,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="res_a"></output> м2</p>
-                                    <p><output id="res_b"></output> м³</p>
-                                    <p><output id="res_c"></output> м</p>
-                                    <p><output id="res_d"></output> м2</p>
-                                    <p><output id="res_e"></output> кг</p>
-                                    <p><output id="res_f"></output> кг/см2</p>
-                                    <p><output id="res_g"></output> тенге</p>
+                                    <p><output id="cres_a"></output> м2</p>
+                                    <p><output id="cres_b"></output> м³</p>
+                                    <p><output id="cres_c"></output> м</p>
+                                    <p><output id="cres_d"></output> м2</p>
+                                    <p><output id="cres_e"></output> кг</p>
+                                    <p><output id="cres_f"></output> кг/см2</p>
+                                    <p><output id="cres_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -597,7 +586,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title4"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Ленточный фундамент (III секция) <div class="h3_border"></div>
                                 </h3>
@@ -612,17 +601,17 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="a"><span class="form_validation"></span>
+                                            id="da"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="b"><span class="form_validation"></span>
+                                            id="db"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="c"><span class="form_validation"></span>
+                                            id="dc"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
@@ -630,24 +619,24 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="d"><span class="form_validation"></span>
+                                            id="dd"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[E]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="м"
-                                            id="e"><span class="form_validation"></span>
+                                            id="de"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
-                                        <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге" id="f"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" name="phone" placeholder="тенге"
+                                            id="df"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
-                               
-                                    <button class="button_primary" onclick="Calculate()"><a
-                                            href="#">Рассчитать</a></button>
-                                
+
+                                <button class="button_primary" type="button"
+                                    onclick="Calculate('foundation/strip-three')"><a href="#">Рассчитать</a></button>
+
                             </form>
                             <div id="myModal4" class="modal modal4">
 
@@ -691,9 +680,10 @@
                                 <fieldset class="fields_modal" id="box_modal4" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
-                                            class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <input class="form_control_modal" type="text" name="" placeholder=""
+                                            id="save_title4"><span class="form_validation"></span>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title4').value, 'fundamentFourth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -708,13 +698,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="res_a"></output> м2</p>
-                                    <p><output id="res_b"></output> м³</p>
-                                    <p><output id="res_c"></output> м</p>
-                                    <p><output id="res_d"></output> м2</p>
-                                    <p><output id="res_e"></output> кг</p>
-                                    <p><output id="res_f"></output> кг/см2</p>
-                                    <p><output id="res_g"></output> тенге</p>
+                                    <p><output id="dres_a"></output> м2</p>
+                                    <p><output id="dres_b"></output> м³</p>
+                                    <p><output id="dres_c"></output> м</p>
+                                    <p><output id="dres_d"></output> м2</p>
+                                    <p><output id="dres_e"></output> кг</p>
+                                    <p><output id="dres_f"></output> кг/см2</p>
+                                    <p><output id="dres_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -728,7 +718,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title5"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Ленточный фундамент (IV секция) <div class="h3_border"></div>
                                 </h3>
@@ -743,36 +733,36 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[А]:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м"
-                                            id="a"><span class="form_validation"></span>
+                                            id="ea"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[B]:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="м"
-                                            id="b"><span class="form_validation"></span>
+                                            id="eb"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[C]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="c"><span class="form_validation"></span>
+                                            id="ec"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="см"
-                                            id="d"><span class="form_validation"></span>
+                                            id="ed"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость бетона за м3:</label>
-                                        <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="тенге" id="e"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" name="phone" placeholder="тенге"
+                                            id="ee"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
-                             
-                                    <button class="button_primary" onclick="Calculate()"><a
-                                            href="#">Рассчитать</a></button>
-                                
+
+                                <button class="button_primary" type="button"
+                                    onclick="Calculate('foundation/strip-four')"><a href="#">Рассчитать</a></button>
+
                             </form>
                             <div id="myModal5" class="modal modal5">
 
@@ -816,9 +806,10 @@
                                 <fieldset class="fields_modal" id="box_modal5" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
-                                            class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <input class="form_control_modal" type="text" name="" placeholder=""
+                                            id="save_title5"><span class="form_validation"></span>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title5').value, 'fundamentFifth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -833,13 +824,13 @@
                                     <p>Стоимость бетона:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="res_a"></output> м2</p>
-                                    <p><output id="res_b"></output> м³</p>
-                                    <p><output id="res_c"></output> м</p>
-                                    <p><output id="res_d"></output> м2</p>
-                                    <p><output id="res_e"></output> кг</p>
-                                    <p><output id="res_f"></output> кг/см2</p>
-                                    <p><output id="res_g"></output> тенге</p>
+                                    <p><output id="eres_a"></output> м2</p>
+                                    <p><output id="eres_b"></output> м³</p>
+                                    <p><output id="eres_c"></output> м</p>
+                                    <p><output id="eres_d"></output> м2</p>
+                                    <p><output id="eres_e"></output> кг</p>
+                                    <p><output id="eres_f"></output> кг/см2</p>
+                                    <p><output id="eres_g"></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -853,7 +844,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title6"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Состав бетона<div class="h3_border"></div>
                                 </h3>
@@ -868,17 +859,17 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Объем бетона:</label>
                                         <input class="form_control_calc" type="number" name="name" placeholder="м3"
-                                            id="a"><span class="form_validation"></span>
+                                            id="fa"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Влажность песка:</label>
                                         <input class="form_control_calc" type="number" name="email" placeholder="%"
-                                            id="b"><span class="form_validation"></span>
+                                            id="fb"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Влажность щебня:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="%"
-                                            id="c"><span class="form_validation"></span>
+                                            id="fc"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
@@ -933,12 +924,12 @@
                                     </div>
                                 </fieldset>
 
-                                
-                                
-                                    <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
-                                    </button>
-                             
-                             
+
+
+                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                </button>
+
+
                             </form>
                             <div id="myModal6" class="modal modal6">
 
@@ -982,9 +973,10 @@
                                 <fieldset class="fields_modal" id="box_modal6" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
-                                            class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <input class="form_control_modal" type="text" name="" placeholder=""
+                                            id="save_title6"><span class="form_validation"></span>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title6').value, 'fundamentSixth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -996,10 +988,10 @@
                                     <p>Вода:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="res_a"></output> кг</p>
-                                    <p><output id="res_b"></output> кг</p>
-                                    <p><output id="res_c"></output> кг</p>
-                                    <p><output id="res_d"></output> л</p>
+                                    <p><output id="fres_a"></output> кг</p>
+                                    <p><output id="fres_b"></output> кг</p>
+                                    <p><output id="fres_c"></output> кг</p>
+                                    <p><output id="fres_d"></output> л</p>
                                 </div>
                             </div>
                         </div>
@@ -1013,7 +1005,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title7"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Бетонные кольца<div class="h3_border"></div>
                                 </h3>
@@ -1028,23 +1020,23 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Диаметр[D]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="м"
-                                            id="a"><span class="form_validation"></span>
+                                            id="ga"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Высота[Н]:</label>
                                         <input class="form_control_calc" type="number" name="phone" placeholder="м"
-                                            id="b"><span class="form_validation"></span>
+                                            id="gb"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Толщина(А):</label>
-                                        <input class="form_control_calc" type="number" name="phone"
-                                            placeholder="см" id="c"><span class="form_validation"></span>
+                                        <input class="form_control_calc" type="number" name="phone" placeholder="см"
+                                            id="gc"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
-                                </button>
+                                <button class="button_primary" type="button"
+                                    onclick="Calculate('foundation/concrete-ring')"><a href="#">Рассчитать</a></button>
 
                             </form>
                             <div id="myModal7" class="modal modal7">
@@ -1089,9 +1081,10 @@
                                 <fieldset class="fields_modal" id="box_modal7" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
-                                            class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <input class="form_control_modal" type="text" name="" placeholder=""
+                                            id="save_title7"><span class="form_validation"></span>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title7').value, 'fundamentSeventh')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1106,13 +1099,13 @@
                                     <p>Приблизительный вес:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="res_a"></output> мм</p>
-                                    <p><output id="res_b"></output> м³</p>
-                                    <p><output id="res_c"></output> м³</p>
-                                    <p><output id="res_d"></output> мм</p>
-                                    <p><output id="res_e"></output> мм</p>
-                                    <p><output id="res_f"></output> м2</p>
-                                    <p><output id="res_g"></output> кг</p>
+                                    <p><output id="gres_a"></output> мм</p>
+                                    <p><output id="gres_b"></output> м³</p>
+                                    <p><output id="gres_c"></output> м³</p>
+                                    <p><output id="gres_d"></output> мм</p>
+                                    <p><output id="gres_e"></output> мм</p>
+                                    <p><output id="gres_f"></output> м2</p>
+                                    <p><output id="gres_g"></output> кг</p>
                                 </div>
                             </div>
                         </div>

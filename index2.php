@@ -25,7 +25,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <script src="javascript/authentication.js"></script>
-    
+
     <script src="javascript/calculations.js"></script>
     <script src="javascript/jquery-3.1.0.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="header_left">
-                        <div class="icons" style="display: flex;">
+                        <div class="icons" id="signedIn">
                             <a href="profile.php" class="logo_icon">
                                 <svg class="header_logo" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
@@ -111,7 +111,7 @@
                                 </svg>
 
                             </a>
-                            <a href="Log.php" class="logo_icon">
+                            <a href="#" class="logo_icon" onClick="logout()">
                                 <svg class="header_logo" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                     version="1.1" width="23" height="23" x="0" y="0" viewBox="0 0 512 512"
@@ -133,9 +133,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="auth_button_about">
-                            <a href="Log.php" class="btn_SignIn"><?php //echo $user->full_name; 
-                                                            ?></a>
+                        <div class="auth_button_about" id="signedOut">
+                            <a href="Log.php" class="btn_SignIn">Войти</a>
                         </div>
                     </div>
                 </div>
@@ -287,10 +286,10 @@
                                             class="form_validation"></span>
                                     </div>
                                 </fieldset>
-                               
-                                    <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
-                                    </button>
-                              
+
+                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                </button>
+
                             </form>
                             <div id="myModal1" class="modal modal1">
 
@@ -454,10 +453,9 @@
                                     </div>
                                 </fieldset>
 
-                            
-                                    <button class="button_primary" onclick="Calculate()"><a
-                                            href="#">Рассчитать</a></button>
-                                
+
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+
                             </form>
                             <div id="myModal2" class="modal modal2">
 
@@ -582,10 +580,9 @@
                                     </div>
                                 </fieldset>
 
-                               
-                                    <button class="button_primary" onclick="Calculate()"><a
-                                            href="#">Рассчитать</a></button>
-                               
+
+                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+
                             </form>
                             <div id="myModal3" class="modal modal3">
 

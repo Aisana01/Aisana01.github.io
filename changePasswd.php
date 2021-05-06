@@ -26,7 +26,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascript/parallax.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="javascript/authentication.js"></script>
+    <script src="javascript/change_password.js"></script>
 
     <script src="javascript/jquery-3.1.0.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -113,7 +118,7 @@
                             <div class="form_wrap">
                                 <!-- <label class="input_label" >Номер-телефона</label> -->
                                 <div class="passw_block">
-                                <input id = "password" class="form_control" type="password" name="" name placeholder="Введите старый пароль">                                        
+                                <input id = "old_password" class="form_control" type="password" name="" name placeholder="Введите старый пароль">                                        
                                     <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 
                                 </div>
@@ -122,18 +127,16 @@
                             <div class="form_wrap">
                                 <!-- <label class="input_label" >Номер-телефона</label> -->
                                 <div class="passw_block">
-                                <input id = "password2" class="form_control" type="password" name="" name placeholder="Введите новый пароль">                                        
+                                <input id = "new_password1" class="form_control" type="password" name="" name placeholder="Введите новый пароль">                                        
                                     <span toggle="#password2" class="fa fa-fw fa-eye field-icon toggle-password2"></span>
-
                                 </div>
 
                             </div>
                             <div class="form_wrap">
-                                <input class="form_control" type="password" name="" name placeholder="Подтвердите новый пароль"><span class="form_validation"></span>  
+                                <input id="new_password2" class="form_control" type="password" name="" name placeholder="Подтвердите новый пароль"><span class="form_validation"></span>  
                             </div>
                             <div class="form_wrap_calc">
-                                <button class="button_primary" type="submit"><a href="#">Сохранить</a>
-                                </button>
+                                <button class="button_primary" type="button" onclick="changePassword()">Сохранить</button>
                             </div>
                         </form>
                     </div>
