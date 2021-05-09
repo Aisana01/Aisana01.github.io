@@ -1,0 +1,114 @@
+footer {
+	width: 100%;
+	height: 354px;
+	/*background-color: #1a85f1;*/
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+.content_blog_footer {
+	width: 100%;
+	height: 354px;
+	background-color: #1a85f1;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	max-width: 1400px;
+	margin: 0 auto;
+	
+}
+.content_blog_footer_about{
+	width: 100%;
+	height: 300px;
+	background-image: url(../../image/bg-footer.jpg); 
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgba(23, 20, 54, 0.384);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: inherit;
+	max-width: 1400px;
+	margin: 0 auto;
+
+}
+.content_footer_container{
+	width: 100%;
+	background-color: rgba(23, 20, 54, 0.384);
+	height: 300px;
+}
+.content_blog {
+	height: 100%;
+	width: 100%;
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	
+}
+.top_footer {
+	padding-top: 55px;
+	display: flex;
+}
+.top_footer div {
+	width: 25%;
+}
+.bottom_footer {
+
+}
+.footer_big_title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+}
+.footer_title {
+	font-size: 17px;
+	font-weight: 500;
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+}
+.introduction_words {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+.navigation .navigation_inner {
+	width: 100%;
+}
+.navigation a {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+.contacts a {
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+.navigation a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.contacts a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.mailing_input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding-left: 10px;
+	outline:0;
+	overflow: hidden;
+	background-color: rgba(255,255,255,0.6);	
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	color: #FFFFFF;
+}
+
+.bottom_footer p {
+	color: #fff;
+	padding-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+}

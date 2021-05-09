@@ -1,0 +1,283 @@
+.container1{
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
+.grid{
+	background-image: url(https://www.corona-materials.de/images/bg-theme/1.png);
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	width: 100%;
+	background-color: #fff;
+	height: 100%;
+	text-align: center;
+}
+
+
+/* Common style */
+.grid figure {
+
+	margin: 0 auto 17px auto;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+.grid_inside{
+	justify-content: left;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+figure.effect-phoebe figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../../image/triangle2.svg) no-repeat center center;
+	background-size: 100% 100%;
+	content: '';
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(5,2.5,1);
+	transform: scale3d(5,2.5,1);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+figure.effect-phoebe:hover figcaption::before {
+	opacity: 0.6;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-phoebe h2 {
+	margin-top: 1em;
+	-webkit-transition: transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-phoebe:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-phoebe p a {
+	color: #fff;
+	font-size: 140%;
+	opacity: 0;
+	position: relative;
+	display: inline-block;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-phoebe p a:first-child {
+	-webkit-transform: translate3d(-60px,-60px,0);
+	transform: translate3d(-60px,-60px,0);
+}
+
+figure.effect-phoebe p a:nth-child(2) {
+	-webkit-transform: translate3d(0,60px,0);
+	transform: translate3d(0,60px,0);
+}
+
+figure.effect-phoebe p a:nth-child(3) {
+	-webkit-transform: translate3d(60px,-60px,0);
+	transform: translate3d(60px,-60px,0);
+}
+
+figure.effect-phoebe:hover p a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.fig_title {
+	height: 80px;
+    border-bottom: 2px solid #e6e6e8;
+    margin: 5px 15px;
+}
+.fig_title_adm{
+	height: 40px;
+    border-bottom: 2px solid #e6e6e8;
+    margin: 5px 15px;
+}
+
+.fig_title_adm  a{
+	display: block;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin:21px auto;
+  	width: 72%;
+  	text-align: center;
+}
+.fig_title_adm a:hover {
+	color: #9bcfcc;
+}
+
+.fig_title  a{
+	display: block;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin:21px auto;
+  	width: 72%;
+  	text-align: center;
+}
+.fig_title  a:hover {
+	color: #9bcfcc;
+}
+
+.grid1 {
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    list-style: none;
+    text-align: center;
+}
+
+
+.grid1 figure {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 17px;
+
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid1 figure img {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.grid1 figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid1 figure figcaption::before,
+.grid1 figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid1 figure figcaption,
+.grid1 figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 137px;
+    width: 139%;
+    height: 138%;
+}
+.grid1 figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid1 figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    font-size: 30px;
+    padding-top: 60px;
+}
+
+.grid1 figure h2 span {
+    font-weight: 800;
+}
+
+.grid1 figure h2,
+.grid1 figure p {
+    margin: 0;
+}
+
+.grid1 figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+.grid1 figure h6 {
+    margin: 0;
+}
+
+.grid1 figure h6 {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}

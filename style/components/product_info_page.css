@@ -1,0 +1,106 @@
+.info_page_image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    margin: 0 auto;
+    border: 1px solid #dfe3e6;
+}
+.info_item_image {
+	width: 40%;
+}
+.info_item_image_inner {
+	height: auto;
+    width: auto;
+    margin: 0 auto;
+}
+.info_item_title {
+	display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #474f56;
+    line-height: 18px;
+}
+.hrr {
+	border: 0.1px solid #ababab;
+	margin-bottom: 15px;
+}
+.item_item_info {
+	width: 50%;
+}
+.info_item_vendor {
+	font-weight: 400;
+}
+.info_vendor {
+    display: flex;
+    margin-bottom: 4px;
+}
+.info_vendor p {
+	margin-bottom: 10px;
+}
+.buy_item_button_save {
+    width: 120px;
+    height: 35px;
+    margin-top: 70px;
+    border-radius: 5px;
+    border-width: 0;
+    background-color: #FFB72B;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.comment_username {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.comment_blog {
+    padding: 15px 20px 0 20px;
+}
+.comment_textarea {
+	width: 500px;
+	max-width: 500px;
+	height: 100px;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif; 
+}
+.send_comment_button {
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-width: 0;
+    background-color: #FFB72B;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.show_comments {
+	padding: 15px 20px 0 20px;
+}
+.exact_comment {
+	width: 507px;
+	background-color: #eaeaea;
+}
+.comment_owner {
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: 10px;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+.comment_text {
+	margin-left: 30px;
+	padding-bottom: 10px;
+}
+.hrrr {
+	width: 507px;
+	border: 0.1px solid #ababab;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	margin-left: 20px;
+	padding-left: 20px;
+}

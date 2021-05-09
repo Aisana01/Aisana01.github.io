@@ -1,0 +1,56 @@
+.resume_section {
+	display: flex;
+    padding: 40px 30px;
+
+}
+.resume_form {
+	margin: 0 auto;
+	width: 540px;
+}
+.my_resume {
+	margin: 0 auto;
+}
+.form_worker {
+	max-width: 800px;
+}
+.worker_salary {
+
+}
+.salary_inner {
+	display: flex;
+}
+.resume_main_title {
+	font-size: 20px;
+	font-weight: 500;
+}
+.salary_title {
+	margin: 0 20px 0 20px;
+	font-weight: 400;
+}
+.input_salary {
+	border: 1px solid #FFB72B;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+
+    min-width: 13.375em;
+    padding: .7em 1em;
+}
+.margin_top {
+	margin-top: 40px;
+}
+.work_types {
+	margin-left: 58px;
+	width: 300px;
+	height: 40px;
+	border: 1px solid #FFB72B;
+	border-radius: 4px;
+	font-family: 'Montserrat', sans-serif;
+}
+option .work_types {
+	height: 50px;
+}
+.input_about_yourself {
+	width: 100%;
+	max-width: 538px;
+	height: 200px;
+}
