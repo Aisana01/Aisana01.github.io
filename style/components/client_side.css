@@ -651,7 +651,7 @@
 
 .label_title_block{
 	display: flex;
-    justify-content: right;
+    /* justify-content: right; */
     margin: 0px 27px;
   }
   .toggle_block{
