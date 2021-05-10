@@ -159,8 +159,8 @@
                                 <a href="index2.php#block9">Расчет стен из блоков</a>
                                 <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
                                 <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
-                                <!-- <a href="index2.php#block4">Объем блоков/кирпича в ярде3</a> -->
-                                <!-- <a href="index2.php#block4">Параметры стеновых блоков</a> -->
+                                <a href="index2.php#block35">Расчет стен из блоков по своим размерам</a>
+                                <a href="index2.php#block36">Параметры стеновых блоков</a>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -270,19 +270,11 @@
                                 </button>
 
                             </form>
-                            <div id="myModal1" class="modal modal1">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content1">
-                                    <span class="close close1">&times;</span>
-                                    <img src="image/fp.jpg" alt="">
-                                </div>
-
-                            </div>
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal11');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -328,8 +320,8 @@
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> ед</p>
-                                    <p><output id=""></output> м³</p>
-                                    <p><output id=""></output> м³</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> м3</p>
                                     <p><output id=""></output> тенге</p>
                                     <p><output id=""></output> тенге</p>
                                 </div>
@@ -390,19 +382,11 @@
                                 </button>
 
                             </form>
-                            <div id="myModal2" class="modal modal2">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content2">
-                                    <span class="close close2">&times;</span>
-                                    <img src="image/1s.jpg" alt="">
-                                </div>
-
-                            </div>
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal12');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -448,7 +432,7 @@
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> ед</p>
-                                    <p><output id=""></output> м³</p>
+                                    <p><output id=""></output> м3</p>
                                     <p><output id=""></output> ед</p>
                                     <p><output id=""></output> тенге</p>
                                     <p><output id=""></output> тенге</p>

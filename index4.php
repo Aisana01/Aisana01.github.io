@@ -159,8 +159,8 @@
                                 <a href="index2.php#block9">Расчет стен из блоков</a>
                                 <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
                                 <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
-                                <!-- <a href="index2.php#block4">Объем блоков/кирпича в ярде3</a> -->
-                                <!-- <a href="index2.php#block4">Параметры стеновых блоков</a> -->
+                                <a href="index2.php#block35">Расчет стен из блоков по своим размерам</a>
+                                <a href="index2.php#block36">Параметры стеновых блоков</a>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -254,7 +254,7 @@
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">В 1м³:</label>
+                                        <label class="input_label">В 1м3:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="кг"
                                             id=""><span class="form_validation"></span>
                                     </div>
@@ -280,25 +280,22 @@
                                         <input class="form_control_calc" type="number" name="" placeholder="л"><span
                                             class="form_validation"></span>
                                     </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость за м3:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"><span
+                                            class="form_validation"></span>
+                                    </div>
                                 </fieldset>
 
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
-                            <div id="myModal1" class="modal modal1">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content1">
-                                    <span class="close close1">&times;</span>
-                                    <img src="image/fp.jpg" alt="">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal13');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -341,13 +338,15 @@
                                     <p>Объем материала с учетом тромбовки:</p>
                                     <p>Вес материала в ведре:</p>
                                     <p>Количество ведер:</p>
+                                    <p>Стоимость:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м³</p>
+                                    <p><output id=""></output> м3</p>
                                     <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> м³</p>
+                                    <p><output id=""></output> м3</p>
                                     <p><output id=""></output> кг</p>
                                     <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> тг</p>
                                 </div>
                             </div>
                         </div>
@@ -383,38 +382,39 @@
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
-                                </fieldset>
-                                <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[a]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
+                                </fieldset>
+                                <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Плотность грунта:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м³"
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м3"
                                             id=""><span class="form_validation"></span>
                                     </div>
-
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Раскопка(за м3):</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Вывоз грунта(за м3):</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
                                 </fieldset>
 
 
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal2" class="modal modal2">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content2">
-                                    <span class="close close2">&times;</span>
-                                    <img src="image/Group 56.png" alt="" width="500px" height="440px">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal14');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -454,10 +454,16 @@
                                 <div class="result_calc_words_titles">
                                     <p>Объем котлована:</p>
                                     <p>Вес грунта:</p>
+                                    <p>Раскопка:</p>
+                                    <p>Вывоз грунта:</p>
+                                    <p>Общие затраты:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м³</p>
-                                    <p><output id="vneshni_bokovoi"></output> кг</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> тг</p>
                                 </div>
                             </div>
                         </div>
@@ -505,31 +511,33 @@
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Плотность грунта:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м³"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
 
                                 </fieldset>
-
-
+                                <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                        <label class="input_label">Плотность грунта:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м3"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                <div class="form_wrap_calc">
+                                        <label class="input_label">Раскопка(за м3):</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Вывоз грунта(за м3):</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal3" class="modal modal3">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content3">
-                                    <span class="close close3">&times;</span>
-                                    <img src="image/Group 57.png" alt="" width="500px" height="440px">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal15');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -569,10 +577,16 @@
                                 <div class="result_calc_words_titles">
                                     <p>Объем котлована:</p>
                                     <p>Вес грунта:</p>
+                                    <p>Раскопка:</p>
+                                    <p>Вывоз грунта:</p>
+                                    <p>Общие затраты:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м³</p>
-                                    <p><output id="vneshni_bokovoi"></output> кг</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> тг</p>
                                 </div>
                             </div>
                         </div>
@@ -622,49 +636,77 @@
 
         </section>
 
+        <!--  -->
+        <div id="myModal1" class="modal modal1">
 
+            <!-- Modal content -->
+            <div id = "m_block1" class="modal-content modal-content1">
+                <span class="close close1">&times;</span>
+                <img src="image/fp.jpg" alt="">
+            </div>
 
+        </div>
+        <div id="myModal2" class="modal modal2">
+
+            <!-- Modal content -->
+            <div id = "m_block2" class="modal-content modal-content2">
+                <span class="close close2">&times;</span>
+                <img src="image/Group 56.png" alt="" width="500px" height="440px">
+            </div>
+
+        </div>
+        <div id="myModal3" class="modal modal3">
+
+            <!-- Modal content -->
+            <div id = "m_block3" class="modal-content modal-content3">
+                <span class="close close3">&times;</span>
+                <img src="image/Group 57.png" alt="" width="500px" height="440px">
+            </div>
+
+        </div>
+
+        <!--  -->
 
         <!-- Script modal !-->
         <script>
-            // Get the modal
-            var modal2 = document.getElementById("myModal2");
-            var modal3 = document.getElementById("myModal3");
+        // Get the modal
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
 
 
-            var btn2 = document.getElementById("myBtn2");
-            var btn3 = document.getElementById("myBtn3");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
 
-            // Get the <span> element that closes the modal
-            var span2 = document.getElementsByClassName("close2")[0];
-            var span3 = document.getElementsByClassName("close3")[0];
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
 
 
-            btn2.onmouseenter = function () {
-                modal2.style.display = "block";
-            }
-            btn3.onmouseenter = function () {
-                modal3.style.display = "block";
-            }
+        btn2.onmouseenter = function() {
+            modal2.style.display = "block";
+        }
+        btn3.onmouseenter = function() {
+            modal3.style.display = "block";
+        }
 
-            // When the user clicks on <span> (x), close the modal
+        // When the user clicks on <span> (x), close the modal
 
-            span2.onclick = function () {
-                modal2.style.display = "none";
-            }
-            span3.onclick = function () {
-                modal3.style.display = "none";
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+        span3.onclick = function() {
+            modal3.style.display = "none";
 
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function (event) {
-                    if (event.target == modal2 || event.target == modal3) {
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal2 || event.target == modal3) {
 
-                        modal2.style.display = "none";
-                        modal3.style.display = "none";
+                    modal2.style.display = "none";
+                    modal3.style.display = "none";
 
-                    }
                 }
             }
+        }
         </script>
 
     </div>
@@ -674,6 +716,7 @@
 <script src="javascript/animate_plugin/animate-css.js"></script>
 <script src="javascript/common.js"></script>
 <script src="javascript/live_search.js"></script>
+<script src="javascript/scroll_block.js"></script>
 
 </html>
 

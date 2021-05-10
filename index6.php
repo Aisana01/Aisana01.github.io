@@ -159,8 +159,8 @@
                                 <a href="index2.php#block9">Расчет стен из блоков</a>
                                 <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
                                 <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
-                                <!-- <a href="index2.php#block4">Объем блоков/кирпича в ярде3</a> -->
-                                <!-- <a href="index2.php#block4">Параметры стеновых блоков</a> -->
+                                <a href="index2.php#block35">Расчет стен из блоков по своим размерам</a>
+                                <a href="index2.php#block36">Параметры стеновых блоков</a>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -371,38 +371,10 @@
                                 </button>
 
                             </form>
-                            <div id="myModal1" class="modal modal1">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content1">
-                                    <span class="close close1">&times;</span>
-                                    <img src="image/Group 35.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
-                            <div id="myModal2" class="modal modal2">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content2">
-                                    <span class="close close2">&times;</span>
-                                    <img src="image/Group 38.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
-                            <div id="myModal3" class="modal modal3">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content3">
-                                    <span class="close close3">&times;</span>
-                                    <img src="image/Group 39.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
-                            <div id="myModal4" class="modal modal4">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content4">
-                                    <span class="close close4">&times;</span>
-                                    <img src="image/Group 41.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal35');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -445,11 +417,16 @@
                                     <p>Длина ската:</p>
                                     <p>Площадь фронтона:</p>
                                     <p>Длина стропил:</p>
+                                    <p>Количество стропил:</p>
                                     <p>Необходимо досок:</p>
                                     <p>Объем доски:</p>
                                     <p>Объем всего:</p>
                                     <p>Шаг:</p>
-                                    <p>Нахлест:</p>
+                                    <p>Количество проходов(обрешетка):</p>
+                                    <p>Необходимо досок(обрешетка):</p>
+                                    <p>Объем штуки(обрешетка):</p>
+                                    <p>Объем всего(обрешетка):</p>
+                                    <p>Шаг(обрешетка):</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> м2</p>
@@ -462,6 +439,12 @@
                                     <p><output id=""></output> м3</p>
                                     <p><output id=""></output> м3</p>
                                     <p><output id=""></output> мм</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> мм</p>
+
                                 </div>
                             </div>
                         </div>
@@ -613,38 +596,11 @@
                                 </button>
 
                             </form>
-                            <div id="myModal5" class="modal modal5">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content5">
-                                    <span class="close close5">&times;</span>
-                                    <img src="image/Group 36.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
-                            <div id="myModal6" class="modal modal6">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content6">
-                                    <span class="close close6">&times;</span>
-                                    <img src="image/Group 42.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
-                            <div id="myModal7" class="modal modal7">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content7">
-                                    <span class="close close7">&times;</span>
-                                    <img src="image/Group 43.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
-                            <div id="myModal8" class="modal modal8">
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content8">
-                                    <span class="close close8">&times;</span>
-                                    <img src="image/Group 41.png" alt="" width="600px" height="400px">
-                                </div>
-                            </div>
+                           
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal36');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -687,11 +643,16 @@
                                     <p>Длина ската:</p>
                                     <p>Площадь фронтона:</p>
                                     <p>Длина стропил:</p>
+                                    <p>Количество стропил:</p>
                                     <p>Необходимо досок:</p>
                                     <p>Объем доски:</p>
                                     <p>Объем всего:</p>
                                     <p>Шаг:</p>
-                                    <p>Нахлест:</p>
+                                    <p>Количество проходов(обрешетка):</p>
+                                    <p>Необходимо досок(обрешетка):</p>
+                                    <p>Объем штуки(обрешетка):</p>
+                                    <p>Объем всего(обрешетка):</p>
+                                    <p>Шаг(обрешетка):</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> м2</p>
@@ -704,13 +665,76 @@
                                     <p><output id=""></output> м3</p>
                                     <p><output id=""></output> м3</p>
                                     <p><output id=""></output> мм</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> мм</p>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+<!--  -->
+                            <div id="myModal1" class="modal modal1">
+                                <!-- Modal content -->
+                                <div id = "m_block1" class="modal-content modal-content1">
+                                    <span class="close close1">&times;</span>
+                                    <img src="image/Group 35.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <div id="myModal2" class="modal modal2">
+                                <!-- Modal content -->
+                                <div id = "m_block2" class="modal-content modal-content2">
+                                    <span class="close close2">&times;</span>
+                                    <img src="image/Group 38.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <div id="myModal3" class="modal modal3">
+                                <!-- Modal content -->
+                                <div id = "m_block3" class="modal-content modal-content3">
+                                    <span class="close close3">&times;</span>
+                                    <img src="image/Group 39.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <div id="myModal4" class="modal modal4">
+                                <!-- Modal content -->
+                                <div id = "m_block4" class="modal-content modal-content4">
+                                    <span class="close close4">&times;</span>
+                                    <img src="image/Group 41.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <div id="myModal5" class="modal modal5">
+                                <!-- Modal content -->
+                                <div id = "m_block5" class="modal-content modal-content5">
+                                    <span class="close close5">&times;</span>
+                                    <img src="image/Group 36.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <div id="myModal6" class="modal modal6">
+                                <!-- Modal content -->
+                                <div id = "m_block6" class="modal-content modal-content6">
+                                    <span class="close close6">&times;</span>
+                                    <img src="image/Group 42.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <div id="myModal7" class="modal modal7">
+                                <!-- Modal content -->
+                                <div id = "m_block7" class="modal-content modal-content7">
+                                    <span class="close close7">&times;</span>
+                                    <img src="image/Group 43.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <div id="myModal8" class="modal modal8">
+                                <!-- Modal content -->
+                                <div id = "m_block8" class="modal-content modal-content8">
+                                    <span class="close close8">&times;</span>
+                                    <img src="image/Group 41.png" alt="" width="600px" height="400px">
+                                </div>
+                            </div>
+                            <!--  -->
 
             <footer>
                 <div class="content_blog">
@@ -859,7 +883,7 @@
 <script src="javascript/animate_plugin/animate-css.js"></script>
 <script src="javascript/common.js"></script>
 <script src="javascript/live_search.js"></script>
-
+<script src="javascript/scroll_block.js"></script>
 </html>
 
 <?php

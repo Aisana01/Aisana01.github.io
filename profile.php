@@ -120,7 +120,7 @@
                         </div>
                         <div class="user_inform_form">
                             <form class="landing_form_input">
-                                <div class="form_wrap">
+                                <div class="form_wrap" style = "display:none;">
                                     <!-- <label class="input_label" >ID Пользователя</label> -->
                                     <input class="form_control" type="text" name="" id="user_id"><span class="form_validation"></span></div>
                                 <div class="form_wrap">

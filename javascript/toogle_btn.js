@@ -17,3 +17,4 @@ if (input2.type == 'password') {
     input2.type = 'password';
 }
 });
+

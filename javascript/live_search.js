@@ -1,7 +1,7 @@
 var ul = document.getElementById("search_list");
 db.collection("calculations").get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
-        console.log(doc.id, " => ", doc.data());
+        // console.log(doc.id, " => ", doc.data());
         var li = document.createElement('li');
         li.appendChild(document.createTextNode(doc.data().calc_title));
         ul.appendChild(li);
@@ -9,7 +9,7 @@ db.collection("calculations").get().then((querySnapshot) => {
 });
 
 document.querySelector('#elastic').oninput = function(){
-    let val = this.value.trim();
+    let val = this.value.trim().toLowerCase();
     let elasticItems = document.querySelectorAll('.elastic li');
     var block_drp = document.getElementById('drop_dwn');
     if (val !=''){
@@ -23,7 +23,7 @@ document.querySelector('#elastic').oninput = function(){
             else{
                 elem.classList.remove('hide');
                 let str = elem.innerText;
-                elem.innerHTML = insertMark(str,elem.innerText.search(val),val.length);
+                elem.innerHTML = insertMark(str.toLowerCase(),elem.innerText.search(val.toLowerCase()),val.length);
             }
         });
     }
@@ -37,6 +37,6 @@ document.querySelector('#elastic').oninput = function(){
 }
 
 function insertMark(string,pos,len){
-    return string.slice(0,pos) + '<mark>' + string.slice(pos,pos+len)+'</mark>' + string.slice(pos+len);
+    return string.slice(0,pos) + '<mark>' + string.slice(pos,pos+len)+'</mark>' + string.slice(pos+len)+'<mark>' + string.slice(pos,0);
 
 }

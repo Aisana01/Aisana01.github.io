@@ -159,8 +159,8 @@
                                 <a href="index2.php#block9">Расчет стен из блоков</a>
                                 <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
                                 <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
-                                <!-- <a href="index2.php#block4">Объем блоков/кирпича в ярде3</a> -->
-                                <!-- <a href="index2.php#block4">Параметры стеновых блоков</a> -->
+                                <a href="index2.php#block35">Расчет стен из блоков по своим размерам</a>
+                                <a href="index2.php#block36">Параметры стеновых блоков</a>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -273,24 +273,27 @@
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
-
+                                <fieldset class="fields">
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Плотность:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м3"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
-                            <div id="myModal1" class="modal modal1">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content1">
-                                    <span class="close close1">&times;</span>
-                                    <img src="image/fp.jpg" alt="">
-                                </div>
-
-                            </div>
+                           
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal16');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -330,12 +333,24 @@
                                 <div class="result_calc_words_titles">
                                     <p>Площадь одного листа:</p>
                                     <p>Объем одного листа:</p>
-                                    <p>Листов в 1м³:</p>
+                                    <p>Листов в 1м3:</p>
+                                    <p>Площадь поверхности:</p>
+                                    <p>Толщина утепления:</p>
+                                    <p>Объем утеплителя:</p>
+                                    <p>Количество листов:</p>
+                                    <p>Полная стоимость:</p>
+                                    <p>Суммарный вес:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> м2</p>
-                                    <p><output id="perimetr_vneshni"></output> м³</p>
-                                    <p><output id="obshaya_dlina"></output> шт</p>
+                                    <p><output id=""></output> м2</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> м2</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> ед</p>
+                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> кг</p>
                                 </div>
                             </div>
                         </div>
@@ -401,19 +416,11 @@
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal2" class="modal modal2">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content2">
-                                    <span class="close close2">&times;</span>
-                                    <img src="image/1s.jpg" alt="">
-                                </div>
-
-                            </div>
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal17');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -458,7 +465,7 @@
                                 <div class="result_calc_words_parameters">
                                     <p><output id="beton_volume"></output> м2</p>
                                     <p><output id="perimetr_vneshni"></output> шт</p>
-                                    <p><output id="obshaya_dlina"></output> м³</p>
+                                    <p><output id="obshaya_dlina"></output> м3</p>
                                 </div>
                             </div>
                         </div>
@@ -520,25 +527,22 @@
                                         <input class="form_control_calc" type="number" name="" placeholder="%"
                                             id=""><span class="form_validation"></span>
                                     </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость за м2:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
                                 </fieldset>
 
 
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal3" class="modal modal3">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content3">
-                                    <span class="close close3">&times;</span>
-                                    <img src="image/2s.jpg" alt="">
-                                </div>
-
-                            </div>
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal18');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -651,19 +655,11 @@
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal4" class="modal modal4">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content4">
-                                    <span class="close close4">&times;</span>
-                                    <img src="image/3s.jpg" alt="">
-                                </div>
-
-                            </div>
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal19');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -702,10 +698,12 @@
                             <div class="result_calc_words_main">
                                 <div class="result_calc_words_titles">
                                     <p>Минимальный расход:</p>
+                                    <p>Минимальный расход:</p>
 
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id="beton_volume"></output> м2</p>
+                                    <p><output id=""></output> м2</p>
+                                    <p><output id=""></output> ед</p>
                                 </div>
                             </div>
                         </div>
@@ -733,39 +731,50 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Длина[А]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Ширина[B]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    
+                                </fieldset>
+                                <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                        <label class="input_label">Длина шипа[Е]:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
+                                        <label class="input_label">Ширина поверхности[С]:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    
+                                </fieldset>
+                                <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                        <label class="input_label">Высота поверхности[D]:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"><span
+                                            class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
                                         <label class="input_label">Толщина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Длина шипа[Е]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Количество в упаковке:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="ед"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Высота поверхности[D]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м"><span
-                                            class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Ширина поверхности[С]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м"
+                                        <label class="input_label">Стоимость упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -775,19 +784,12 @@
                                 <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal5" class="modal modal5">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content5">
-                                    <span class="close close5">&times;</span>
-                                    <img src="image/4s.jpg" alt="">
-                                </div>
-
-                            </div>
+                           
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal20');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -924,19 +926,11 @@
                                 </button>
 
                             </form>
-                            <div id="myModal6" class="modal modal6">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content6">
-                                    <span class="close close6">&times;</span>
-                                    <img src="image/бетон.jpg" alt="" width="510px" height="510px">
-                                </div>
-
-                            </div>
+                           
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal21');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1018,6 +1012,18 @@
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
+                                <fieldset class="fields">
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Объем банки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="ед"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость банки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
                                 <div class="label_title">Размеры поверхности</div>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
@@ -1031,24 +1037,15 @@
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
-
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
-                            <div id="myModal7" class="modal modal7">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content7">
-                                    <span class="close close7">&times;</span>
-                                    <img src="image/БетонныеКольца.jpg" alt="">
-                                </div>
-
-                            </div>
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal22');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1088,10 +1085,16 @@
                                 <div class="result_calc_words_titles">
                                     <p>Площадь поверхности:</p>
                                     <p>Объем краски:</p>
+                                    <p>Необходимое количество банок:</p>
+                                    <p>Стоимость за 1м2:</p>
+                                    <p>Приблизительная стоимость:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id="beton_volume"></output> м2</p>
                                     <p><output id="perimetr_vneshni"></output> л</p>
+                                    <p><output id="perimetr_vneshni"></output> шт</p>
+                                    <p><output id="perimetr_vneshni"></output> тг</p>
+                                    <p><output id="perimetr_vneshni"></output> тг</p>
                                 </div>
                             </div>
                         </div>
@@ -1148,6 +1151,11 @@
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
+                                        <label class="input_label">Расход:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м2"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
                                         <label class="input_label">Толщина слоя:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="мм"
                                             id=""><span class="form_validation"></span>
@@ -1155,32 +1163,38 @@
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
+                                        <label class="input_label">Вес упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fields">
+                                    <div class="form_wrap_calc">
                                         <label class="input_label">Длина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Ширина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
-
+                                
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
-                            <!-- <div id="myModal7" class="modal modal7">
-                            <div class="modal-content modal-content7">
-                                <span class="close close7">&times;</span>
-                                <img src="image/БетонныеКольца.jpg" alt="">
-                            </div>
-
-                        </div> -->
+                         
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal28');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1221,12 +1235,16 @@
                                     <p>Площадь обрабатываемой поверхности:</p>
                                     <p>Расход материалов на 1м2:</p>
                                     <p>Вес материала:</p>
+                                    <p>Количество упаковок:</p>
+                                    <p>Стоимость:</p>
 
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> м2</p>
                                     <p><output id=""></output> кг</p>
                                     <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -1281,8 +1299,25 @@
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
+                                        <label class="input_label">Расход:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м2"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
                                         <label class="input_label">Толщина слоя:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fields">
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Вес упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1290,31 +1325,25 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Длина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Ширина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
-
+                            
                                 <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
-                            <!-- <div id="myModal7" class="modal modal7">
-                            <div class="modal-content modal-content7">
-                                <span class="close close7">&times;</span>
-                                <img src="image/БетонныеКольца.jpg" alt="">
-                            </div>
-
-                        </div> -->
+                        
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal29');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1355,12 +1384,16 @@
                                     <p>Площадь обрабатываемой поверхности:</p>
                                     <p>Расход материалов на 1м2:</p>
                                     <p>Вес материала:</p>
+                                    <p>Количество упаковок:</p>
+                                    <p>Стоимость упаковки:</p>
 
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> м2</p>
                                     <p><output id=""></output> кг</p>
                                     <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -1422,8 +1455,25 @@
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
+                                        <label class="input_label">Расход:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м2"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
                                         <label class="input_label">Толщина слоя:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fields">
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Вес упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1431,12 +1481,12 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Длина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Ширина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1445,17 +1495,11 @@
                                 </button>
 
                             </form>
-                            <!-- <div id="myModal7" class="modal modal7">
-                            <div class="modal-content modal-content7">
-                                <span class="close close7">&times;</span>
-                                <img src="image/БетонныеКольца.jpg" alt="">
-                            </div>
-
-                        </div> -->
+                           
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal30');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1496,12 +1540,16 @@
                                     <p>Площадь обрабатываемой поверхности:</p>
                                     <p>Расход материалов на 1м2:</p>
                                     <p>Вес материала:</p>
+                                    <p>Количество упаковок:</p>
+                                    <p>Стоимость упаковки:</p>
 
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> м2</p>
                                     <p><output id=""></output> кг</p>
                                     <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -1556,8 +1604,25 @@
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
+                                        <label class="input_label">Расход:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м2"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
                                         <label class="input_label">Толщина слоя:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fields">
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Вес упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1565,12 +1630,12 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Длина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Ширина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1579,17 +1644,11 @@
                                 </button>
 
                             </form>
-                            <!-- <div id="myModal7" class="modal modal7">
-                            <div class="modal-content modal-content7">
-                                <span class="close close7">&times;</span>
-                                <img src="image/БетонныеКольца.jpg" alt="">
-                            </div>
-
-                        </div> -->
+                          
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal31');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1630,12 +1689,16 @@
                                     <p>Площадь обрабатываемой поверхности:</p>
                                     <p>Расход материалов на 1м2:</p>
                                     <p>Вес материала:</p>
+                                    <p>Количество упаковок:</p>
+                                    <p>Стоимость упаковки:</p>
 
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> м2</p>
                                     <p><output id=""></output> кг</p>
                                     <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -1690,8 +1753,25 @@
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
+                                        <label class="input_label">Расход:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м2"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
                                         <label class="input_label">Толщина слоя:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fields">
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Вес упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Стоимость упаковки:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1699,12 +1779,12 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Длина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Ширина:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1713,17 +1793,11 @@
                                 </button>
 
                             </form>
-                            <!-- <div id="myModal7" class="modal modal7">
-                            <div class="modal-content modal-content7">
-                                <span class="close close7">&times;</span>
-                                <img src="image/БетонныеКольца.jpg" alt="">
-                            </div>
-
-                        </div> -->
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal32');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1764,12 +1838,16 @@
                                     <p>Площадь обрабатываемой поверхности:</p>
                                     <p>Расход материалов на 1м2:</p>
                                     <p>Вес материала:</p>
+                                    <p>Количество упаковок:</p>
+                                    <p>Стоимость упаковки:</p>
 
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> м2</p>
                                     <p><output id=""></output> кг</p>
                                     <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> шт</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -1813,13 +1891,26 @@
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Шаг рисунк/Раппорт:</label>
+                                        <label class="input_label">Ширина рулона:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Длина рулона:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
+                                   
+                                </fieldset>
+                                <fieldset class="fields">
+                                <div class="form_wrap_calc">
+                                        <label class="input_label">Шаг рисунка/Раппорт:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="см"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость одного рулона:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="тенге"
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -1841,17 +1932,11 @@
                                 </button>
 
                             </form>
-                            <!-- <div id="myModal7" class="modal modal7">
-                            <div class="modal-content modal-content7">
-                                <span class="close close7">&times;</span>
-                                <img src="image/БетонныеКольца.jpg" alt="">
-                            </div>
-
-                        </div> -->
+                           
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal33');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1933,6 +2018,11 @@
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
+                                    <div class="form_wrap_calc">
+                                        <label class="input_label">Цена плинтуса:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id=""><span class="form_validation"></span>
+                                    </div>
                                 </fieldset>
                                 <div class="label_title">Размеры помещения</div>
                                 <fieldset class="fields">
@@ -1952,17 +2042,11 @@
                                 </button>
 
                             </form>
-                            <!-- <div id="myModal7" class="modal modal7">
-                            <div class="modal-content modal-content7">
-                                <span class="close close7">&times;</span>
-                                <img src="image/БетонныеКольца.jpg" alt="">
-                            </div>
-
-                        </div> -->
+                           
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal34');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -2002,11 +2086,13 @@
                                 <div class="result_calc_words_titles">
                                     <p>Плинтус:</p>
                                     <p>Площадь помещения:</p>
+                                    <p>Стоимость плинтуса:</p>
 
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id=""></output> шт</p>
                                     <p><output id=""></output> м2</p>
+                                    <p><output id=""></output> тенге</p>
 
                                 </div>
                             </div>
@@ -2056,99 +2142,10 @@
 
 
         </section>
-
-
-
-
-        <!-- Script modal !-->
-        <script>
-            // Get the modal
-            var modal1 = document.getElementById("myModal1");
-            var modal2 = document.getElementById("myModal2");
-            var modal3 = document.getElementById("myModal3");
-            var modal4 = document.getElementById("myModal4");
-            var modal5 = document.getElementById("myModal5");
-            var modal6 = document.getElementById("myModal6");
-            var modal7 = document.getElementById("myModal7");
-            // Get the button that opens the modal
-            var btn1 = document.getElementById("myBtn1");
-            var btn2 = document.getElementById("myBtn2");
-            var btn3 = document.getElementById("myBtn3");
-            var btn4 = document.getElementById("myBtn4");
-            var btn5 = document.getElementById("myBtn5");
-            var btn6 = document.getElementById("myBtn6");
-            var btn7 = document.getElementById("myBtn7");
-            // Get the <span> element that closes the modal
-            var span1 = document.getElementsByClassName("close1")[0];
-            var span2 = document.getElementsByClassName("close2")[0];
-            var span3 = document.getElementsByClassName("close3")[0];
-            var span4 = document.getElementsByClassName("close4")[0];
-            var span5 = document.getElementsByClassName("close5")[0];
-            var span6 = document.getElementsByClassName("close6")[0];
-            var span7 = document.getElementsByClassName("close7")[0];
-            // When the user clicks the button, open the modal 
-            btn1.onmouseenter = function () {
-                modal1.style.display = "block";
-            }
-            btn2.onmouseenter = function () {
-                modal2.style.display = "block";
-            }
-            btn3.onmouseenter = function () {
-                modal3.style.display = "block";
-            }
-            btn4.onmouseenter = function () {
-                modal4.style.display = "block";
-            }
-            btn5.onmouseenter = function () {
-                modal5.style.display = "block";
-            }
-            btn6.onmouseenter = function () {
-                modal6.style.display = "block";
-            }
-            btn7.onmouseenter = function () {
-                modal7.style.display = "block";
-            }
-            // When the user clicks on <span> (x), close the modal
-            span1.onclick = function () {
-                modal1.style.display = "none";
-            }
-            span2.onclick = function () {
-                modal2.style.display = "none";
-            }
-            span3.onclick = function () {
-                modal3.style.display = "none";
-            }
-            span4.onclick = function () {
-                modal4.style.display = "none";
-            }
-            span5.onclick = function () {
-                modal5.style.display = "none";
-            }
-            span6.onclick = function () {
-                modal6.style.display = "none";
-            }
-            span7.onclick = function () {
-                modal7.style.display = "none";
-            }
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == modal1 || event.target == modal2 || event.target == modal3 || event.target ==
-                    modal4 || event.target == modal5 || event.target == modal6 || event.target == modal7) {
-                    modal1.style.display = "none";
-                    modal2.style.display = "none";
-                    modal3.style.display = "none";
-                    modal4.style.display = "none";
-                    modal5.style.display = "none";
-                    modal6.style.display = "none";
-                    modal7.style.display = "none";
-                }
-            }
-        </script>
-
-
-
-
     </div>
+    <!--  -->
+
+    <!--  -->
 </body>
 <script src="javascript/open_box.js"> </script>
 <script src="javascript/change_block.js"></script>

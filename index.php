@@ -148,8 +148,8 @@
                                 <a href="index2.php#block9">Расчет стен из блоков</a>
                                 <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
                                 <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
-                                <!-- <a href="index2.php#block4">Объем блоков/кирпича в ярде3</a> -->
-                                <!-- <a href="index2.php#block4">Параметры стеновых блоков</a> -->
+                                <a href="index2.php#block35">Расчет стен из блоков по своим размерам</a>
+                                <a href="index2.php#block36">Параметры стеновых блоков</a>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -254,19 +254,10 @@
                                         href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal1" class="modal modal1">
-
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content1">
-                                    <span class="close close1">&times;</span>
-                                    <img src="image/fp.jpg" alt="">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -380,19 +371,11 @@
                                         href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal2" class="modal modal2">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content2">
-                                    <span class="close close2">&times;</span>
-                                    <img src="image/1s.jpg" alt="">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal2');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -441,7 +424,7 @@
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id="bres_a"></output> м2</p>
-                                    <p><output id="bres_b"></output> м³</p>
+                                    <p><output id="bres_b"></output> м3</p>
                                     <p><output id="bres_c"></output> м</p>
                                     <p><output id="bres_d"></output> м2</p>
                                     <p><output id="bres_e"></output> кг</p>
@@ -506,19 +489,11 @@
                                     onclick="Calculate('foundation/strip-two')"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal3" class="modal modal3">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content3">
-                                    <span class="close close3">&times;</span>
-                                    <img src="image/2s.jpg" alt="">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal3');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -567,7 +542,7 @@
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id="cres_a"></output> м2</p>
-                                    <p><output id="cres_b"></output> м³</p>
+                                    <p><output id="cres_b"></output> м3</p>
                                     <p><output id="cres_c"></output> м</p>
                                     <p><output id="cres_d"></output> м2</p>
                                     <p><output id="cres_e"></output> кг</p>
@@ -638,19 +613,11 @@
                                     onclick="Calculate('foundation/strip-three')"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal4" class="modal modal4">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content4">
-                                    <span class="close close4">&times;</span>
-                                    <img src="image/3s.jpg" alt="">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal4');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -699,7 +666,7 @@
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id="dres_a"></output> м2</p>
-                                    <p><output id="dres_b"></output> м³</p>
+                                    <p><output id="dres_b"></output> м3</p>
                                     <p><output id="dres_c"></output> м</p>
                                     <p><output id="dres_d"></output> м2</p>
                                     <p><output id="dres_e"></output> кг</p>
@@ -764,19 +731,11 @@
                                     onclick="Calculate('foundation/strip-four')"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal5" class="modal modal5">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content5">
-                                    <span class="close close5">&times;</span>
-                                    <img src="image/4s.jpg" alt="">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal5');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -825,7 +784,7 @@
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id="eres_a"></output> м2</p>
-                                    <p><output id="eres_b"></output> м³</p>
+                                    <p><output id="eres_b"></output> м3</p>
                                     <p><output id="eres_c"></output> м</p>
                                     <p><output id="eres_d"></output> м2</p>
                                     <p><output id="eres_e"></output> кг</p>
@@ -931,19 +890,11 @@
 
 
                             </form>
-                            <div id="myModal6" class="modal modal6">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content6">
-                                    <span class="close close6">&times;</span>
-                                    <img src="image/бетон.jpg" alt="" width="510px" height="510px">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal6');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1039,19 +990,11 @@
                                     onclick="Calculate('foundation/concrete-ring')"><a href="#">Рассчитать</a></button>
 
                             </form>
-                            <div id="myModal7" class="modal modal7">
 
-                                <!-- Modal content -->
-                                <div class="modal-content modal-content7">
-                                    <span class="close close7">&times;</span>
-                                    <img src="image/Group 50.png" width="518px" height="414px" alt="">
-                                </div>
-
-                            </div>
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" href="#">
+                                <a class="result_calc_svg" >
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal7');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1100,8 +1043,8 @@
                                 </div>
                                 <div class="result_calc_words_parameters">
                                     <p><output id="gres_a"></output> мм</p>
-                                    <p><output id="gres_b"></output> м³</p>
-                                    <p><output id="gres_c"></output> м³</p>
+                                    <p><output id="gres_b"></output> м3</p>
+                                    <p><output id="gres_c"></output> м3</p>
                                     <p><output id="gres_d"></output> мм</p>
                                     <p><output id="gres_e"></output> мм</p>
                                     <p><output id="gres_f"></output> м2</p>
@@ -1156,88 +1099,153 @@
         </section>
 
 
+        <!--  -->
+        <div id="myModal1" class="modal modal1">
 
+            <!-- Modal content -->
+            <div id = "m_block1" class="modal-content modal-content1">
+                <span class="close close1">&times;</span>
+                <img src="image/fp.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="myModal2" class="modal modal2">
+
+            <!-- Modal content -->
+            <div id = "m_block2"  class="modal-content modal-content2">
+                <span class="close close2">&times;</span>
+                <img src="image/1s.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="myModal3" class="modal modal3">
+
+            <!-- Modal content -->
+            <div id = "m_block3"  class="modal-content modal-content3">
+                <span class="close close3">&times;</span>
+                <img src="image/2s.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="myModal4" class="modal modal4">
+
+            <!-- Modal content -->
+            <div id = "m_block4" class="modal-content modal-content4">
+                <span class="close close4">&times;</span>
+                <img src="image/3s.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="myModal5" class="modal modal5">
+
+            <!-- Modal content -->
+            <div id = "m_block5" class="modal-content modal-content5">
+                <span class="close close5">&times;</span>
+                <img src="image/4s.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="myModal6" class="modal modal6">
+
+            <!-- Modal content -->
+            <div id = "m_block6" class="modal-content modal-content6">
+                <span class="close close6">&times;</span>
+                <img src="image/бетон.jpg" alt="" width="510px" height="510px">
+            </div>
+
+        </div>
+        <div id="myModal7" class="modal modal7">
+
+            <!-- Modal content -->
+            <div id = "m_block7" class="modal-content modal-content7">
+                <span class="close close7">&times;</span>
+                <img src="image/Group 50.png" width="518px" height="414px" alt="">
+            </div>
+
+        </div>
+
+        <!--  -->
 
         <!-- Script modal !-->
         <script>
-            // Get the modal
-            var modal1 = document.getElementById("myModal1");
-            var modal2 = document.getElementById("myModal2");
-            var modal3 = document.getElementById("myModal3");
-            var modal4 = document.getElementById("myModal4");
-            var modal5 = document.getElementById("myModal5");
-            var modal6 = document.getElementById("myModal6");
-            var modal7 = document.getElementById("myModal7");
-            // Get the button that opens the modal
-            var btn1 = document.getElementById("myBtn1");
-            var btn2 = document.getElementById("myBtn2");
-            var btn3 = document.getElementById("myBtn3");
-            var btn4 = document.getElementById("myBtn4");
-            var btn5 = document.getElementById("myBtn5");
-            var btn6 = document.getElementById("myBtn6");
-            var btn7 = document.getElementById("myBtn7");
-            // Get the <span> element that closes the modal
-            var span1 = document.getElementsByClassName("close1")[0];
-            var span2 = document.getElementsByClassName("close2")[0];
-            var span3 = document.getElementsByClassName("close3")[0];
-            var span4 = document.getElementsByClassName("close4")[0];
-            var span5 = document.getElementsByClassName("close5")[0];
-            var span6 = document.getElementsByClassName("close6")[0];
-            var span7 = document.getElementsByClassName("close7")[0];
-            // When the user clicks the button, open the modal 
-            btn1.onmouseenter = function () {
-                modal1.style.display = "block";
-            }
-            btn2.onmouseenter = function () {
-                modal2.style.display = "block";
-            }
-            btn3.onmouseenter = function () {
-                modal3.style.display = "block";
-            }
-            btn4.onmouseenter = function () {
-                modal4.style.display = "block";
-            }
-            btn5.onmouseenter = function () {
-                modal5.style.display = "block";
-            }
-            btn6.onmouseenter = function () {
-                modal6.style.display = "block";
-            }
-            btn7.onmouseenter = function () {
-                modal7.style.display = "block";
-            }
-            // When the user clicks on <span> (x), close the modal
-            span1.onclick = function () {
-                modal1.style.display = "none";
-            }
-            span2.onclick = function () {
-                modal2.style.display = "none";
-            }
-            span3.onclick = function () {
-                modal3.style.display = "none";
-            }
-            span4.onclick = function () {
-                modal4.style.display = "none";
-            }
-            span5.onclick = function () {
-                modal5.style.display = "none";
-            }
-            span6.onclick = function () {
-                modal6.style.display = "none";
-            }
-            span7.onclick = function () {
-                modal7.style.display = "none";
-            }
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                modal1.style.display = "none";
-                modal2.style.display = "none";
-                modal3.style.display = "none";
-                modal4.style.display = "none";
-                modal5.style.display = "none";
-                modal6.style.display = "none";
-                modal7.style.display = "none";
-            }
+        // Get the modal
+        var modal1 = document.getElementById("myModal1");
+        var modal2 = document.getElementById("myModal2");
+        var modal3 = document.getElementById("myModal3");
+        var modal4 = document.getElementById("myModal4");
+        var modal5 = document.getElementById("myModal5");
+        var modal6 = document.getElementById("myModal6");
+        var modal7 = document.getElementById("myModal7");
+        // Get the button that opens the modal
+        var btn1 = document.getElementById("myBtn1");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+        var btn4 = document.getElementById("myBtn4");
+        var btn5 = document.getElementById("myBtn5");
+        var btn6 = document.getElementById("myBtn6");
+        var btn7 = document.getElementById("myBtn7");
+        // Get the <span> element that closes the modal
+        var span1 = document.getElementsByClassName("close1")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+        var span3 = document.getElementsByClassName("close3")[0];
+        var span4 = document.getElementsByClassName("close4")[0];
+        var span5 = document.getElementsByClassName("close5")[0];
+        var span6 = document.getElementsByClassName("close6")[0];
+        var span7 = document.getElementsByClassName("close7")[0];
+        // When the user clicks the button, open the modal 
+        btn1.onmouseenter = function() {
+            modal1.style.display = "block";
+        }
+        btn2.onmouseenter = function() {
+            modal2.style.display = "block";
+        }
+        btn3.onmouseenter = function() {
+            modal3.style.display = "block";
+        }
+        btn4.onmouseenter = function() {
+            modal4.style.display = "block";
+        }
+        btn5.onmouseenter = function() {
+            modal5.style.display = "block";
+        }
+        btn6.onmouseenter = function() {
+            modal6.style.display = "block";
+        }
+        btn7.onmouseenter = function() {
+            modal7.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span1.onclick = function() {
+            modal1.style.display = "none";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+        span3.onclick = function() {
+            modal3.style.display = "none";
+        }
+        span4.onclick = function() {
+            modal4.style.display = "none";
+        }
+        span5.onclick = function() {
+            modal5.style.display = "none";
+        }
+        span6.onclick = function() {
+            modal6.style.display = "none";
+        }
+        span7.onclick = function() {
+            modal7.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            modal1.style.display = "none";
+            modal2.style.display = "none";
+            modal3.style.display = "none";
+            modal4.style.display = "none";
+            modal5.style.display = "none";
+            modal6.style.display = "none";
+            modal7.style.display = "none";
+        }
         </script>
 
 
@@ -1247,6 +1255,7 @@
         <script src="javascript/animate_plugin/animate-css.js"></script>
         <script src="javascript/common.js"></script>
         <script src="javascript/live_search.js"></script>
+        <script src="javascript/scroll_block.js"></script>
     </div>
 </body>
 
