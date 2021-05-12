@@ -40,7 +40,12 @@ function login() {
         .then((userCredential) => {
             // Signed in
             var user = userCredential.user;
-            window.location.href = "index.php";
+            if (user.email != 'admin@gmail.com') {
+                window.location.href = "index.php";
+            } else {
+                window.location.href = "adminpg.php";
+            }
+            
         })
         .catch((error) => {
             var errorCode = error.code;
