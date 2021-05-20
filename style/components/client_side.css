@@ -341,7 +341,7 @@
 	font-weight: 500;
 	line-height: 24px;
 	letter-spacing: -0.02em;
-	/* color: rgba(0, 0, 0, 0.1); */
+	font-family: 'Montserrat',sans-serif;
 	color: #474f56;
 	background-color: transparent;
 	background-image: none;
@@ -478,7 +478,7 @@
  .slider {
 	position: relative;
 	overflow: hidden;
-	max-width: 1400px;
+	/* max-width: 1400px; */
 	margin-left: auto;
 	margin-right: auto;
   }
@@ -651,7 +651,7 @@
 
 .label_title_block{
 	display: flex;
-    justify-content: right;
+    /* justify-content: right; */
     margin: 0px 27px;
   }
   .toggle_block{

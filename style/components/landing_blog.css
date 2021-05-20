@@ -1,7 +1,7 @@
 .landing_blog {
 	height: 436px;
 	width: 100%;
-	max-width: 1400px;
+	/* max-width: 1400px; */
 	margin: auto;
 	background-color: #2D426D;
 }

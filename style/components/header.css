@@ -1,12 +1,12 @@
 .aboutUs_header {
 	width: auto;
 	background-color: #2D426D;
-	max-width: 1400px;
+	/* max-width: 1400px; */
 	margin: auto;
 }
 .index_header{
 	width: auto;
-	max-width: 1400px;
+	/* max-width: 1400px; */
 	margin: auto;
 }
 
@@ -239,7 +239,7 @@
   .rainbow {
 	  height: 2px;
 	  width: 100%;
-	  background-image: url(https://image.shutterstock.com/image-photo/rainbow-gradient-mesh-blur-background-260nw-493197505.jpg);
+	  /* background-image: url(https://image.shutterstock.com/image-photo/rainbow-gradient-mesh-blur-background-260nw-493197505.jpg); */
 	  background-repeat: no-repeat;
 	  background-size: 100%;
   }
@@ -424,4 +424,9 @@
   }
   .header_logo_svd:hover{
 	fill: #C4956A;
+  }
+  .auth_button_about{
+
+	margin: 10px;
+
   }

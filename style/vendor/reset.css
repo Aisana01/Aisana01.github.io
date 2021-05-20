@@ -89,8 +89,8 @@ div {
 }
 body {
     margin: 0 auto;
-    min-width: 1350px;
-    max-width: 1350px;
+    /* min-width: 1350px;
+    max-width: 1350px; */
 }
 fieldset {
     display: block;
