@@ -41,7 +41,7 @@ function login() {
             // Signed in
             var user = userCredential.user;
             if (user.email != 'admin@gmail.com') {
-                window.location.href = "index.html";
+                window.location.href = "AboutUs.html";
             } else {
                 window.location.href = "adminpg.html";
             }
