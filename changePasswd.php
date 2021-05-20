@@ -177,6 +177,7 @@
 
     </div>
     <script src="javascript/parallaxByID.js"></script>
+    <script src = "javascript/adaptive.js"></script>
     <script>
     $('.toggle-password').on('click', function() {
         $(this).toggleClass('fa-eye fa-eye-slash');
