@@ -108,3 +108,13 @@
 	font-size: 30px;
 	color: #464646;
 }
+.date_sidenav{
+	text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    border-bottom: 0.2px solid #2D426D;
+    width: 106px;
+    margin: 0 auto;
+	
+
+}

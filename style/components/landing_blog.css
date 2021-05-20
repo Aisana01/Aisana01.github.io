@@ -1,7 +1,7 @@
 .landing_blog {
 	height: 436px;
 	width: 100%;
-	max-width: 1400px;
+	/* max-width: 1400px; */
 	margin: auto;
 	background-color: #2D426D;
 }
@@ -10,6 +10,9 @@
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+}
+.landing_large_calc{
+	width: 50%;
 }
 .landing_pages {
 	height: 76px;
@@ -72,8 +75,8 @@
 }
 .transition_img{
 	position: absolute;
-    top: 30%;
-    left: 105%;
+    top: 39%;
+    left: 100%;
 	transform: translate3d(-50%, -50%, 0);
     
 
