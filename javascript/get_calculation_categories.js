@@ -47,6 +47,7 @@ var calcConverter = {
 };
 
 var categArray = []
+var state = 0
 
 var docRef = db.collection("calcCategories")
 docRef.withConverter(categConverter).get().then((querySnapshot) => {
@@ -73,9 +74,10 @@ docRef.withConverter(categConverter).get().then((querySnapshot) => {
         }
         li.addEventListener('click', function (e) {
             if (e.target.tagName === 'A') {
-                fillData(e.target.id, calc_types_ul); // Check if the element is a LI
+                fillData(e.target.id, calc_types_ul); // Check if the element is a A
             }
         });
+        state = 1
         var a = document.createElement('a');
         a.setAttribute("id", categArray[i].id);
         a.appendChild(document.createTextNode(categ_title));
@@ -88,7 +90,7 @@ var accessArray = [];
 
 function fillData(id, ul) {
     accessArray = []
-    if (ul.firstChild != null) {
+    if (state == 1) {
         while (ul.firstChild) {
             ul.removeChild(ul.firstChild);
         }
@@ -151,14 +153,17 @@ function save_access(){
             newAccessArray.push([checkbox.value, "free"])
         }
     }
-
+    console.log(accessArray)
+    console.log(newAccessArray)
     for (var i = 0; i < newAccessArray.length; i++){
         if (accessArray[i][1] != newAccessArray[i][1]){
+            console.log(accessArray[i])
             db.collection("calculations").doc(newAccessArray[i][0]).update({
                 access: newAccessArray[i][1]
             })
             .then(() => {
                 console.log("Document successfully updated!");
+                accessArray = newAccessArray
             })
             .catch((error) => {
                 // The document probably doesn't exist.
