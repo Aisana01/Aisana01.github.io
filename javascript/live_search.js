@@ -49,14 +49,14 @@ function choosePage(calc_data){
     var category = calc_data.split(" ")[0]
     var number = calc_data.split(" ")[1]
     var page_index = ""
-    if (category == "foundation") page_index = "index.php"
-    else if (category == "material") page_index = "index5.php"
-    else if (category == "wall") page_index = "index2.php"
-    else if (category == "lumber") page_index = "index3.php"
-    else if (category == "roof") page_index = "index6.php"
-    else if (category == "armature") page_index = "index7.php"
-    else if (category == "earthen") page_index = "index4.php"
-    else page_index = "index.php"
+    if (category == "foundation") page_index = "index.html"
+    else if (category == "material") page_index = "index5.html"
+    else if (category == "wall") page_index = "index2.html"
+    else if (category == "lumber") page_index = "index3.html"
+    else if (category == "roof") page_index = "index6.html"
+    else if (category == "armature") page_index = "index7.html"
+    else if (category == "earthen") page_index = "index4.html"
+    else page_index = "index.html"
 
     window.location.href = page_index + "#block" + number;
 }
