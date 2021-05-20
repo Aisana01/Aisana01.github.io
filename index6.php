@@ -43,7 +43,7 @@
                 <div class="top_header">
                     <div class="header_right">
                         <div class="logo">
-                            <a href="AboutUs.php" class="logo_link">iBuild</a>
+                            <a href="AboutUs.html" class="logo_link">iBuild</a>
                         </div>
                         <div class="dropdown_search">
                             <div class="search_field">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <a href="AboutUs.php" class="logo_link basket_link">Главная страница</a>
+                            <a href="AboutUs.html" class="logo_link basket_link">Главная страница</a>
                         </div>
                     </div>
                     <div class="header_left">
