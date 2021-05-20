@@ -127,5 +127,6 @@
 <script src="javascript/change_block.js"></script>
 <script src="javascript/animate_plugin/animate-css.js"></script>
 <script src="javascript/common.js"></script>
+<script src = "javascript/adaptive.js"></script>
 
 </html>
