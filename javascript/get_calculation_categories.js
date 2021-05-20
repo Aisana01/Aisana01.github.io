@@ -163,6 +163,7 @@ function save_access(){
             })
             .then(() => {
                 console.log("Document successfully updated!");
+                alert("Доступы успешно обновлены")
                 accessArray = newAccessArray
             })
             .catch((error) => {
