@@ -1,18 +1,10 @@
-<?php
-
-// include "config/db.php" ;
-// include "config/config.php" ;
-// session_start();
-// if(isset($_SESSION["user_id"])){
-// 	$id = $_SESSION["user_id"];
-// 	$query = $db->query("SELECT * FROM ibuild_users WHERE id=$id");
-
-// 	if($query->num_rows>0){
-// 		$user = $query->fetch_object();
-
-?>
-
 <!DOCTYPE html>
+<script>
+    var hash = window.location.hash.substr(1);
+    if (hash == "block2") {
+
+    }
+</script>
 <html>
 
 <head>
@@ -61,7 +53,7 @@
                     </div>
                     <div class="header_left">
                         <div class="icons" id="signedIn">
-                            <a href="profile.php" class="logo_icon">
+                            <a href="profile.html" class="logo_icon">
                                 <svg class="header_logo" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                     version="1.1" width="23" height="23" x="0" y="0" viewBox="0 0 460.8 460.8"
@@ -85,7 +77,7 @@
                                 </svg>
 
                             </a>
-                            <a href="Saved.php" class="logo_icon">
+                            <a href="Saved.html" class="logo_icon">
                                 <svg class="header_logo" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"
                                     version="1.1" width="23" height="23" x="0" y="0" viewBox="0 0 512 512"
@@ -134,22 +126,22 @@
                             </a>
                         </div>
                         <div class="auth_button_about" id="signedOut">
-                            <a href="Log.php" class="btn_SignIn">Войти</a>
+                            <a href="Log.html" class="btn_SignIn">Войти</a>
                         </div>
                     </div>
                 </div>
                 <div class="bottom_header">
                     <div class="bottom_header_in">
                         <div class="dropdown">
-                            <a href="index.php" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
+                            <a href="index.html" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
                             <div class="dropdown_content">
-                                <a href="index.php#block1">Расчет фундаментной плиты</a>
-                                <a href="index.php#block2">Расчет ленточного фундамента</a>
-                                <a href="index.php#block3">Расчет ленточного фундамента(2 секции)</a>
-                                <a href="index.php#block4">Расчет ленточного фундамента(3 секции)</a>
-                                <a href="index.php#block5">Расчет ленточного фундамента(4 секции)</a>
-                                <a href="index.php#block6">Расчет состава бетона</a>
-                                <a href="index.php#block7">Количество материала для бетонных колец</a>
+                                <a href="index.html#block1">Расчет фундаментной плиты</a>
+                                <a href="index.html#block2">Расчет ленточного фундамента</a>
+                                <a href="index.html#block3">Расчет ленточного фундамента(2 секции)</a>
+                                <a href="index.html#block4">Расчет ленточного фундамента(3 секции)</a>
+                                <a href="index.html#block5">Расчет ленточного фундамента(4 секции)</a>
+                                <a href="index.html#block6">Расчет состава бетона</a>
+                                <a href="index.html#block7">Количество материала для бетонных колец</a>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -164,52 +156,52 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <a href="index5.php" class="categories">Отделка</a>
+                            <a href="index5.html" class="categories">Отделка</a>
                             <div class="dropdown_content">
-                                <a href="index5.php#block16">Количество утеплителя для стен и фундаментов</a>
-                                <a href="index5.php#block17">Расчет настила из досок/перекрытий</a>
-                                <a href="index5.php#block18">Расчет количества плитки</a>
-                                <a href="index5.php#block19">Расчет напольного покрытия</a>
-                                <a href="index5.php#block20">Расчет количества вагонки на поверхность</a>
-                                <a href="index5.php#block21">Расход грунтовки</a>
-                                <a href="index5.php#block22">Расход краски</a>
-                                <a href="index5.php#block23">Расход штукатурки</a>
-                                <a href="index5.php#block24">Расход шпаклевки</a>
-                                <a href="index5.php#block25">Расход стяжки</a>
-                                <a href="index5.php#block26">Расход ровнителя/наливных полов</a>
-                                <a href="index5.php#block27">Расход плиточного клея</a>
-                                <a href="index5.php#block28">Расход обоев</a>
-                                <a href="index5.php#block29">Плинтус</a>
+                                <a href="index5.html#block16">Количество утеплителя для стен и фундаментов</a>
+                                <a href="index5.html#block17">Расчет настила из досок/перекрытий</a>
+                                <a href="index5.html#block18">Расчет количества плитки</a>
+                                <a href="index5.html#block19">Расчет напольного покрытия</a>
+                                <a href="index5.html#block20">Расчет количества вагонки на поверхность</a>
+                                <a href="index5.html#block21">Расход грунтовки</a>
+                                <a href="index5.html#block22">Расход краски</a>
+                                <a href="index5.html#block23">Расход штукатурки</a>
+                                <a href="index5.html#block24">Расход шпаклевки</a>
+                                <a href="index5.html#block25">Расход стяжки</a>
+                                <a href="index5.html#block26">Расход ровнителя/наливных полов</a>
+                                <a href="index5.html#block27">Расход плиточного клея</a>
+                                <a href="index5.html#block28">Расход обоев</a>
+                                <a href="index5.html#block29">Плинтус</a>
                             </div>
                         </div>
                         <div class="dropdown">
-                            <a href="index3.php" class="categories">Пиломатериалы</a>
+                            <a href="index3.html" class="categories">Пиломатериалы</a>
                             <div class="dropdown_content">
-                                <a href="index3.php#block11">Объем пиломатериалов по количеству</a>
-                                <a href="index3.php#block12">Количество пиломатериалов по объему</a>
+                                <a href="index3.html#block11">Объем пиломатериалов по количеству</a>
+                                <a href="index3.html#block12">Количество пиломатериалов по объему</a>
                             </div>
                         </div>
                         <div class="dropdown">
-                            <a href="index6.php" class="categories">Кровли</a>
+                            <a href="index6.html" class="categories">Кровли</a>
                             <div class="dropdown_content">
-                                <a href="index6.php#block30">Односкатная</a>
-                                <a href="index6.php#block31">Двускатная</a>
+                                <a href="index6.html#block30">Односкатная</a>
+                                <a href="index6.html#block31">Двускатная</a>
                             </div>
                         </div>
                         <div class="dropdown">
-                            <a href="index7.php" class="categories">Арматура</a>
+                            <a href="index7.html" class="categories">Арматура</a>
                             <div class="dropdown_content">
-                                <a href="index7.php#block32">Вес арматуры по количеству</a>
-                                <a href="index7.php#block33">Количество арматуры по весу</a>
-                                <a href="index7.php#block34">Арматура ГОСТ 5781-82</a>
+                                <a href="#block32" class="source source-1">Вес арматуры по количеству</a>
+                                <a href="#block33" class="source source-2">Количество арматуры по весу</a>
+                                <a href="#block34" class="source source-3">Арматура ГОСТ 5781-82</a>
                             </div>
                         </div>
                         <div class="dropdown">
-                            <a href="index4.php" class="categories">Земляные работы</a>
+                            <a href="index4.html" class="categories">Земляные работы</a>
                             <div class="dropdown_content">
-                                <a href="#block13" class="source source-1">Расчет подушки из сыпучих материалов</a>
-                                <a href="#block14" class="source source-2">Объем земленых работ(вертикальные стены)</a>
-                                <a href="#block15" class="source source-3">Объем земленых работ(уклон)</a>
+                                <a href="index4.html#block13">Расчет подушки из сыпучих материалов</a>
+                                <a href="index4.html#block14">Объем земленых работ(вертикальные стены)</a>
+                                <a href="index4.html#block15">Объем земленых работ(уклон)</a>
                             </div>
                         </div>
                     </div>
@@ -221,14 +213,14 @@
             <div class="landing_main_calc">
                 <div class="landing_large_form_calc">
 
-                    <div class="target target-1" id="block13">
+                    <div class="target target-1" id="block32">
                         <div class="landing_large_calc">
                             <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет
                                 материалов</h1>
                             <div class="expand_img">
                                 <h3
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
-                                    Подушка песка<div class="h3_border"></div>
+                                    Вес арматуры по количеству<div class="h3_border"></div>
                                 </h3>
                                 <!-- <div class="expand_img_svg">
                                 <img id="myBtn1" src="image/question-mark.svg" alt="">
@@ -238,51 +230,42 @@
                             <form class="landing_form_input_calc">
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Вид материала:</label>
+                                        <label class="input_label">Диаметр арматуры:</label>
                                         <select class="select_calc">
-                                            <option value="">Песок строительный</option>
-                                            <option value="">Песок речной</option>
-                                            <option value="">ПГС-песчано-гравийная смесь</option>
-                                            <option value="">Гравий</option>
-                                            <option value="">Керамзит</option>
-                                            <option value="">Щебень гранитный</option>
-                                            <option value="">Известь гашеная</option>
-                                            <option value="">Известь негашеная</option>
-                                            <option value="">Гипс</option>
-                                            <option value="">Цемент</option>
-                                            <option value="">Вермикулит вспученный</option>
+                                            <option value="">5,5мм</option>
+                                            <option value="">6мм</option>
+                                            <option value="">8мм</option>
+                                            <option value="">10мм</option>
+                                            <option value="">12мм</option>
+                                            <option value="">14мм</option>
+                                            <option value="">16мм</option>
+                                            <option value="">18мм</option>
+                                            <option value="">20мм</option>
+                                            <option value="">22мм</option>
+                                            <option value="">25мм</option>
+                                            <option value="">28мм</option>
+                                            <option value="">32мм</option>
+                                            <option value="">36мм</option>
+                                            <option value="">40мм</option>
+                                            <option value="">45мм</option>
+                                            <option value="">50мм</option>
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">В 1м3:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="кг"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Площадь засыпки:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м2"
+                                        <label class="input_label">Длина стержня:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Толщина слоя засыпки:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="мм"
+                                        <label class="input_label">Количество стержней:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="ед"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Коэффицент уплотнения:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder=""><span
-                                            class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Объем ведра:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="л"><span
-                                            class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Стоимость за м3:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="тг"><span
+                                        <label class="input_label">Стоимость за тонну:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тенге"><span
                                             class="form_validation"></span>
                                     </div>
                                 </fieldset>
@@ -291,13 +274,13 @@
                                 </button>
 
                             </form>
-
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
                                 <a class="result_calc_svg">
                                     <svg class="save_svg"
-                                        onclick="this.classList.toggle('active');openbox('box_modal13');"
+                                        onclick="this.classList.toggle('active');openbox('box_modal37');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0"
                                         y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
@@ -322,7 +305,7 @@
                                         </g>
                                     </svg>
                                 </a>
-                                <fieldset class="fields_modal" id="box_modal13" style="display: none;">
+                                <fieldset class="fields_modal" id="box_modal37" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
                                         <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
@@ -333,90 +316,93 @@
                             </div>
                             <div class="result_calc_words_main">
                                 <div class="result_calc_words_titles">
-                                    <p>Объем подушки:</p>
-                                    <p>Вес материала:</p>
-                                    <p>Объем материала с учетом тромбовки:</p>
-                                    <p>Вес материала в ведре:</p>
-                                    <p>Количество ведер:</p>
-                                    <p>Стоимость:</p>
+                                    <p>Длина всей арматуры:</p>
+                                    <p>Вес стержня:</p>
+                                    <p>Вес всей арматуры:</p>
+                                    <p>Метров в тонне:</p>
+                                    <p>Стоимость стержня:</p>
+                                    <p>Стоимость всей арматуры:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> м</p>
                                     <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> м3</p>
                                     <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> шт</p>
-                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> м</p>
+                                    <p><output id=""></output> тенге</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--2block!-->
-                    <div class="target target-2" id="block14">
+                    <div class="target target-2" id="block33">
                         <div class="landing_large_calc">
-
                             <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет
                                 материалов</h1>
-
-
                             <div class="expand_img">
                                 <h3
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
-                                    Объём котлована (вертикаль)<div class="h3_border"></div>
+                                    Количество арматуры по весу<div class="h3_border"></div>
                                 </h3>
-                                <div class="expand_img_svg">
-                                    <img id="myBtn2" src="image/question-mark.svg" alt="">
-                                </div>
+                                <!-- <div class="expand_img_svg">
+                                <img id="myBtn1" src="image/question-mark.svg" alt="">
+                            </div> -->
                             </div>
-
 
                             <form class="landing_form_input_calc">
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[H]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                        <label class="input_label">Диаметр арматуры:</label>
+                                        <select class="select_calc">
+                                            <option value="">5,5мм</option>
+                                            <option value="">6мм</option>
+                                            <option value="">8мм</option>
+                                            <option value="">10мм</option>
+                                            <option value="">12мм</option>
+                                            <option value="">14мм</option>
+                                            <option value="">16мм</option>
+                                            <option value="">18мм</option>
+                                            <option value="">20мм</option>
+                                            <option value="">22мм</option>
+                                            <option value="">25мм</option>
+                                            <option value="">28мм</option>
+                                            <option value="">32мм</option>
+                                            <option value="">36мм</option>
+                                            <option value="">40мм</option>
+                                            <option value="">45мм</option>
+                                            <option value="">50мм</option>
+                                        </select>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[L]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[a]:</label>
+                                        <label class="input_label">Длина стержня:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Плотность грунта:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м3"
+                                        <label class="input_label">Вес всей арматуры:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="кг"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Раскопка(за м3):</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Вывоз грунта(за м3):</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
+                                        <label class="input_label">Стоимость за тонну:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тенге"><span
+                                            class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
-
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                </button>
 
                             </form>
-
+                            
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
                                 <a class="result_calc_svg">
                                     <svg class="save_svg"
-                                        onclick="this.classList.toggle('active');openbox('box_modal14');"
+                                        onclick="this.classList.toggle('active');openbox('box_modal38');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0"
                                         y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
@@ -441,7 +427,7 @@
                                         </g>
                                     </svg>
                                 </a>
-                                <fieldset class="fields_modal" id="box_modal14" style="display: none;">
+                                <fieldset class="fields_modal" id="box_modal38" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
                                         <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
@@ -452,94 +438,94 @@
                             </div>
                             <div class="result_calc_words_main">
                                 <div class="result_calc_words_titles">
-                                    <p>Объем котлована:</p>
-                                    <p>Вес грунта:</p>
-                                    <p>Раскопка:</p>
-                                    <p>Вывоз грунта:</p>
-                                    <p>Общие затраты:</p>
+                                    <p>Длина всей арматуры:</p>
+                                    <p>Количество стержней:</p>
+                                    <p>Метров в тонне:</p>
+                                    <p>Стоимость стержня:</p>
+                                    <p>Стоимость всей арматуры:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м3</p>
-                                    <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> м</p>
+                                    <p><output id=""></output> ед</p>
+                                    <p><output id=""></output> м</p>
+                                    <p><output id=""></output> тенге</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--3block!-->
-                    <div class="target target-3" id="block15">
+                    <div class="target target-3" id="block34">
                         <div class="landing_large_calc">
-
                             <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет
                                 материалов</h1>
-
-
                             <div class="expand_img">
                                 <h3
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
-                                    Объём котлована (уклон)<div class="h3_border"></div>
+                                    Арматура ГОСТ 5781-82<div class="h3_border"></div>
                                 </h3>
-                                <div class="expand_img_svg">
-                                    <img id="myBtn3" src="image/question-mark.svg" alt="">
-                                </div>
+                                <!-- <div class="expand_img_svg">
+                                <img id="myBtn1" src="image/question-mark.svg" alt="">
+                            </div> -->
                             </div>
-
 
                             <form class="landing_form_input_calc">
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[H]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                        <label class="input_label">Диаметр арматуры:</label>
+                                        <select class="select_calc">
+                                            <option value="">6мм</option>
+                                            <option value="">8мм</option>
+                                            <option value="">10мм</option>
+                                            <option value="">12мм</option>
+                                            <option value="">14мм</option>
+                                            <option value="">16мм</option>
+                                            <option value="">18мм</option>
+                                            <option value="">20мм</option>
+                                            <option value="">22мм</option>
+                                            <option value="">25мм</option>
+                                            <option value="">28мм</option>
+                                            <option value="">32мм</option>
+                                            <option value="">36мм</option>
+                                            <option value="">40мм</option>
+                                            <option value="">45мм</option>
+                                            <option value="">50мм</option>
+                                            <option value="">55мм</option>
+                                            <option value="">60мм</option>
+                                            <option value="">70мм</option>
+                                            <option value="">80мм</option>
+                                        </select>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[L]:</label>
+                                        <label class="input_label">Длина стержня:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[a]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м"
+                                        <label class="input_label">Количество стержней:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="ед"
                                             id=""><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
-                                        <label class="input_label">Размер[a1]:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                        <label class="input_label">Стоимость за тонну:</label>
+                                        <input class="form_control_calc" type="number" name="" placeholder="тенге"><span
+                                            class="form_validation"></span>
                                     </div>
+                                </fieldset>
 
-                                </fieldset>
-                                <fieldset class="fields">
-                                <div class="form_wrap_calc">
-                                        <label class="input_label">Плотность грунта:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="кг/м3"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
-                                <div class="form_wrap_calc">
-                                        <label class="input_label">Раскопка(за м3):</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
-                                    <div class="form_wrap_calc">
-                                        <label class="input_label">Вывоз грунта(за м3):</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
-                                    </div>
-                                </fieldset>
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                </button>
 
                             </form>
-
+                       
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
                                 <a class="result_calc_svg">
                                     <svg class="save_svg"
-                                        onclick="this.classList.toggle('active');openbox('box_modal15');"
+                                        onclick="this.classList.toggle('active');openbox('box_modal39');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="20" height="20" x="0"
                                         y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512"
@@ -564,7 +550,7 @@
                                         </g>
                                     </svg>
                                 </a>
-                                <fieldset class="fields_modal" id="box_modal15" style="display: none;">
+                                <fieldset class="fields_modal" id="box_modal39" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
                                         <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
@@ -575,18 +561,20 @@
                             </div>
                             <div class="result_calc_words_main">
                                 <div class="result_calc_words_titles">
-                                    <p>Объем котлована:</p>
-                                    <p>Вес грунта:</p>
-                                    <p>Раскопка:</p>
-                                    <p>Вывоз грунта:</p>
-                                    <p>Общие затраты:</p>
+                                    <p>Длина всей арматуры:</p>
+                                    <p>Вес стержня:</p>
+                                    <p>Вес всей арматуры:</p>
+                                    <p>Метров в тонне:</p>
+                                    <p>Стоимость стержня:</p>
+                                    <p>Стоимость всей арматуры:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м3</p>
+                                    <p><output id=""></output> м</p>
                                     <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
+                                    <p><output id=""></output> кг</p>
+                                    <p><output id=""></output> м</p>
+                                    <p><output id=""></output> тенге</p>
+                                    <p><output id=""></output> тенге</p>
                                 </div>
                             </div>
                         </div>
@@ -636,79 +624,6 @@
 
         </section>
 
-        <!--  -->
-        <div id="myModal1" class="modal modal1">
-
-            <!-- Modal content -->
-            <div id = "m_block1" class="modal-content modal-content1">
-                <span class="close close1">&times;</span>
-                <img src="image/fp.jpg" alt="">
-            </div>
-
-        </div>
-        <div id="myModal2" class="modal modal2">
-
-            <!-- Modal content -->
-            <div id = "m_block2" class="modal-content modal-content2">
-                <span class="close close2">&times;</span>
-                <img src="image/Group 56.png" alt="" width="500px" height="440px">
-            </div>
-
-        </div>
-        <div id="myModal3" class="modal modal3">
-
-            <!-- Modal content -->
-            <div id = "m_block3" class="modal-content modal-content3">
-                <span class="close close3">&times;</span>
-                <img src="image/Group 57.png" alt="" width="500px" height="440px">
-            </div>
-
-        </div>
-
-        <!--  -->
-
-        <!-- Script modal !-->
-        <script>
-        // Get the modal
-        var modal2 = document.getElementById("myModal2");
-        var modal3 = document.getElementById("myModal3");
-
-
-        var btn2 = document.getElementById("myBtn2");
-        var btn3 = document.getElementById("myBtn3");
-
-        // Get the <span> element that closes the modal
-        var span2 = document.getElementsByClassName("close2")[0];
-        var span3 = document.getElementsByClassName("close3")[0];
-
-
-        btn2.onmouseenter = function() {
-            modal2.style.display = "block";
-        }
-        btn3.onmouseenter = function() {
-            modal3.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-
-        span2.onclick = function() {
-            modal2.style.display = "none";
-        }
-        span3.onclick = function() {
-            modal3.style.display = "none";
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-                if (event.target == modal2 || event.target == modal3) {
-
-                    modal2.style.display = "none";
-                    modal3.style.display = "none";
-
-                }
-            }
-        }
-        </script>
-
     </div>
 </body>
 <script src="javascript/open_box.js"> </script>
@@ -716,16 +631,5 @@
 <script src="javascript/animate_plugin/animate-css.js"></script>
 <script src="javascript/common.js"></script>
 <script src="javascript/live_search.js"></script>
-<script src="javascript/scroll_block.js"></script>
 
 </html>
-
-<?php
-// } else {
-// 	header("Location:$base_url/Log.php?error=4");
-// } 
-
-// }else{
-// 	header("Location:$base_url/Log.php?error=5");
-// }
-?>
