@@ -112,7 +112,7 @@ function fillData(id){
 
 function fillDataInner(saveRequest, saveResponse, saveCode){
     if(saveCode == 'fundamentFirst') {
-        chooseBlock('index.php #block1', function() {
+        chooseBlock('index.html #block1', function() {
         
             document.getElementById('aa').value = saveRequest.a_length
             document.getElementById('ab').value = saveRequest.b_length
@@ -128,7 +128,7 @@ function fillDataInner(saveRequest, saveResponse, saveCode){
             document.getElementById('ares_g').innerHTML = saveResponse.total_cost
         })
     } else if(saveCode == 'fundamentSecond') {
-        chooseBlock('index.php #block2', function() {
+        chooseBlock('index.html #block2', function() {
         
             document.getElementById('ba').value = saveRequest.a_length
             document.getElementById('bb').value = saveRequest.b_length

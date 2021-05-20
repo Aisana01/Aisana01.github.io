@@ -5,7 +5,7 @@ function getBlog(){
 
 	$.ajax({
 		method:"Get",
-		url:"api/blog/get.php"
+		url:"api/blog/get.Saved.html"
 	}).done(function(data){
 		data = JSON.parse(data);
 		showBlogs(data);
@@ -41,7 +41,7 @@ var imgInp = $("#img");
 
 	$.ajax ({ 
 method:"POST", 
-url: "api/blog/save.php", 
+url: "api/blog/save.Saved.html", 
 data: fm,
 processData: false,
 contentType: false 
@@ -59,7 +59,7 @@ function findBlogs(){
 	var search = $("#search").val();
 	$.ajax({
 		method:"GET",
-		url: "api/blog/search.php?key=" + search 
+		url: "api/blog/search.Saved.html?key=" + search 
 
 	}).done(function(data){
 data = JSON.parse(data) ;

@@ -13,7 +13,7 @@ function changePassword() {
 
                         user.updatePassword(newPass1).then(function () {
                             alert("Пароль обновлен успешно!")
-                            window.location.href = "profile.php";
+                            window.location.href = "profile.html";
                         }).catch(function (error) {
                             alert(error)
                         });
