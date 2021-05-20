@@ -43,7 +43,7 @@
                 <div class="top_header">
                     <div class="header_right">
                         <div class="logo">
-                            <a href="AboutUs.php" class="logo_link">iBuild</a>
+                            <a href="AboutUs.html" class="logo_link">iBuild</a>
                         </div>
                         <div class="dropdown_search">
                             <div class="search_field">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <a href="AboutUs.php" class="logo_link basket_link">Главная страница</a>
+                            <a href="AboutUs.html" class="logo_link basket_link">Главная страница</a>
                         </div>
                     </div>
                     <div class="header_left">
@@ -153,14 +153,14 @@
                             </div>
                         </div>
                         <div class="dropdown">
-                            <a href="index2.php" class="categories">Стены</a>
+                            <a href="index2.html" class="categories">Стены</a>
                             <div class="dropdown_content">
-                                <a href="index2.php#block8">Расчет кирпичных стен</a>
-                                <a href="index2.php#block9">Расчет стен из блоков</a>
-                                <!-- <a href="index2.php#block3">Расчет стен из блоков по своим размерам</a> -->
-                                <a href="index2.php#block10">Объем блоков/кирпича в м3</a>
-                                <a href="index2.php#block35">Расчет стен из блоков по своим размерам</a>
-                                <a href="index2.php#block36">Параметры стеновых блоков</a>
+                                <a href="index2.html#block8">Расчет кирпичных стен</a>
+                                <a href="index2.html#block9">Расчет стен из блоков</a>
+                                <!-- <a href="index2.html#block3">Расчет стен из блоков по своим размерам</a> -->
+                                <a href="index2.html#block10">Объем блоков/кирпича в м3</a>
+                                <a href="index2.html#block35">Расчет стен из блоков по своим размерам</a>
+                                <a href="index2.html#block36">Параметры стеновых блоков</a>
                             </div>
                         </div>
                         <div class="dropdown">
