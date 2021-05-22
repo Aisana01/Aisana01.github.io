@@ -4,8 +4,7 @@ $(document).ready(function($) {
             width:$(window).innerWidth(),
             backgroundSize: $(window).innerWidth(),
         });
-        console.log($(window).innerWidth());
-        
+    
         $(".slider").css({
             maxWidth: $(window).innerWidth()
         });

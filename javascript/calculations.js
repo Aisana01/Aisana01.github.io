@@ -26,13 +26,14 @@ function Calculate(id) {
     var html = document.getElementsByTagName("html")[0];
     html.insertBefore(backDiv, html.lastChild)
     html.insertBefore(gifDiv, html.lastChild)
-
+  var heightL =   $(window).innerWidth().toString() + "px";
+  
     backDiv.setAttribute("id", "loading_back");
     backDiv.style.background = "rgb(255, 255, 255, 0.6)"
     backDiv.style.position = "absolute"
     backDiv.style.top = "0"
     backDiv.style.left = "0"
-    backDiv.style.height = "100%";
+    backDiv.style.height = heightL;
     backDiv.style.width = "100%";
     backDiv.style.zIndex = "9999999";
 
