@@ -8,7 +8,6 @@ var cache_width = $('#apend').width();
                 var doc = new jsPDF({ unit: 'px', format: 'a3' });
                 doc.addImage(img, 'JPEG', 20, 20);
                 doc.save('Result.pdf');
-    
             }
         });
     }); 
