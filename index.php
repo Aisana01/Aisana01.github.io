@@ -132,13 +132,34 @@
                         <div class="dropdown">
                             <a href="index.php" class="categories" onclick="return theFunction();">Фундамент и бетон</a>
                             <div class="dropdown_content">
-                                <a href="#block1" class="source source-1">Расчет фундаментной плиты</a>
-                                <a href="#block2" class="source source-2">Расчет ленточного фундамента</a>
-                                <a href="#block3" class="source source-3">Расчет ленточного фундамента(2 секции)</a>
-                                <a href="#block4" class="source source-4">Расчет ленточного фундамента(3 секции)</a>
-                                <a href="#block5" class="source source-5">Расчет ленточного фундамента(4 секции)</a>
-                                <a href="#block6" class="source source-6">Расчет состава бетона</a>
-                                <a href="#block7" class="source source-7">Количество материала для бетонных колец</a>
+                                <div class="categ_block">
+                                    <a href="#block1" class="source source-1">Расчет фундаментной плиты <span class="premium">Premium</span></a>
+                                    
+                                </div>
+                                <div class="categ_block">
+                                    <a href="#block2" class="source source-2">Расчет ленточного фундамента <span class="premium"></a>
+                                    
+                                </div>
+                                <div class="categ_block">
+                                    <a href="#block3" class="source source-3">Расчет ленточного фундамента(2 секции)<span class="premium"></a>
+                                    
+                                </div>
+                                <div class="categ_block">
+                                    <a href="#block4" class="source source-4">Расчет ленточного фундамента(3 секции) <span class="premium"></a>
+                                    
+                                </div>
+                                <div class="categ_block">
+                                    <a href="#block5" class="source source-5">Расчет ленточного фундамента(4 секции) <span class="premium"></a>
+                                  
+                                </div>
+                                <div class="categ_block">
+                                    <a href="#block6" class="source source-6">Расчет состава бетона <span class="premium"></a>
+                                   
+                                </div>
+                                <div class="categ_block">
+                                    <a href="#block7" class="source source-7">Количество материала для бетонных колец <span class="premium"></a>
+                                      
+                                </div>
                             </div>
                         </div>
                         <div class="dropdown">
@@ -994,7 +1015,7 @@
                         </div>
                         <div class="result_calc_words">
                             <div class="result_calc_title">
-                                <a class="result_calc_svg" >
+                                <a class="result_calc_svg">
                                     <svg class="save_svg"
                                         onclick="this.classList.toggle('active');openbox('box_modal7');"
                                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1103,7 +1124,7 @@
         <div id="myModal1" class="modal modal1">
 
             <!-- Modal content -->
-            <div id = "m_block1" class="modal-content modal-content1">
+            <div id="m_block1" class="modal-content modal-content1">
                 <span class="close close1">&times;</span>
                 <img src="image/fp.jpg" alt="">
             </div>
@@ -1112,7 +1133,7 @@
         <div id="myModal2" class="modal modal2">
 
             <!-- Modal content -->
-            <div id = "m_block2"  class="modal-content modal-content2">
+            <div id="m_block2" class="modal-content modal-content2">
                 <span class="close close2">&times;</span>
                 <img src="image/1s.jpg" alt="">
             </div>
@@ -1121,7 +1142,7 @@
         <div id="myModal3" class="modal modal3">
 
             <!-- Modal content -->
-            <div id = "m_block3"  class="modal-content modal-content3">
+            <div id="m_block3" class="modal-content modal-content3">
                 <span class="close close3">&times;</span>
                 <img src="image/2s.jpg" alt="">
             </div>
@@ -1130,7 +1151,7 @@
         <div id="myModal4" class="modal modal4">
 
             <!-- Modal content -->
-            <div id = "m_block4" class="modal-content modal-content4">
+            <div id="m_block4" class="modal-content modal-content4">
                 <span class="close close4">&times;</span>
                 <img src="image/3s.jpg" alt="">
             </div>
@@ -1139,7 +1160,7 @@
         <div id="myModal5" class="modal modal5">
 
             <!-- Modal content -->
-            <div id = "m_block5" class="modal-content modal-content5">
+            <div id="m_block5" class="modal-content modal-content5">
                 <span class="close close5">&times;</span>
                 <img src="image/4s.jpg" alt="">
             </div>
@@ -1148,7 +1169,7 @@
         <div id="myModal6" class="modal modal6">
 
             <!-- Modal content -->
-            <div id = "m_block6" class="modal-content modal-content6">
+            <div id="m_block6" class="modal-content modal-content6">
                 <span class="close close6">&times;</span>
                 <img src="image/бетон.jpg" alt="" width="510px" height="510px">
             </div>
@@ -1157,7 +1178,7 @@
         <div id="myModal7" class="modal modal7">
 
             <!-- Modal content -->
-            <div id = "m_block7" class="modal-content modal-content7">
+            <div id="m_block7" class="modal-content modal-content7">
                 <span class="close close7">&times;</span>
                 <img src="image/Group 50.png" width="518px" height="414px" alt="">
             </div>
