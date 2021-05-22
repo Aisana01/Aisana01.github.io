@@ -20,7 +20,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             signedOut.style.display = "none";
         }
 
-        console.log("User signed in: " + user.uid)
+        console.log("User signed in: " + user.uid + "~")
         localStorage.setItem("userID", user.uid);
     } else {
         var signedIn = document.getElementById("signedIn");
