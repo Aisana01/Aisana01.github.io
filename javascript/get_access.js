@@ -35,6 +35,7 @@ db.collection("calculations").where("access", "==", "free").withConverter(calcCo
         divTitle = divs[i].innerText.replace("\n", "").replace("Premium", "").replace(/\s+/g, ' ').trim()
         if (calculationsArray.includes(divTitle)){
             divs[i].removeChild(divs[i].lastElementChild)
+            divs[i].lastElementChild.style.padding = "16px";
         }
     }
 })
@@ -42,5 +43,6 @@ db.collection("calculations").where("access", "==", "free").withConverter(calcCo
 $(document).on("click", ".sub", function () {
     if (this.querySelector(".premium") != null){
         // ЗДЕСЬ БУДЕТ МОДОЛЬНОЕ ОКНО
+        
     }
 });

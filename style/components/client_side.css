@@ -513,7 +513,7 @@
 	right: 0;
 	bottom: 10px;
 	left: 0;
-	z-index: 15;
+	/* z-index: 15; */
 	display: flex;
 	justify-content: center;
 	padding-left: 0;
