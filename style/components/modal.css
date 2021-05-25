@@ -24,4 +24,141 @@
     
   }
 
+  /* Модальный (фон) */
+.ModalPremium {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  padding-top: 100px; /* Расположение коробки */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+  background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
+}
+
+/* Модальное содержание */
+.ModalPremium-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Добавить анимацию */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* Кнопка закрытия */
+.close_Premium {
+  color: #f5f5f5;
+  float: right;
+  font-size: 40px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.close_Premium:hover,
+.close_Premium:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ModalPremium-header {
+  padding: 2px 16px;
+  background-color: #FFF;
+  color: #4AD295;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ModalPremium-body {padding: 2px 16px;}
+
+.ModalPremium-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+.ModalPremium-body{
+  display: flex;
+  padding: 50px;
+  z-index: 9999;
+}
+.img_premium{
+  text-align: center;
+  width: 50%;
+  padding: 20px 0;
+  margin-right: 25px;
+}
+.img_premium img{
+  width: 400px;
+  height: 300px;
+  margin: 20px 0;
+}
+.content_premium{
+  display: block;
+  width: 50%;
+}
+.fieldset_pr{
+  margin: 0 0 10px;
+  padding: 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgb(134 159 178 / 60%);
+  background-color: #fff;
+  color: #5F7D95;
+  font-size: 15px;
+}
+ .fieldset_pr label {
+  display: flex;
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: 1px solid #E3E9ED;
+ }
+ .field{
+  display: block;
+  width: 100%;
+  height: 24px;
+  border: 1px solid #fff;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+ }
+ .fieldset_pr label>span {
+  min-width: 150px;
+  max-width: 150px;
+  margin: 0 20px 0 0;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+.Cost_premium{
+  display: flex;
+  justify-content: flex-end;
+}
+.Cost_premium p {
+  margin: 0 20px;
   
+}
+.font_payment{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+    color: #0e2a47;
+    /* margin: 0; */
+    margin-bottom: 20px;
+}

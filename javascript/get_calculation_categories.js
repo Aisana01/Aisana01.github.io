@@ -158,6 +158,8 @@ function save_access(){
     for (var i = 0; i < newAccessArray.length; i++){
         if (accessArray[i][1] != newAccessArray[i][1]){
             console.log(accessArray[i])
+            console.log(accessArray[i][0])
+
             db.collection("calculations").doc(newAccessArray[i][0]).update({
                 access: newAccessArray[i][1]
             })
