@@ -9,6 +9,7 @@ function main() {
     var sources = getElements(SOURCE_CLASS_NAME)
     sources.forEach(function(sourceNode) {
         var sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME)
+    //    console.log(sourceNode);
         sourceNode.addEventListener('click', function() {
             showTarget(targets, sourceNodeId)
         })
