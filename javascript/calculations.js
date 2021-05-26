@@ -72,17 +72,63 @@ function matchSend(calcId, xhr) {
             "a_length": ${a},
             "b_length": ${b},
             "c_length": ${c},
-            "d_length": ${d}
+            "d_length": ${d},
             "cost": ${e}
         }`;
     } else if (calcId == 'foundation/strip-two') {
+        var a = parseFloat(document.getElementById('ca').value)
+        var b = parseFloat(document.getElementById('cb').value)
+        var c = parseFloat(document.getElementById('cc').value)
+        var d = parseFloat(document.getElementById('cd').value)
+        var e = parseFloat(document.getElementById('ce').value)
 
+        myBody = `{
+            "a_length": ${a},
+            "b_length": ${b},
+            "c_length": ${c},
+            "d_length": ${d},
+            "cost": ${e}
+        }`;
     } else if (calcId == 'foundation/strip-three') {
+        var a = parseFloat(document.getElementById('da').value)
+        var b = parseFloat(document.getElementById('db').value)
+        var c = parseFloat(document.getElementById('dc').value)
+        var d = parseFloat(document.getElementById('dd').value)
+        var e = parseFloat(document.getElementById('de').value)
+        var f = parseFloat(document.getElementById('df').value)
 
+        myBody = `{
+            "a_length": ${a},
+            "b_length": ${b},
+            "c_length": ${c},
+            "d_length": ${d},
+            "e_length": ${e},
+            "cost": ${f}
+        }`;
     } else if (calcId == 'foundation/strip-four') {
+        var a = parseFloat(document.getElementById('ea').value)
+        var b = parseFloat(document.getElementById('eb').value)
+        var c = parseFloat(document.getElementById('ec').value)
+        var d = parseFloat(document.getElementById('ed').value)
+        var e = parseFloat(document.getElementById('ee').value)
 
+        myBody = `{
+            "a_length": ${a},
+            "b_length": ${b},
+            "c_length": ${c},
+            "d_length": ${d},
+            "cost": ${e}
+        }`;
     } else if (calcId == 'foundation/concrete-ring') {
+        var a = parseFloat(document.getElementById('ga').value)
+        var b = parseFloat(document.getElementById('gb').value)
+        var c = parseFloat(document.getElementById('gc').value)
 
+        myBody = `{
+            "diameter": ${a},
+            "height": ${b},
+            "thickness": ${c}
+        }`;
     } else if (calcId == 'material/insulation') {
 
     } else if (calcId == 'material/decking') {
@@ -132,13 +178,37 @@ function matchData(calcId, data) {
         document.getElementById('bres_f').innerHTML = data.soil_load
         document.getElementById('bres_g').innerHTML = data.total_cost
     } else if (calcId == 'foundation/strip-two') {
-
+        document.getElementById('cres_a').innerHTML = data.basement_area
+        document.getElementById('cres_b').innerHTML = data.outer_side_area
+        document.getElementById('cres_c').innerHTML = data.concrete_volume
+        document.getElementById('cres_d').innerHTML = data.outer_perimeter
+        document.getElementById('cres_e').innerHTML = data.weight
+        document.getElementById('cres_f').innerHTML = data.soil_load
+        document.getElementById('cres_g').innerHTML = data.total_cost
     } else if (calcId == 'foundation/strip-three') {
-
+        document.getElementById('dres_a').innerHTML = data.basement_area
+        document.getElementById('dres_b').innerHTML = data.outer_side_area
+        document.getElementById('dres_c').innerHTML = data.concrete_volume
+        document.getElementById('dres_d').innerHTML = data.outer_perimeter
+        document.getElementById('dres_e').innerHTML = data.weight
+        document.getElementById('dres_f').innerHTML = data.soil_load
+        document.getElementById('dres_g').innerHTML = data.total_cost
     } else if (calcId == 'foundation/strip-four') {
-
+        document.getElementById('eres_a').innerHTML = data.basement_area
+        document.getElementById('eres_b').innerHTML = data.outer_side_area
+        document.getElementById('eres_c').innerHTML = data.concrete_volume
+        document.getElementById('eres_d').innerHTML = data.outer_perimeter
+        document.getElementById('eres_e').innerHTML = data.weight
+        document.getElementById('eres_f').innerHTML = data.soil_load
+        document.getElementById('eres_g').innerHTML = data.total_cost
     } else if (calcId == 'foundation/concrete-ring') {
-
+        document.getElementById('gres_a').innerHTML = data.concrete_volume
+        document.getElementById('gres_b').innerHTML = data.inner_diameter
+        document.getElementById('gres_c').innerHTML = data.inner_volume
+        document.getElementById('gres_d').innerHTML = data.mesh_height
+        document.getElementById('gres_e').innerHTML = data.mesh_width
+        document.getElementById('gres_f').innerHTML = data.mesh_area
+        document.getElementById('gres_g').innerHTML = data.weight
     } else if (calcId == 'material/insulation') {
 
     } else if (calcId == 'material/decking') {
