@@ -98,10 +98,10 @@
 }
 .ModalPremium-body{
   /* display: flex; */
-  padding: 50px 10px 10px;
+  padding: 50px 0 0;
   z-index: 9999;
   text-align: -webkit-center;
-  background-color: #2D426D;
+  background-color: #fff;
 }
 .title_premium{
   text-align: center;
@@ -109,7 +109,13 @@
   padding: 20px 0;
   margin-right: 25px; */
 }
-
+.img_premium img{
+  width: 200px;
+}
+.img_premium{
+  text-align: center;
+  padding: 20px;
+}
 .title_premium img{
   width: 200px;
   height: auto;
@@ -137,34 +143,41 @@
  }
  .field{
   display: block;
-  width: 100%;
+  /* width: 42%; */
+  margin: 0 15px;
   height: 24px;
   border: 1px solid #fff;
   outline: none;
   font-family: 'Montserrat', sans-serif;
- }
+}
+
  .fieldset_pr label>span {
-  min-width: 150px;
-  max-width: 150px;
-  margin: 0 20px 0 0;
-  text-align: right;
-  font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+     /* min-width: 150px; */
+     width: 90%;
+     /* margin: 0 20px 0 0; */
+     text-align: left;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1em;
 }
 .Cost_premium{
   display: flex;
   justify-content: flex-end;
 }
 .Cost_premium p {
-  margin: 0 20px;
+  margin: 20px;
   
 }
 .font_payment{
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-    color: #fff;
-    /* margin: 0; */
-    margin-bottom: 20px;
+  font-size: 15px;
+  /* color: #fff; */
+  width: 80%;
+  margin: 0px auto;
+  font-weight: 700;
+  display: flex;
+  margin-bottom: 36px;
+  line-height: 2em;
+  padding-left: 27px;
 }
 
 .content_adv_pr {
