@@ -103,3 +103,6 @@ fieldset {
     min-inline-size: min-content;
  
 }
+html{
+    margin: 0 auto;
+}

@@ -1,21 +1,5 @@
 @media (max-width: 1600px){
-	
-    .slider {
-        max-width: 1590px;
-      }
-    
-      .wrapper{
-          /*  */
-        width:100%;
-        max-width: 1590px;
-        min-width: 1590px;
-      }
-     .background_profile img{
-         width: 1600px;
-     }
-     .landing_contaner {
-        max-width: 1075px;
-    }
+
     .main_section {
         max-width: 65%;
         margin: 0 auto;
