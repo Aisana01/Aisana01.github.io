@@ -46,7 +46,7 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 60%;
+  width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -97,23 +97,34 @@
   color: white;
 }
 .ModalPremium-body{
-  display: flex;
-  padding: 50px;
+  /* display: flex; */
+  padding: 50px 0 0;
   z-index: 9999;
+  text-align: -webkit-center;
+  background-color: #fff;
+}
+.title_premium{
+  text-align: center;
+  /* width: 50%;
+  padding: 20px 0;
+  margin-right: 25px; */
+}
+.img_premium img{
+  width: 200px;
 }
 .img_premium{
   text-align: center;
-  width: 50%;
-  padding: 20px 0;
+  padding: 20px;
 }
-.img_premium img{
-  width: 300px;
-  height: 300px;
-  
+.title_premium img{
+  width: 200px;
+  height: auto;
+  /* margin: 20px 0; */
 }
 .content_premium{
   display: block;
-  width: 50%;
+  width: 100%;
+  background-color: #fff;
 }
 .fieldset_pr{
   margin: 0 0 10px;
@@ -132,32 +143,61 @@
  }
  .field{
   display: block;
-  width: 100%;
+  /* width: 42%; */
+  margin: 0 15px;
   height: 24px;
   border: 1px solid #fff;
   outline: none;
   font-family: 'Montserrat', sans-serif;
- }
+}
+
  .fieldset_pr label>span {
-  min-width: 150px;
-  max-width: 150px;
-  margin: 0 20px 0 0;
-  text-align: right;
-  font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+     /* min-width: 150px; */
+     width: 90%;
+     /* margin: 0 20px 0 0; */
+     text-align: left;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1em;
 }
 .Cost_premium{
   display: flex;
   justify-content: flex-end;
 }
 .Cost_premium p {
-  margin: 0 20px;
+  margin: 20px;
   
 }
 .font_payment{
   font-family: 'Montserrat', sans-serif;
-  font-size: 13px;
-    color: #0e2a47;
-    /* margin: 0; */
-    margin-bottom: 20px;
+  font-size: 15px;
+  /* color: #fff; */
+  margin: 0 auto;
+  font-weight: 700;
+  width: 72%;
+  display: flex;
+  margin-bottom: 36px;
+  line-height: 2em;
+  /* padding-left: 56px;*/
+}
+
+.content_adv_pr {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  user-select: none;
+  text-align: left;
+}
+
+.content_adv_pr{
+ padding: 20px;
+
+}
+.content_First_pr{
+font-size: 25px;
+margin: 50px;
+border-bottom: 2px rgb(190, 143, 55);
+text-align: center;
 }

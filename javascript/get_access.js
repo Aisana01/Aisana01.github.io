@@ -40,9 +40,9 @@ db.collection("calculations").where("access", "==", "free").withConverter(calcCo
     }
 })
 
-$(document).on("click", ".sub", function () {
-    if (this.querySelector(".premium") != null){
-        // ЗДЕСЬ БУДЕТ МОДОЛЬНОЕ ОКНО
+// $(document).on("click", ".sub", function () {
+//     if (this.querySelector(".premium") != null){
+//         // ЗДЕСЬ БУДЕТ МОДОЛЬНОЕ ОКНО
         
-    }
-});
+//     }
+// });
