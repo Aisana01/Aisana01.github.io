@@ -26,6 +26,7 @@ var calcConverter = {
 };
 var divs = document.getElementsByClassName("sub")
 var calculationsArray = []
+// console.log(db);
 db.collection("calculations").where("access", "==", "free").withConverter(calcConverter).get().then((querySnapshot) => {
     querySnapshot.forEach((doc) => {
         calculationsArray.push(doc.data().calc_title);
@@ -36,6 +37,7 @@ db.collection("calculations").where("access", "==", "free").withConverter(calcCo
         if (calculationsArray.includes(divTitle)){
             divs[i].removeChild(divs[i].lastElementChild)
             divs[i].lastElementChild.style.padding = "16px";
+             // divs[i].querySelector(".source").style.pointerEvents ="none";
         }
     }
 })

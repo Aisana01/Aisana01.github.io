@@ -9,12 +9,12 @@
   /* max-width: 1400px; */
   margin: auto;
 }
-.wrapper{
+/* .wrapper{
   width:100%;
   max-width: 1400px;
   min-width: 1400px;
   margin: 0 auto;
-}
+} */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -23,7 +23,7 @@
 .main_section{
   text-align: center;
   width: 100%;
-  font-size: 26px;
+  font-size: 15px;
   font-family: 'Montserrat',sans-serif;
 }
 .main-content{

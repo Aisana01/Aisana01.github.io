@@ -1,13 +1,12 @@
 .sidenav_left {
-  /* height: 100%; */
-  width: 28%;
-  /* position: fixed; */
-  z-index: 1;
-  left: 0;
-  background-color: #f4f4f6;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  top:75px;
+    height: 700px;
+    width: 20%;
+    /* position: fixed; */
+    z-index: 1;
+    left: 0;
+    background-color: #f4f4f6;
+    overflow-x: hidden;
+    overflow-y: auto;
 
 
 }
