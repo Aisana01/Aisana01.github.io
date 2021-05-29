@@ -351,6 +351,58 @@ function matchSend(calcId, xhr) {
             "room_width": ${c},
             "cost": ${d}
         }`;
+    } else if (calcId == 'plumber/volume') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ad').value)
+
+        myBody = `{
+            "plinth_width": ${a},
+            "room_length": ${b},
+            "room_width": ${c},
+            "cost": ${d},
+            "cost": ${e}
+        }`;
+    } else if (calcId == 'plumber_amount') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ad').value)
+
+        myBody = `{
+            "plinth_width": ${a},
+            "room_length": ${b},
+            "room_width": ${c},
+            "cost": ${d},
+            "cost": ${e}
+        }`;
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
     }
 
     xhr.send(myBody);
@@ -485,5 +537,20 @@ function matchData(calcId, data) {
         document.getElementById('nres_a').innerHTML = data.plinth
         document.getElementById('nres_b').innerHTML = data.room_area
         document.getElementById('nres_c').innerHTML = data.total_cost
+    }
+    
+
+    else if (calcId == 'plumber/volume') {
+        document.getElementById('ares_a').innerHTML = data.wall_area
+        document.getElementById('ares_b').innerHTML = data.roll_amount
+        document.getElementById('ares_c').innerHTML = data.sheet_amount
+        document.getElementById('ares_d').innerHTML = data.sheet_length
+        document.getElementById('ares_e').innerHTML = data.cost
+    } else if (calcId == 'plumber/amount') {
+        document.getElementById('bres_a').innerHTML = data.wall_area
+        document.getElementById('bres_b').innerHTML = data.roll_amount
+        document.getElementById('bres_c').innerHTML = data.sheet_amount
+        document.getElementById('bres_d').innerHTML = data.sheet_length
+        document.getElementById('bres_e').innerHTML = data.cost
     }
 }
