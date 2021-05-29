@@ -72,7 +72,7 @@ function matchSend(calcId, xhr) {
             "a_length": ${a},
             "b_length": ${b},
             "c_length": ${c},
-            "d_length": ${d}
+            "d_length": ${d},
             "cost": ${e}
         }`;
     } else if (calcId == 'foundation/strip-two') {
@@ -408,6 +408,7 @@ function matchData(calcId, data) {
     } 
     
 
+  
     else if (calcId == 'material/insulation') {
         document.getElementById('ares_a').innerHTML = data.sheet_area
         document.getElementById('ares_b').innerHTML = data.sheet_volume
