@@ -11,6 +11,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <script src="javascript/authentication.js"></script>
+    <script src="javascript/get_access.js"></script>
 
     <script src="javascript/calculations.js"></script>
     <script src="javascript/jquery-3.1.0.js"></script>
@@ -308,9 +309,10 @@
                                 <fieldset class="fields_modal" id="box_modal16" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title1"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title1').value, 'materialsFirst')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -435,9 +437,10 @@
                                 <fieldset class="fields_modal" id="box_modal17" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title2"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title2').value, 'materialsSecond')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -557,9 +560,10 @@
                                 <fieldset class="fields_modal" id="box_modal18" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title3"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title3').value, 'materialsThird')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -674,9 +678,10 @@
                                 <fieldset class="fields_modal" id="box_modal19" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title4"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title4').value, 'materialsFourth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -804,9 +809,10 @@
                                 <fieldset class="fields_modal" id="box_modal20" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title5"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title5').value, 'materialsFifth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -945,9 +951,10 @@
                                 <fieldset class="fields_modal" id="box_modal21" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title6"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title6').value, 'materialsSixth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1060,9 +1067,10 @@
                                 <fieldset class="fields_modal" id="box_modal22" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title7"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title7').value, 'materialsSeventh')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1209,9 +1217,10 @@
                                 <fieldset class="fields_modal" id="box_modal28" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title8"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title8').value, 'materialsEighth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1358,9 +1367,10 @@
                                 <fieldset class="fields_modal" id="box_modal29" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title9"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title9').value, 'materialsNinth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1514,9 +1524,10 @@
                                 <fieldset class="fields_modal" id="box_modal30" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title10"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title10').value, 'materialsTenth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1663,9 +1674,10 @@
                                 <fieldset class="fields_modal" id="box_modal31" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title11"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title11').value, 'materialsEleventh')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1812,9 +1824,10 @@
                                 <fieldset class="fields_modal" id="box_modal32" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title12"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title12').value, 'materialsTwelfth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1951,9 +1964,10 @@
                                 <fieldset class="fields_modal" id="box_modal33" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title13"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title13').value, 'materialsThirteenth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -2061,9 +2075,10 @@
                                 <fieldset class="fields_modal" id="box_modal34" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title14"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title14').value, 'materialsFourteenth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
