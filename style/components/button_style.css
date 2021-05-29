@@ -118,7 +118,7 @@
     fill: #C4956A;
    }
   .expand_img_svg :hover{
-  
+    cursor: pointer;
     fill: #2D426D;
    }
 

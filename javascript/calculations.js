@@ -130,32 +130,228 @@ function matchSend(calcId, xhr) {
             "thickness": ${c}
         }`;
     } else if (calcId == 'material/insulation') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ae').value)
+        var f = parseFloat(document.getElementById('af').value)
+        var g = parseFloat(document.getElementById('ag').value)
+        var h = parseFloat(document.getElementById('ah').value)
 
+        myBody = `{
+            "a_length": ${a},
+            "b_length": ${b},
+            "c_length": ${c},
+            "length": ${d},
+            "width": ${e},
+            "insulation_amount": ${f},
+            "cost": ${g},
+            "density": ${h}
+        }`;
     } else if (calcId == 'material/decking') {
+        var a = parseFloat(document.getElementById('ba').value)
+        var b = parseFloat(document.getElementById('bb').value)
+        var c = parseFloat(document.getElementById('bc').value)
+        var d = parseFloat(document.getElementById('bd').value)
+        var e = parseFloat(document.getElementById('be').value)
+        var f = parseFloat(document.getElementById('bf').value)
 
+        myBody = `{
+            "a_side": ${a},
+            "b_side": ${b},
+            "length": ${c},
+            "width": ${d},
+            "thickness": ${e},
+            "c_length": ${f}
+        }`;
     } else if (calcId == 'material/tile') {
+        var a = parseFloat(document.getElementById('ca').value)
+        var b = parseFloat(document.getElementById('cb').value)
+        var c = parseFloat(document.getElementById('cc').value)
+        var d = parseFloat(document.getElementById('cd').value)
+        var e = parseFloat(document.getElementById('ce').value)
+        var f = parseFloat(document.getElementById('cf').value)
+        var g = parseFloat(document.getElementById('cg').value)
 
+        myBody = `{
+            "tile_length": ${a},
+            "tile_width": ${b},
+            "surface_length": ${c},
+            "surface_width": ${d},
+            "seam_thickness": ${e},
+            "pruning": ${f},
+            "cost": ${g}
+        }`;
     } else if (calcId == 'material/covering') {
+        var a = parseFloat(document.getElementById('da').value)
+        var b = parseFloat(document.getElementById('db').value)
+        var c = parseFloat(document.getElementById('dc').value)
+        var d = parseFloat(document.getElementById('dd').value)
 
+        myBody = `{
+            "covering_length": ${a},
+            "covering_width": ${b},
+            "floor_length": ${c},
+            "floor_width": ${d}
+        }`;
     } else if (calcId == 'material/lining') {
+        var a = parseFloat(document.getElementById('ea').value)
+        var b = parseFloat(document.getElementById('eb').value)
+        var c = parseFloat(document.getElementById('ec').value)
+        var d = parseFloat(document.getElementById('ed').value)
+        var e = parseFloat(document.getElementById('ee').value)
+        var f = parseFloat(document.getElementById('ef').value)
+        var g = parseFloat(document.getElementById('eg').value)
+        var h = parseFloat(document.getElementById('eh').value)
 
+        myBody = `{
+            "a_length": ${a},
+            "b_width": ${b},
+            "thickness": ${c},
+            "tenon_length": ${d},
+            "amount_in_package": ${e},
+            "surface_height": ${f},
+            "surface_width": ${g},
+            "package_cost": ${h}
+        }`;
     } else if (calcId == 'material/primer') {
+        var a = parseFloat(document.getElementById('fa').value)
+        var b = parseFloat(document.getElementById('fb').value)
+        var c = parseFloat(document.getElementById('fc').value)
+        var d = parseFloat(document.getElementById('fd').value)
 
+        myBody = `{
+            "primer_type": ${a},
+            "layer_amount": ${b},
+            "rubble_length": ${c},
+            "rubble_width": ${d}
+        }`;
     } else if (calcId == 'material/paint') {
+        var a = parseFloat(document.getElementById('ga').value)
+        var b = parseFloat(document.getElementById('gb').value)
+        var c = parseFloat(document.getElementById('gc').value)
+        var d = parseFloat(document.getElementById('gd').value)
+        var e = parseFloat(document.getElementById('ge').value)
+        var f = parseFloat(document.getElementById('gf').value)
 
+        myBody = `{
+            "paint_waste": ${a},
+            "layer_amount": ${b},
+            "length": ${c},
+            "width": ${d},
+            "bank_volume": ${e},
+            "bank_cost": ${f}
+        }`;
     } else if (calcId == 'material/plaster') {
+        var a = parseFloat(document.getElementById('ha').value)
+        var b = parseFloat(document.getElementById('hb').value)
+        var c = parseFloat(document.getElementById('hc').value)
+        var d = parseFloat(document.getElementById('hd').value)
+        var e = parseFloat(document.getElementById('he').value)
+        var f = parseFloat(document.getElementById('hf').value)
 
+        myBody = `{
+            "waste": ${a},
+            "layer_thickness": ${b},
+            "length": ${c},
+            "width": ${d},
+            "package_weight": ${e},
+            "package_cost": ${f}
+        }`;
     } else if (calcId == 'material/putty') {
+        var a = parseFloat(document.getElementById('ia').value)
+        var b = parseFloat(document.getElementById('ib').value)
+        var c = parseFloat(document.getElementById('ic').value)
+        var d = parseFloat(document.getElementById('id').value)
+        var e = parseFloat(document.getElementById('ie').value)
+        var f = parseFloat(document.getElementById('if').value)
 
+        myBody = `{
+            "waste": ${a},
+            "layer_thickness": ${b},
+            "length": ${c},
+            "width": ${d},
+            "package_weight": ${e},
+            "package_cost": ${f}
+        }`;
     } else if (calcId == 'material/screed') {
+        var a = parseFloat(document.getElementById('ga').value)
+        var b = parseFloat(document.getElementById('gb').value)
+        var c = parseFloat(document.getElementById('gc').value)
+        var d = parseFloat(document.getElementById('gd').value)
+        var e = parseFloat(document.getElementById('ge').value)
+        var f = parseFloat(document.getElementById('gf').value)
 
+        myBody = `{
+            "waste": ${a},
+            "layer_thickness": ${b},
+            "length": ${c},
+            "width": ${d},
+            "package_weight": ${e},
+            "package_cost": ${f}
+        }`;
     } else if (calcId == 'material/equalizer') {
+        var a = parseFloat(document.getElementById('ka').value)
+        var b = parseFloat(document.getElementById('kb').value)
+        var c = parseFloat(document.getElementById('kc').value)
+        var d = parseFloat(document.getElementById('kd').value)
+        var e = parseFloat(document.getElementById('ke').value)
+        var f = parseFloat(document.getElementById('kf').value)
 
+        myBody = `{
+            "waste": ${a},
+            "layer_thickness": ${b},
+            "length": ${c},
+            "width": ${d},
+            "package_weight": ${e},
+            "package_cost": ${f}
+        }`;
     } else if (calcId == 'material/adhesive') {
+        var a = parseFloat(document.getElementById('la').value)
+        var b = parseFloat(document.getElementById('lb').value)
+        var c = parseFloat(document.getElementById('lc').value)
+        var d = parseFloat(document.getElementById('ld').value)
+        var e = parseFloat(document.getElementById('le').value)
+        var f = parseFloat(document.getElementById('lf').value)
 
+        myBody = `{
+            "waste": ${a},
+            "layer_thickness": ${b},
+            "length": ${c},
+            "width": ${d},
+            "package_weight": ${e},
+            "package_cost": ${f}
+        }`;
     } else if (calcId == 'material/wallpaper') {
+        var a = parseFloat(document.getElementById('ma').value)
+        var b = parseFloat(document.getElementById('mb').value)
+        var c = parseFloat(document.getElementById('mc').value)
+        var d = parseFloat(document.getElementById('md').value)
+        var e = parseFloat(document.getElementById('me').value)
+        var f = parseFloat(document.getElementById('mf').value)
 
-    } else if (calcId == 'material/plinth') {}
+        myBody = `{
+            "roll_width": ${a},
+            "roll_length": ${b},
+            "draw_step": ${c},
+            "roll_cost": ${d},
+            "wall_width": ${e},
+            "wall_height": ${f}
+        }`;
+    } else if (calcId == 'material/plinth') {
+        var a = parseFloat(document.getElementById('na').value)
+        var b = parseFloat(document.getElementById('nb').value)
+        var c = parseFloat(document.getElementById('nc').value)
+        var d = parseFloat(document.getElementById('nd').value)
+
+        myBody = `{
+            "plinth_width": ${a},
+            "room_length": ${b},
+            "room_width": ${c},
+            "cost": ${d}
+        }`;
+    }
 
     xhr.send(myBody);
 }
@@ -209,31 +405,86 @@ function matchData(calcId, data) {
         document.getElementById('gres_e').innerHTML = data.mesh_width
         document.getElementById('gres_f').innerHTML = data.mesh_area
         document.getElementById('gres_g').innerHTML = data.weight
-    } else if (calcId == 'material/insulation') {
+    } 
+    
 
+  
+    else if (calcId == 'material/insulation') {
+        document.getElementById('ares_a').innerHTML = data.sheet_area
+        document.getElementById('ares_b').innerHTML = data.sheet_volume
+        document.getElementById('ares_c').innerHTML = data.sheet_amount_one
+        document.getElementById('ares_d').innerHTML = data.surface_area
+        document.getElementById('ares_e').innerHTML = data.insulation_thickness
+        document.getElementById('ares_f').innerHTML = data.insulation_volume
+        document.getElementById('ares_g').innerHTML = data.sheet_amount
+        document.getElementById('ares_h').innerHTML = data.total_cost
+        document.getElementById('ares_i').innerHTML = data.total_weight
     } else if (calcId == 'material/decking') {
-
+        document.getElementById('bres_a').innerHTML = data.flooring_area
+        document.getElementById('bres_b').innerHTML = data.flooring_board_amount
+        document.getElementById('bres_c').innerHTML = data.flooring_board_volume
     } else if (calcId == 'material/tile') {
-
+        document.getElementById('cres_a').innerHTML = data.surface_area
+        document.getElementById('cres_b').innerHTML = data.tile_amount
+        document.getElementById('cres_c').innerHTML = data.tile_amount_square
+        document.getElementById('cres_d').innerHTML = data.waste
     } else if (calcId == 'material/covering') {
-
+        document.getElementById('dres_a').innerHTML = data.minimal_waste
+        document.getElementById('dres_b').innerHTML = data.minimal_waste_square
     } else if (calcId == 'material/lining') {
-
+        document.getElementById('eres_a').innerHTML = data.surface_area
+        document.getElementById('eres_b').innerHTML = data.lining_amount
+        document.getElementById('eres_c').innerHTML = data.package_amount
+        document.getElementById('eres_d').innerHTML = data.cost
     } else if (calcId == 'material/primer') {
-
+        document.getElementById('fres_a').innerHTML = data.surface_area
+        document.getElementById('fres_b').innerHTML = data.material_waste
+        document.getElementById('fres_c').innerHTML = data.material_weight
     } else if (calcId == 'material/paint') {
-
+        document.getElementById('gres_a').innerHTML = data.surface_area
+        document.getElementById('gres_b').innerHTML = data.paint_volume
+        document.getElementById('gres_c').innerHTML = data.bank_amount
+        document.getElementById('gres_d').innerHTML = data.cost_one
+        document.getElementById('gres_e').innerHTML = data.cost
     } else if (calcId == 'material/plaster') {
-
+        document.getElementById('hres_a').innerHTML = data.surface_area
+        document.getElementById('hres_b').innerHTML = data.material_waste
+        document.getElementById('hres_c').innerHTML = data.material_weight
+        document.getElementById('hres_d').innerHTML = data.package_amount
+        document.getElementById('hres_e').innerHTML = data.cost
     } else if (calcId == 'material/putty') {
-
+        document.getElementById('ires_a').innerHTML = data.surface_area
+        document.getElementById('ires_b').innerHTML = data.material_waste
+        document.getElementById('ires_c').innerHTML = data.material_weight
+        document.getElementById('ires_d').innerHTML = data.package_amount
+        document.getElementById('ires_e').innerHTML = data.cost
     } else if (calcId == 'material/screed') {
-
+        document.getElementById('jres_a').innerHTML = data.surface_area
+        document.getElementById('jres_b').innerHTML = data.material_waste
+        document.getElementById('jres_c').innerHTML = data.material_weight
+        document.getElementById('jres_d').innerHTML = data.package_amount
+        document.getElementById('jres_e').innerHTML = data.cost
     } else if (calcId == 'material/equalizer') {
-
+        document.getElementById('kres_a').innerHTML = data.surface_area
+        document.getElementById('kres_b').innerHTML = data.material_waste
+        document.getElementById('kres_c').innerHTML = data.material_weight
+        document.getElementById('kres_d').innerHTML = data.package_amount
+        document.getElementById('kres_e').innerHTML = data.cost
     } else if (calcId == 'material/adhesive') {
-
+        document.getElementById('lres_a').innerHTML = data.surface_area
+        document.getElementById('lres_b').innerHTML = data.material_waste
+        document.getElementById('lres_c').innerHTML = data.material_weight
+        document.getElementById('lres_d').innerHTML = data.package_amount
+        document.getElementById('lres_e').innerHTML = data.cost
     } else if (calcId == 'material/wallpaper') {
-
-    } else if (calcId == 'material/plinth') {}
+        document.getElementById('mres_a').innerHTML = data.wall_area
+        document.getElementById('mres_b').innerHTML = data.roll_amount
+        document.getElementById('mres_c').innerHTML = data.sheet_amount
+        document.getElementById('mres_d').innerHTML = data.sheet_length
+        document.getElementById('mres_e').innerHTML = data.cost
+    } else if (calcId == 'material/plinth') {
+        document.getElementById('nres_a').innerHTML = data.plinth
+        document.getElementById('nres_b').innerHTML = data.room_area
+        document.getElementById('nres_c').innerHTML = data.total_cost
+    }
 }

@@ -1,7 +1,7 @@
 
 function premium_get(thisID) {
     var elem = document.getElementById(thisID);
-    console.log(elem);
+    // console.log(elem);
     if (elem.querySelector(".premium") != null) {
         var modal = document.getElementById("myModalPremium");
         var span = document.getElementsByClassName("close_Premium")[0];

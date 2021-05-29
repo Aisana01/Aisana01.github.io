@@ -97,6 +97,7 @@ function logout(){
     firebase.auth().signOut().then(() => {
         localStorage.clear();
         console.log("User signed out")
+        location.reload();
       }).catch((error) => {
         // An error happened.
       });

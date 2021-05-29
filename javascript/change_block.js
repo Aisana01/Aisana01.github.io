@@ -1,16 +1,23 @@
 var HIDDEN_CLASS_NAME = 'hidden'
 var TARGET_CLASS_NAME = 'target'
 var SOURCE_CLASS_NAME = 'source'
-
 var targetIdToShow = 1
-
 function main() {
     var targets = getElements(TARGET_CLASS_NAME)
     var sources = getElements(SOURCE_CLASS_NAME)
-    sources.forEach(function(sourceNode) {
+    sources.forEach(function (sourceNode) {
         var sourceNodeId = extractId(sourceNode, SOURCE_CLASS_NAME)
-    //    console.log(sourceNode);
-        sourceNode.addEventListener('click', function() {
+        //    console.log(sourceNode);
+        sourceNode.addEventListener('click', function () {
+            var btnPr = document.getElementById("myBtnPremium" + sourceNodeId.toString());
+            if (btnPr.querySelector(".premium") != null) {
+                classDiv = document.getElementById(window.location.hash.substr(1));
+                IDblock_hash = extractId(classDiv, TARGET_CLASS_NAME);
+                sourceNodeId = IDblock_hash;
+                showTarget(targets, sourceNodeId)}
+                else{
+                    showTarget(targets, sourceNodeId)
+            }
             showTarget(targets, sourceNodeId)
         })
     })
@@ -54,8 +61,7 @@ function showTarget(targets, targetId) {
 main()
 
   //отображение блока где вызываешь из другой страницы
-  var hash = window.location.hash.substr(1);
-  classDiv = document.getElementById(hash);
+  classDiv = document.getElementById(window.location.hash.substr(1));
   IDblock_hash = extractId(classDiv, TARGET_CLASS_NAME);
   // hash_targets = getElements('target-' + IDblock_hash.toString());
   targetsBlock = getElements(TARGET_CLASS_NAME);
