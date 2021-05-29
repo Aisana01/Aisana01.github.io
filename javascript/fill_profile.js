@@ -8,6 +8,8 @@ db.collection("users").doc(userId).get().then((doc) => {
         document.getElementById('user_name').value = userData.name
         document.getElementById('user_surname').value = userData.surname
         document.getElementById('user_email').value = userData.email
+        if (userData.access == "paid") document.getElementById('user_access').value = "Премиум"
+        else document.getElementById('user_access').value = "Бесплатная"
     } else {
         // doc.data() will be undefined in this case
         console.log("No such document!");
