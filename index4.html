@@ -1127,7 +1127,7 @@
                             <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет
                                 материалов</h1>
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title1"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Подушка песка<div class="h3_border"></div>
                                 </h3>
@@ -1140,55 +1140,59 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Вид материала:</label>
-                                        <select class="select_calc">
-                                            <option value="">Песок строительный</option>
-                                            <option value="">Песок речной</option>
-                                            <option value="">ПГС-песчано-гравийная смесь</option>
-                                            <option value="">Гравий</option>
-                                            <option value="">Керамзит</option>
-                                            <option value="">Щебень гранитный</option>
-                                            <option value="">Известь гашеная</option>
-                                            <option value="">Известь негашеная</option>
-                                            <option value="">Гипс</option>
-                                            <option value="">Цемент</option>
-                                            <option value="">Вермикулит вспученный</option>
+                                        <select id="aa" class="select_calc">
+                                            <option value="0">Песок строительный</option>
+                                            <option value="1">Песок речной</option>
+                                            <option value="2">ПГС-песчано-гравийная смесь</option>
+                                            <option value="3">Гравий</option>
+                                            <option value="4">Керамзит</option>
+                                            <option value="5">Щебень гранитный</option>
+                                            <option value="6">Известь гашеная</option>
+                                            <option value="7">Известь негашеная</option>
+                                            <option value="8">Гипс</option>
+                                            <option value="9">Цемент</option>
+                                            <option value="10">Вермикулит вспученный</option>
                                         </select>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">В 1м3:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="кг"
-                                            id=""><span class="form_validation"></span>
+                                            id="ab"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Площадь засыпки:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м2"
-                                            id=""><span class="form_validation"></span>
+                                            id="ac"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Толщина слоя засыпки:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="мм"
-                                            id=""><span class="form_validation"></span>
+                                            id="ad"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Коэффицент уплотнения:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder=""><span
+                                        <input class="form_control_calc" type="number" name="" placeholder=""
+                                            id="ae"><span
                                             class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Объем ведра:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="л"><span
+                                        <input class="form_control_calc" type="number" name="" placeholder="л"
+                                            id="af"><span
                                             class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Стоимость за м3:</label>
-                                        <input class="form_control_calc" type="number" name="" placeholder="тг"><span
+                                        <input class="form_control_calc" type="number" name="" placeholder="тг"
+                                            id="ag"><span
                                             class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="submit"
+                                    onclick="Calculate('earthen/pillow')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1207,21 +1211,22 @@
                                             <g xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="m462.453 0h-16.516l-16.516 19.294h-346.842l-16.516-19.294h-16.516l-8.157 16.516v484.514l20.851 1.086 193.759-155.274 187.864 160.033c13.827 11.778 35.105 1.952 35.105-16.211v-474.148c.001-9.121-7.394-16.516-16.516-16.516z"
-                                                    data-original="#ff7e92" <path
+                                                    data-original="#ff7e92" /> <path
                                                     d="m66.063 0v447.363c0 7.043 8.251 10.854 13.613 6.286l154.904-131.953c6.169-5.258 13.794-7.887 21.42-7.887 7.625 0 15.25 2.629 21.42 7.887l154.904 131.954c5.362 4.567 13.613.757 13.613-6.286v-447.364h-16.516l-14.675 16.036h-323.185l-8.982-16.036z"
-                                                    data-original="#fb4455" <g>
+                                                    data-original="#fb4455" /> <g>
                                                     <path
                                                         d="m256 346.842c0-8.546-10.012-13.169-16.517-7.627l-182.057 155.088c-1.919 1.637-3.815 1.286-5.105.702-1.266-.585-2.774-1.815-2.774-4.343v-490.662c-9.122 0-16.517 7.394-16.517 16.516v474.146c0 18.164 21.279 27.99 35.106 16.211z"
-                                                        data-original="#ff5f7a" <path
+                                                        data-original="#ff5f7a" /> <path
                                                         d="m223.871 309.124c8.952-7.629 20.363-11.831 32.129-11.831s23.178 4.202 32.129 11.835l100.452 85.565c16.086 13.702 40.839 2.27 40.839-18.86v-375.833h-346.841v375.832c0 21.13 24.754 32.562 40.84 18.86z"
-                                                        data-original="#ff5f7a" </g> </g> </g> </svg> </a> <fieldset
+                                                        data-original="#ff5f7a" /> </g> </g> </g> </svg> </a> <fieldset
                                                         class="fields_modal" id="box_modal13" style="display: none;">
                                                         <div class="form_wrap_modal">
                                                             <label class="input_label">Наименование:</label>
                                                             <input class="form_control_modal" type="text" name=""
-                                                                placeholder="" id=""><span
+                                                                placeholder="" id="save_title1"><span
                                                                 class="form_validation"></span>
-                                                            <button class="btn_modal">OK</button>
+                                                            <button class="btn_modal"
+                                                            onclick="save_calculation(document.getElementById('save_title1').value, 'earthenFirst')">OK</button>
                                                         </div>
                                                         </fieldset>
                             </div>
@@ -1235,12 +1240,12 @@
                                     <p>Стоимость:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м3</p>
-                                    <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> м3</p>
-                                    <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> шт</p>
-                                    <p><output id=""></output> тг</p>
+                                    <p><output id="ares_a"></output> м3</p>
+                                    <p><output id="ares_b"></output> кг</p>
+                                    <p><output id="ares_c"></output> м3</p>
+                                    <p><output id="ares_d"></output> кг</p>
+                                    <p><output id="ares_e"></output> шт</p>
+                                    <p><output id="ares_f"></output> тг</p>
                                 </div>
                             </div>
                         </div>
@@ -1254,7 +1259,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title2"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Объём котлована (вертикаль)<div class="h3_border"></div>
                                 </h3>
@@ -1269,39 +1274,40 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[H]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                            id="ba"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[L]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                            id="bb"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[a]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                            id="bc"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Плотность грунта:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="кг/м3"
-                                            id=""><span class="form_validation"></span>
+                                            id="bd"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Раскопка(за м3):</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
+                                            id="be"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Вывоз грунта(за м3):</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
+                                            id="bf"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
 
 
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary"
+                                    onclick="Calculate('earthen/excavation-vertical')"><a href="#">Рассчитать</a></button>
 
                             </form>
 
@@ -1319,21 +1325,22 @@
                                             <g xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="m462.453 0h-16.516l-16.516 19.294h-346.842l-16.516-19.294h-16.516l-8.157 16.516v484.514l20.851 1.086 193.759-155.274 187.864 160.033c13.827 11.778 35.105 1.952 35.105-16.211v-474.148c.001-9.121-7.394-16.516-16.516-16.516z"
-                                                    data-original="#ff7e92" <path
+                                                    data-original="#ff7e92" /> <path
                                                     d="m66.063 0v447.363c0 7.043 8.251 10.854 13.613 6.286l154.904-131.953c6.169-5.258 13.794-7.887 21.42-7.887 7.625 0 15.25 2.629 21.42 7.887l154.904 131.954c5.362 4.567 13.613.757 13.613-6.286v-447.364h-16.516l-14.675 16.036h-323.185l-8.982-16.036z"
-                                                    data-original="#fb4455" <g>
+                                                    data-original="#fb4455" /> <g>
                                                     <path
                                                         d="m256 346.842c0-8.546-10.012-13.169-16.517-7.627l-182.057 155.088c-1.919 1.637-3.815 1.286-5.105.702-1.266-.585-2.774-1.815-2.774-4.343v-490.662c-9.122 0-16.517 7.394-16.517 16.516v474.146c0 18.164 21.279 27.99 35.106 16.211z"
-                                                        data-original="#ff5f7a" <path
+                                                        data-original="#ff5f7a" /> <path
                                                         d="m223.871 309.124c8.952-7.629 20.363-11.831 32.129-11.831s23.178 4.202 32.129 11.835l100.452 85.565c16.086 13.702 40.839 2.27 40.839-18.86v-375.833h-346.841v375.832c0 21.13 24.754 32.562 40.84 18.86z"
-                                                        data-original="#ff5f7a" </g> </g> </g> </svg> </a> <fieldset
+                                                        data-original="#ff5f7a" /> </g> </g> </g> </svg> </a> <fieldset
                                                         class="fields_modal" id="box_modal14" style="display: none;">
                                                         <div class="form_wrap_modal">
                                                             <label class="input_label">Наименование:</label>
                                                             <input class="form_control_modal" type="text" name=""
-                                                                placeholder="" id=""><span
+                                                                placeholder="" id="save_title2"><span
                                                                 class="form_validation"></span>
-                                                            <button class="btn_modal">OK</button>
+                                                            <button class="btn_modal"
+                                                            onclick="save_calculation(document.getElementById('save_title2').value, 'earthenSecond')">OK</button>
                                                         </div>
                                                         </fieldset>
                             </div>
@@ -1346,11 +1353,11 @@
                                     <p>Общие затраты:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м3</p>
-                                    <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
+                                    <p><output id="bres_a"></output> м3</p>
+                                    <p><output id="bres_b"></output> кг</p>
+                                    <p><output id="bres_c"></output> тг</p>
+                                    <p><output id="bres_d"></output> тг</p>
+                                    <p><output id="bres_e"></output> тг</p>
                                 </div>
                             </div>
                         </div>
@@ -1364,7 +1371,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title3"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Объём котлована (уклон)<div class="h3_border"></div>
                                 </h3>
@@ -1379,24 +1386,24 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[H]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                            id="ca"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[L]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                            id="cb"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[a]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                            id="cc"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Размер[a1]:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="м"
-                                            id=""><span class="form_validation"></span>
+                                            id="cd"><span class="form_validation"></span>
                                     </div>
 
                                 </fieldset>
@@ -1404,20 +1411,20 @@
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Плотность грунта:</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="кг/м3"
-                                            id=""><span class="form_validation"></span>
+                                            id="ce"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Раскопка(за м3):</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
+                                            id="cf"><span class="form_validation"></span>
                                     </div>
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Вывоз грунта(за м3):</label>
                                         <input class="form_control_calc" type="number" name="" placeholder="тг"
-                                            id=""><span class="form_validation"></span>
+                                            id="cg"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary" onclick="Calculate('earthen/excavation-slope')"><a href="#">Рассчитать</a></button>
 
                             </form>
 
@@ -1435,21 +1442,22 @@
                                             <g xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     d="m462.453 0h-16.516l-16.516 19.294h-346.842l-16.516-19.294h-16.516l-8.157 16.516v484.514l20.851 1.086 193.759-155.274 187.864 160.033c13.827 11.778 35.105 1.952 35.105-16.211v-474.148c.001-9.121-7.394-16.516-16.516-16.516z"
-                                                    data-original="#ff7e92" <path
+                                                    data-original="#ff7e92" /> <path
                                                     d="m66.063 0v447.363c0 7.043 8.251 10.854 13.613 6.286l154.904-131.953c6.169-5.258 13.794-7.887 21.42-7.887 7.625 0 15.25 2.629 21.42 7.887l154.904 131.954c5.362 4.567 13.613.757 13.613-6.286v-447.364h-16.516l-14.675 16.036h-323.185l-8.982-16.036z"
-                                                    data-original="#fb4455" <g>
+                                                    data-original="#fb4455" /> <g>
                                                     <path
                                                         d="m256 346.842c0-8.546-10.012-13.169-16.517-7.627l-182.057 155.088c-1.919 1.637-3.815 1.286-5.105.702-1.266-.585-2.774-1.815-2.774-4.343v-490.662c-9.122 0-16.517 7.394-16.517 16.516v474.146c0 18.164 21.279 27.99 35.106 16.211z"
-                                                        data-original="#ff5f7a" <path
+                                                        data-original="#ff5f7a" /> <path
                                                         d="m223.871 309.124c8.952-7.629 20.363-11.831 32.129-11.831s23.178 4.202 32.129 11.835l100.452 85.565c16.086 13.702 40.839 2.27 40.839-18.86v-375.833h-346.841v375.832c0 21.13 24.754 32.562 40.84 18.86z"
-                                                        data-original="#ff5f7a" </g> </g> </g> </svg> </a> <fieldset
+                                                        data-original="#ff5f7a" /> </g> </g> </g> </svg> </a> <fieldset
                                                         class="fields_modal" id="box_modal15" style="display: none;">
                                                         <div class="form_wrap_modal">
                                                             <label class="input_label">Наименование:</label>
                                                             <input class="form_control_modal" type="text" name=""
-                                                                placeholder="" id=""><span
+                                                                placeholder="" id="save_title3"><span
                                                                 class="form_validation"></span>
-                                                            <button class="btn_modal">OK</button>
+                                                            <button class="btn_modal"
+                                                            onclick="save_calculation(document.getElementById('save_title3').value, 'earthenThird')">OK</button>
                                                         </div>
                                                         </fieldset>
                             </div>
@@ -1462,11 +1470,11 @@
                                     <p>Общие затраты:</p>
                                 </div>
                                 <div class="result_calc_words_parameters">
-                                    <p><output id=""></output> м3</p>
-                                    <p><output id=""></output> кг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
-                                    <p><output id=""></output> тг</p>
+                                    <p><output id="cres_a"></output> м3</p>
+                                    <p><output id="cres_b"></output> кг</p>
+                                    <p><output id="cres_c"></output> тг</p>
+                                    <p><output id="cres_d"></output> тг</p>
+                                    <p><output id="cres_e"></output> тг</p>
                                 </div>
                             </div>
                         </div>
