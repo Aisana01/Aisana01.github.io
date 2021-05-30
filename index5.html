@@ -212,7 +212,7 @@
                             <h1 style="padding:px; text-align:center; font-size:20px; line-height:60px;">Расчет
                                 материалов</h1>
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title1"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Расчет количество утеплителя<div class="h3_border"></div>
                                 </h3>
@@ -270,7 +270,7 @@
                                             id="ah"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/insulation')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -308,9 +308,10 @@
                                 <fieldset class="fields_modal" id="box_modal16" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title1"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title1').value, 'materialsFirst')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -349,7 +350,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title2"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Расчет настила из досок<div class="h3_border"></div>
                                 </h3>
@@ -398,7 +399,7 @@
                                 </fieldset>
 
 
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary" type="button" onclick="Calculate('material/decking')"><a href="#">Рассчитать</a></button>
 
                             </form>
                             
@@ -435,9 +436,10 @@
                                 <fieldset class="fields_modal" id="box_modal17" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title2"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title2').value, 'materialsSecond')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -464,7 +466,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title3"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Плитка<div class="h3_border"></div>
                                 </h3>
@@ -520,7 +522,7 @@
                                 </fieldset>
 
 
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary" type="button" onclick="Calculate('material/tile')"><a href="#">Рассчитать</a></button>
 
                             </form>
                             
@@ -557,9 +559,10 @@
                                 <fieldset class="fields_modal" id="box_modal18" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title3"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title3').value, 'materialsThird')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -588,7 +591,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title4"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Расчет напольного покрытия <div class="h3_border"></div>
                                 </h3>
@@ -637,7 +640,7 @@
                                 </fieldset>
 
 
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary" type="button" onclick="Calculate('material/covering')"><a href="#">Рассчитать</a></button>
 
                             </form>
                             
@@ -674,9 +677,10 @@
                                 <fieldset class="fields_modal" id="box_modal19" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title4"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title4').value, 'materialsFourth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -702,7 +706,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title5"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Вагонка<div class="h3_border"></div>
                                 </h3>
@@ -766,7 +770,7 @@
 
 
 
-                                <button class="button_primary" onclick="Calculate()"><a href="#">Рассчитать</a></button>
+                                <button class="button_primary" type="button" onclick="Calculate('material/lining')"><a href="#">Рассчитать</a></button>
 
                             </form>
                            
@@ -804,9 +808,10 @@
                                 <fieldset class="fields_modal" id="box_modal20" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title5"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title5').value, 'materialsFifth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -835,7 +840,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title6"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Грунтовка<div class="h3_border"></div>
                                 </h3>
@@ -907,7 +912,7 @@
                                 </fieldset>
 
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/primer')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -945,9 +950,10 @@
                                 <fieldset class="fields_modal" id="box_modal21" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title6"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title6').value, 'materialsSixth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -974,7 +980,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title7"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Расход краски<div class="h3_border"></div>
                                 </h3>
@@ -1022,7 +1028,7 @@
                                             id="gf"><span class="form_validation"></span>
                                     </div>
                                 </fieldset>
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/paint')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1060,9 +1066,10 @@
                                 <fieldset class="fields_modal" id="box_modal22" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title7"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title7').value, 'materialsSeventh')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1093,7 +1100,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title8"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Штукатурка<div class="h3_border"></div>
                                 </h3>
@@ -1171,7 +1178,7 @@
                                     </div>
                                 </fieldset>
                                 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/plaster')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1209,9 +1216,10 @@
                                 <fieldset class="fields_modal" id="box_modal28" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title8"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title8').value, 'materialsEighth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1243,7 +1251,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title9"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Шпаклевка<div class="h3_border"></div>
                                 </h3>
@@ -1320,7 +1328,7 @@
                                     </div>
                                 </fieldset>
                             
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/putty')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1358,9 +1366,10 @@
                                 <fieldset class="fields_modal" id="box_modal29" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title9"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title9').value, 'materialsNinth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1392,7 +1401,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title10"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Стяжка пола<div class="h3_border"></div>
                                 </h3>
@@ -1476,7 +1485,7 @@
                                     </div>
                                 </fieldset>
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/screed')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1514,9 +1523,10 @@
                                 <fieldset class="fields_modal" id="box_modal30" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title10"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title10').value, 'materialsTenth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1548,7 +1558,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title11"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Наливной пол<div class="h3_border"></div>
                                 </h3>
@@ -1625,7 +1635,7 @@
                                     </div>
                                 </fieldset>
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/equalizer')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1663,9 +1673,10 @@
                                 <fieldset class="fields_modal" id="box_modal31" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title11"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title11').value, 'materialsEleventh')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1697,7 +1708,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title12"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Плиточный клей<div class="h3_border"></div>
                                 </h3>
@@ -1774,7 +1785,7 @@
                                     </div>
                                 </fieldset>
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/adhesive')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1812,9 +1823,10 @@
                                 <fieldset class="fields_modal" id="box_modal32" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title12"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title12').value, 'materialsTwelfth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1846,7 +1858,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title13"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Расчет обоев<div class="h3_border"></div>
                                 </h3>
@@ -1913,7 +1925,7 @@
                                     </div>
                                 </fieldset>
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/wallpaper')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -1951,9 +1963,10 @@
                                 <fieldset class="fields_modal" id="box_modal33" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title13"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title13').value, 'materialsThirteenth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
@@ -1985,7 +1998,7 @@
 
 
                             <div class="expand_img">
-                                <h3
+                                <h3 id="calculation_title14"
                                     style=" padding:px; text-align:center; font-size:px; line-height:px; letter-spacing: 2px; font-weight:normal;">
                                     Расчет плинтуса<div class="h3_border"></div>
                                 </h3>
@@ -2023,7 +2036,7 @@
                                     </div>
                                 </fieldset>
 
-                                <button class="button_primary" type="submit"><a href="#">Рассчитать</a>
+                                <button class="button_primary" type="button" onclick="Calculate('material/plinth')"><a href="#">Рассчитать</a>
                                 </button>
 
                             </form>
@@ -2061,9 +2074,10 @@
                                 <fieldset class="fields_modal" id="box_modal34" style="display: none;">
                                     <div class="form_wrap_modal">
                                         <label class="input_label">Наименование:</label>
-                                        <input class="form_control_modal" type="text" name="" placeholder="" id=""><span
+                                        <input class="form_control_modal" type="text" name="" placeholder="" id="save_title14"><span
                                             class="form_validation"></span>
-                                        <button class="btn_modal">OK</button>
+                                        <button class="btn_modal"
+                                            onclick="save_calculation(document.getElementById('save_title14').value, 'materialsFourteenth')">OK</button>
                                     </div>
                                 </fieldset>
                             </div>
