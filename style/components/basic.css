@@ -168,3 +168,42 @@ display: contents;
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
+/*  */
+.tableDiv{
+  height:400px; 
+  overflow:auto;
+}
+table {
+  border-collapse: collapse;
+  /* border-spacing: 0; */
+  width: 100%;
+  border: 1px solid rgb(88, 86, 86);
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+th:first-child, td:first-child {
+  text-align: left;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f6;
+}
+
+.fa-check {
+  color: green;
+}
+
+.fa-save {
+  color: #2D426D;
+  cursor: pointer;
+}
+.fa-save .hover {
+  color: #C4956A;
+
+}

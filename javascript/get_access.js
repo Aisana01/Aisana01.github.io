@@ -29,7 +29,7 @@ var calcConverter = {
 var divs = document.getElementsByClassName("sub")
 var calculationsArray = []
 if (userId == null){
-    db.collection("calculations").where("access", "==", "free").withConverter(calcConverter).get().then((querySnapshot) => {
+    db.collection("calculations").where("access", "==", "free").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
             calculationsArray.push(doc.data().calc_title);
         });

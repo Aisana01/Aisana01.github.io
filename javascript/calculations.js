@@ -351,6 +351,184 @@ function matchSend(calcId, xhr) {
             "room_width": ${c},
             "cost": ${d}
         }`;
+    } else if (calcId == 'plumber/volume') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ad').value)
+
+        myBody = `{
+            "length": ${a},
+            "width": ${b},
+            "thickness": ${c},
+            "amount": ${d},
+            "cost": ${e}
+        }`;
+    } else if (calcId == 'plumber/amount') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ad').value)
+
+        myBody = `{
+            "length": ${a},
+            "width": ${b},
+            "thickness": ${c},
+            "amount": ${d},
+            "cost": ${e}
+        }`;
+    }
+    
+    
+    else if (calcId == 'roof/mono') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ae').value)
+        var f = parseFloat(document.getElementById('af').value)
+        var g = parseFloat(document.getElementById('ag').value)
+        var h = parseFloat(document.getElementById('ah').value)
+        var i = parseFloat(document.getElementById('ai').value)
+        var j = parseFloat(document.getElementById('aj').value)
+        var k = parseFloat(document.getElementById('ak').value)
+        var l = parseFloat(document.getElementById('al').value)
+        var m = parseFloat(document.getElementById('am').value)
+        var n = parseFloat(document.getElementById('an').value)
+        var o = parseFloat(document.getElementById('ao').value)
+        var p = parseFloat(document.getElementById('ap').value)
+        var q = parseFloat(document.getElementById('aq').value)
+        var r = parseFloat(document.getElementById('ar').value)
+        var s = parseFloat(document.getElementById('as').value)
+
+        myBody = `{
+            "a_length": ${a},
+            "b_length": ${b},
+            "h_length": ${c},
+            "a_overhangs": ${d},
+            "b_overhangs": ${e},
+            "c_overhangs": ${f},
+            "d_overhangs": ${g},
+            "a_rafters": ${h},
+            "b_rafters": ${i},
+            "c_rafters": ${j},
+            "d_rafters": ${k},
+            "a_lathing": ${l},
+            "b_lathing": ${m},
+            "c_lathing": ${n},
+            "d_lathing": ${o},
+            "roof_cost": ${p},
+            "rafter_cost": ${q},
+            "lathing_cost": ${r},
+            "total_cost": ${s}
+        }`;
+    } else if (calcId == 'roof/gable') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ae').value)
+        var f = parseFloat(document.getElementById('af').value)
+        var g = parseFloat(document.getElementById('ag').value)
+        var h = parseFloat(document.getElementById('ah').value)
+        var i = parseFloat(document.getElementById('ai').value)
+        var j = parseFloat(document.getElementById('aj').value)
+        var k = parseFloat(document.getElementById('ak').value)
+        var l = parseFloat(document.getElementById('al').value)
+        var m = parseFloat(document.getElementById('am').value)
+        var n = parseFloat(document.getElementById('an').value)
+        var o = parseFloat(document.getElementById('ao').value)
+        var p = parseFloat(document.getElementById('ap').value)
+        var q = parseFloat(document.getElementById('aq').value)
+
+        myBody = `{
+            "a_length": ${a},
+            "b_length": ${b},
+            "h_length": ${c},
+            "a_overhangs": ${d},
+            "b_overhangs": ${e},
+            "c_overhangs": ${f},
+            "a_rafters": ${g},
+            "b_rafters": ${h},
+            "c_rafters": ${i},
+            "d_rafters": ${j},
+            "a_lathing": ${k},
+            "b_lathing": ${l},
+            "c_lathing": ${m},
+            "d_lathing": ${n},
+            "roof_cost": ${o},
+            "rafter_cost": ${p},
+            "lathing_cost": ${q}
+        }`;
+    } 
+    
+    
+    else if (calcId == 'earthen/pillow') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ae').value)
+        var f = parseFloat(document.getElementById('af').value)
+        var g = parseFloat(document.getElementById('ag').value)
+
+        myBody = `{
+            "material_type": ${a},
+            "filling_weight": ${b},
+            "filling_area": ${c},
+            "filling_thickness": ${d},
+            "compaction": ${e},
+            "bucket_volume": ${f},
+            "cost": ${g}
+        }`;
+    } else if (calcId == 'earthen/excavation-vertical') {
+        var a = parseFloat(document.getElementById('ba').value)
+        var b = parseFloat(document.getElementById('bb').value)
+        var c = parseFloat(document.getElementById('bc').value)
+        var d = parseFloat(document.getElementById('bd').value)
+        var e = parseFloat(document.getElementById('be').value)
+        var f = parseFloat(document.getElementById('bf').value)
+
+        myBody = `{
+            "h_length": ${a},
+            "l_length": ${b},
+            "a_length": ${c},
+            "density": ${d},
+            "excavation": ${e},
+            "removal_soil": ${f}
+        }`;
+    } else if (calcId == 'earthen/excavation-slope') {
+        var a = parseFloat(document.getElementById('ca').value)
+        var b = parseFloat(document.getElementById('cb').value)
+        var c = parseFloat(document.getElementById('cc').value)
+        var d = parseFloat(document.getElementById('cd').value)
+        var e = parseFloat(document.getElementById('ce').value)
+        var f = parseFloat(document.getElementById('cf').value)
+        var g = parseFloat(document.getElementById('cg').value)
+
+        myBody = `{
+            "h_length": ${a},
+            "l_length": ${b},
+            "a_length": ${c},
+            "b_length": ${d},
+            "density": ${e},
+            "excavation": ${f},
+            "removal_soil": ${g}
+        }`;
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
+    } else if (calcId == '') {
+
     }
 
     xhr.send(myBody);
@@ -486,5 +664,85 @@ function matchData(calcId, data) {
         document.getElementById('nres_a').innerHTML = data.plinth
         document.getElementById('nres_b').innerHTML = data.room_area
         document.getElementById('nres_c').innerHTML = data.total_cost
+    }
+
+
+    else if (calcId == 'lumber/volume') {
+        document.getElementById('ares_a').innerHTML = data.amount_meter
+        document.getElementById('ares_b').innerHTML = data.lumber_volume
+        document.getElementById('ares_c').innerHTML = data.total_volume
+        document.getElementById('ares_d').innerHTML = data.lumber_price
+        document.getElementById('ares_e').innerHTML = data.materials_price
+    } else if (calcId == 'lumber/amount') {
+        document.getElementById('bres_a').innerHTML = data.amount_meter
+        document.getElementById('bres_b').innerHTML = data.lumber_volume
+        document.getElementById('bres_c').innerHTML = data.amount_in_volume
+        document.getElementById('bres_d').innerHTML = data.lumber_price
+        document.getElementById('bres_e').innerHTML = data.materials_price
+    }
+
+
+    else if (calcId == 'roof/mono') {
+        document.getElementById('ares_a').innerHTML = data.roof_area
+        document.getElementById('ares_b').innerHTML = data.tilt_angle
+        document.getElementById('ares_c').innerHTML = data.slope_length
+        document.getElementById('ares_d').innerHTML = data.pediment_area
+        document.getElementById('ares_e').innerHTML = data.rafter_length
+        document.getElementById('ares_f').innerHTML = data.number_of_rafters
+        document.getElementById('ares_g').innerHTML = data.rafter_planks_needed
+        document.getElementById('ares_h').innerHTML = data.board_volume
+        document.getElementById('ares_i').innerHTML = data.rafter_total_volume
+        document.getElementById('ares_j').innerHTML = data.rafter_step
+        document.getElementById('ares_k').innerHTML = data.number_of_passes
+        document.getElementById('ares_l').innerHTML = data.planks_needed
+        document.getElementById('ares_m').innerHTML = data.piece_volume
+        document.getElementById('ares_n').innerHTML = data.passes_total_volume
+        document.getElementById('ares_o').innerHTML = data.passes_step
+        document.getElementById('ares_p').innerHTML = data.roof_total_cost
+        document.getElementById('ares_q').innerHTML = data.rafters_total_cost
+        document.getElementById('ares_r').innerHTML = data.cost_total_lathing
+        document.getElementById('ares_s').innerHTML = data.total_total_cost
+    } else if (calcId == 'roof/gable') {
+        document.getElementById('bres_a').innerHTML = data.roof_area
+        document.getElementById('bres_b').innerHTML = data.tilt_angle
+        document.getElementById('bres_c').innerHTML = data.slope_length
+        document.getElementById('bres_d').innerHTML = data.pediment_area
+        document.getElementById('bres_e').innerHTML = data.rafter_length
+        document.getElementById('bres_f').innerHTML = data.number_of_rafters
+        document.getElementById('bres_g').innerHTML = data.rafter_planks_needed
+        document.getElementById('bres_h').innerHTML = data.board_volume
+        document.getElementById('bres_i').innerHTML = data.rafter_total_volume
+        document.getElementById('bres_j').innerHTML = data.rafter_step
+        document.getElementById('bres_k').innerHTML = data.number_of_passes
+        document.getElementById('bres_l').innerHTML = data.planks_needed
+        document.getElementById('bres_m').innerHTML = data.piece_volume
+        document.getElementById('bres_n').innerHTML = data.passes_total_volume
+        document.getElementById('bres_o').innerHTML = data.passes_step
+        document.getElementById('bres_p').innerHTML = data.roof_total_cost
+        document.getElementById('bres_q').innerHTML = data.rafters_total_cost
+        document.getElementById('bres_r').innerHTML = data.cost_total_lathing
+        document.getElementById('bres_s').innerHTML = data.total_total_cost
+    }
+
+
+    else if (calcId == 'earthen/pillow') {
+        document.getElementById('ares_a').innerHTML = data.pillow_volume
+        document.getElementById('ares_b').innerHTML = data.material_weight
+        document.getElementById('ares_c').innerHTML = data.volume_with_compaction
+        document.getElementById('ares_d').innerHTML = data.weight_bucket
+        document.getElementById('ares_e').innerHTML = data.bucket_amount
+        document.getElementById('ares_f').innerHTML = data.total_cost
+    } else if (calcId == 'earthen/excavation-vertical') {
+        document.getElementById('bres_a').innerHTML = data.pit_volume
+        document.getElementById('bres_b').innerHTML = data.soil_weight
+        document.getElementById('bres_c').innerHTML = data.excavation
+        document.getElementById('bres_d').innerHTML = data.removal_soil
+        document.getElementById('bres_e').innerHTML = data.expenses
+    } else if (calcId == 'earthen/excavation-slope') {
+        document.getElementById('cres_a').innerHTML = data.pit_volume
+        document.getElementById('cres_b').innerHTML = data.soil_weight
+        document.getElementById('cres_c').innerHTML = data.excavation
+        document.getElementById('cres_d').innerHTML = data.removal_soil
+        document.getElementById('cres_e').innerHTML = data.expenses
     }
 }
