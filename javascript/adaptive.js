@@ -37,6 +37,7 @@ $(document).ready(function($) {
             maxWidth: $(window).innerWidth()- 700
            
         });
+        
     }
     
         adapt();

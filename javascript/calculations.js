@@ -351,12 +351,12 @@ function matchSend(calcId, xhr) {
             "room_width": ${c},
             "cost": ${d}
         }`;
-    } else if (calcId == 'plumber/volume') {
+    } else if (calcId == 'lumber/amount') {
         var a = parseFloat(document.getElementById('aa').value)
         var b = parseFloat(document.getElementById('ab').value)
         var c = parseFloat(document.getElementById('ac').value)
         var d = parseFloat(document.getElementById('ad').value)
-        var e = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ae').value)
 
         myBody = `{
             "length": ${a},
@@ -365,18 +365,18 @@ function matchSend(calcId, xhr) {
             "amount": ${d},
             "cost": ${e}
         }`;
-    } else if (calcId == 'plumber/amount') {
-        var a = parseFloat(document.getElementById('aa').value)
-        var b = parseFloat(document.getElementById('ab').value)
-        var c = parseFloat(document.getElementById('ac').value)
-        var d = parseFloat(document.getElementById('ad').value)
-        var e = parseFloat(document.getElementById('ad').value)
+    } else if (calcId == 'lumber/volume') {
+        var a = parseFloat(document.getElementById('ba').value)
+        var b = parseFloat(document.getElementById('bb').value)
+        var c = parseFloat(document.getElementById('bc').value)
+        var d = parseFloat(document.getElementById('bd').value)
+        var e = parseFloat(document.getElementById('bd').value)
 
         myBody = `{
             "length": ${a},
             "width": ${b},
             "thickness": ${c},
-            "amount": ${d},
+            "volume": ${d},
             "cost": ${e}
         }`;
     }
@@ -401,7 +401,6 @@ function matchSend(calcId, xhr) {
         var p = parseFloat(document.getElementById('ap').value)
         var q = parseFloat(document.getElementById('aq').value)
         var r = parseFloat(document.getElementById('ar').value)
-        var s = parseFloat(document.getElementById('as').value)
 
         myBody = `{
             "a_length": ${a},
@@ -421,8 +420,7 @@ function matchSend(calcId, xhr) {
             "d_lathing": ${o},
             "roof_cost": ${p},
             "rafter_cost": ${q},
-            "lathing_cost": ${r},
-            "total_cost": ${s}
+            "lathing_cost": ${r}
         }`;
     } else if (calcId == 'roof/gable') {
         var a = parseFloat(document.getElementById('aa').value)
@@ -668,17 +666,17 @@ function matchData(calcId, data) {
 
 
     else if (calcId == 'lumber/volume') {
-        document.getElementById('ares_a').innerHTML = data.amount_meter
-        document.getElementById('ares_b').innerHTML = data.lumber_volume
-        document.getElementById('ares_c').innerHTML = data.total_volume
-        document.getElementById('ares_d').innerHTML = data.lumber_price
-        document.getElementById('ares_e').innerHTML = data.materials_price
-    } else if (calcId == 'lumber/amount') {
         document.getElementById('bres_a').innerHTML = data.amount_meter
         document.getElementById('bres_b').innerHTML = data.lumber_volume
-        document.getElementById('bres_c').innerHTML = data.amount_in_volume
+        document.getElementById('bres_c').innerHTML = data.total_volume
         document.getElementById('bres_d').innerHTML = data.lumber_price
         document.getElementById('bres_e').innerHTML = data.materials_price
+    } else if (calcId == 'lumber/amount') {
+        document.getElementById('ares_a').innerHTML = data.amount_meter
+        document.getElementById('ares_b').innerHTML = data.lumber_volume
+        document.getElementById('ares_c').innerHTML = data.amount_in_volume
+        document.getElementById('ares_d').innerHTML = data.lumber_price
+        document.getElementById('ares_e').innerHTML = data.materials_price
     }
 
 
@@ -745,4 +743,19 @@ function matchData(calcId, data) {
         document.getElementById('cres_d').innerHTML = data.removal_soil
         document.getElementById('cres_e').innerHTML = data.expenses
     }
+}
+
+function selectOnChange(value){
+    if (value == '0') document.getElementById('ab').value = 1625
+    else if (value == '1') document.getElementById('ab').value = 1630
+    else if (value == '2') document.getElementById('ab').value = 1600
+    else if (value == '3') document.getElementById('ab').value = 1400
+    else if (value == '4') document.getElementById('ab').value = 500
+    else if (value == '5') document.getElementById('ab').value = 1470
+    else if (value == '6') document.getElementById('ab').value = 2210
+    else if (value == '7') document.getElementById('ab').value = 2210
+    else if (value == '8') document.getElementById('ab').value = 3370
+    else if (value == '9') document.getElementById('ab').value = 2300
+    else if (value == '10') document.getElementById('ab').value = 1300
+    else document.getElementById('ab').value = 1800
 }
