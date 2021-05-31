@@ -8,7 +8,7 @@ function Calculate(id) {
         if (xhr.readyState === 4) {
             state = 1
             console.log(xhr.status);
-            if(xhr.status == 0){
+            if (xhr.status == 0) {
                 document.getElementById("loading").remove();
                 document.getElementById("loading_back").remove();
                 alert("Что то пошло не так, повторите позже")
@@ -26,8 +26,8 @@ function Calculate(id) {
     var html = document.getElementsByTagName("html")[0];
     html.insertBefore(backDiv, html.lastChild)
     html.insertBefore(gifDiv, html.lastChild)
-  var heightL =   $(window).innerWidth().toString() + "px";
-  
+    var heightL = $(window).innerWidth().toString() + "px";
+
     backDiv.setAttribute("id", "loading_back");
     backDiv.style.background = "rgb(255, 255, 255, 0.6)"
     backDiv.style.position = "absolute"
@@ -379,10 +379,7 @@ function matchSend(calcId, xhr) {
             "volume": ${d},
             "cost": ${e}
         }`;
-    }
-    
-    
-    else if (calcId == 'roof/mono') {
+    } else if (calcId == 'roof/mono') {
         var a = parseFloat(document.getElementById('aa').value)
         var b = parseFloat(document.getElementById('ab').value)
         var c = parseFloat(document.getElementById('ac').value)
@@ -460,10 +457,7 @@ function matchSend(calcId, xhr) {
             "rafter_cost": ${p},
             "lathing_cost": ${q}
         }`;
-    } 
-    
-    
-    else if (calcId == 'earthen/pillow') {
+    } else if (calcId == 'earthen/pillow') {
         var a = parseFloat(document.getElementById('aa').value)
         var b = parseFloat(document.getElementById('ab').value)
         var c = parseFloat(document.getElementById('ac').value)
@@ -515,10 +509,30 @@ function matchSend(calcId, xhr) {
             "excavation": ${f},
             "removal_soil": ${g}
         }`;
-    } else if (calcId == '') {
+    } else if (calcId == 'armature/amount') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
 
-    } else if (calcId == '') {
+        myBody = `{
+            "diameter": ${a},
+            "length": ${b},
+            "amount": ${c},
+            "cost": ${d}
+        }`;
+    } else if (calcId == 'armature/weight') {
+        var a = parseFloat(document.getElementById('ba').value)
+        var b = parseFloat(document.getElementById('bb').value)
+        var c = parseFloat(document.getElementById('bc').value)
+        var d = parseFloat(document.getElementById('bd').value)
 
+        myBody = `{
+            "diameter": ${a},
+            "length": ${b},
+            "total_weight": ${c},
+            "cost": ${d}
+        }`;
     } else if (calcId == '') {
 
     } else if (calcId == '') {
@@ -581,10 +595,9 @@ function matchData(calcId, data) {
         document.getElementById('gres_e').innerHTML = data.mesh_width
         document.getElementById('gres_f').innerHTML = data.mesh_area
         document.getElementById('gres_g').innerHTML = data.weight
-    } 
+    }
     
-
-  
+    
     else if (calcId == 'material/insulation') {
         document.getElementById('ares_a').innerHTML = data.sheet_area
         document.getElementById('ares_b').innerHTML = data.sheet_volume
@@ -663,8 +676,8 @@ function matchData(calcId, data) {
         document.getElementById('nres_b').innerHTML = data.room_area
         document.getElementById('nres_c').innerHTML = data.total_cost
     }
-
-
+    
+    
     else if (calcId == 'lumber/volume') {
         document.getElementById('bres_a').innerHTML = data.amount_meter
         document.getElementById('bres_b').innerHTML = data.lumber_volume
@@ -678,8 +691,8 @@ function matchData(calcId, data) {
         document.getElementById('ares_d').innerHTML = data.lumber_price
         document.getElementById('ares_e').innerHTML = data.materials_price
     }
-
-
+    
+    
     else if (calcId == 'roof/mono') {
         document.getElementById('ares_a').innerHTML = data.roof_area
         document.getElementById('ares_b').innerHTML = data.tilt_angle
@@ -721,8 +734,8 @@ function matchData(calcId, data) {
         document.getElementById('bres_r').innerHTML = data.cost_total_lathing
         document.getElementById('bres_s').innerHTML = data.total_total_cost
     }
-
-
+    
+    
     else if (calcId == 'earthen/pillow') {
         document.getElementById('ares_a').innerHTML = data.pillow_volume
         document.getElementById('ares_b').innerHTML = data.material_weight
@@ -743,9 +756,25 @@ function matchData(calcId, data) {
         document.getElementById('cres_d').innerHTML = data.removal_soil
         document.getElementById('cres_e').innerHTML = data.expenses
     }
+
+
+    else if (calcId == 'armature/amount') {
+        document.getElementById('ares_a').innerHTML = data.total_length
+        document.getElementById('ares_b').innerHTML = data.weight
+        document.getElementById('ares_c').innerHTML = data.total_weight
+        document.getElementById('ares_d').innerHTML = data.meter
+        document.getElementById('ares_e').innerHTML = data.rod_cost
+        document.getElementById('ares_f').innerHTML = data.total_cost
+    } else if (calcId == 'armature/weight') {
+        document.getElementById('bres_a').innerHTML = data.total_length
+        document.getElementById('bres_b').innerHTML = data.rod_amount
+        document.getElementById('bres_c').innerHTML = data.meter
+        document.getElementById('bres_d').innerHTML = data.rod_cost
+        document.getElementById('bres_e').innerHTML = data.total_cost
+    }
 }
 
-function selectOnChange(value){
+function selectOnChange(value) {
     if (value == '0') document.getElementById('ab').value = 1625
     else if (value == '1') document.getElementById('ab').value = 1630
     else if (value == '2') document.getElementById('ab').value = 1600
@@ -759,3 +788,4 @@ function selectOnChange(value){
     else if (value == '10') document.getElementById('ab').value = 1300
     else document.getElementById('ab').value = 1800
 }
+
