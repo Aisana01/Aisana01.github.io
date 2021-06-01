@@ -1,31 +1,5 @@
 var userId = localStorage.getItem("userID");
 
-class CalcTypes {
-    constructor(calc_title, calc_code, number, calc_category, access) {
-        this.calc_title = calc_title;
-        this.calc_code = calc_code;
-        this.number = number;
-        this.calc_category = calc_category;
-        this.access = access;
-    }
-}
-
-// Firestore data converter
-var calcConverter = {
-    toFirestore: function (calculation) {
-        return {
-            calc_title: calculation.calc_title,
-            calc_code: calculation.calc_code,
-            number: calculation.number,
-            calc_category: calculation.calc_category,
-            access: calculation.access,
-        };
-    },
-    fromFirestore: function (snapshot, options) {
-        const data = snapshot.data(options);
-        return new CalcTypes(data.calc_title, data.calc_code, data.number, data.calc_category, data.access);
-    }
-};
 var divs = document.getElementsByClassName("sub")
 var calculationsArray = []
 if (userId == null){
@@ -50,7 +24,7 @@ if (userId == null){
                 divs[i].lastElementChild.style.padding = "16px";
             }
         } else {
-            db.collection("calculations").where("access", "==", "free").withConverter(calcConverter).get().then((querySnapshot) => {
+            db.collection("calculations").where("access", "==", "free").get().then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
                     calculationsArray.push(doc.data().calc_title);
                 });
