@@ -226,7 +226,7 @@
                                 <fieldset class="fields">
                                     <div class="form_wrap_calc">
                                         <label class="input_label">Вид материала:</label>
-                                        <select id="aa" class="select_calc">
+                                        <select id="aa" class="select_calc" onchange="selectOnChange(this.value)">
                                             <option value="0">Песок строительный</option>
                                             <option value="1">Песок речной</option>
                                             <option value="2">ПГС-песчано-гравийная смесь</option>
@@ -706,6 +706,11 @@
             </div>
         </div>
     </div>
+    <!--  -->
+<div id = "preloader" class="mk-spinner-wrap">
+    <div class="mk-spinner-bubbles"></div>
+  </div>
+        <!--  -->
 </body>
 <script src = "javascript/modalBlockImg.js"></script>
 <script src="javascript/modal_premium.js"> </script>
@@ -716,5 +721,7 @@
 <script src="javascript/live_search.js"></script>
 <script src="javascript/scroll_block.js"></script>
 <script src="javascript/adaptive.js"></script>
+<script src="javascript/open_loader.js"></script>
+
 
 </html>
