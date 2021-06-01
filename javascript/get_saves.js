@@ -183,7 +183,7 @@ function fillDataInner(saveRequest, saveResponse, saveCode){
 }
 
 function chooseBlock(calcCode, _callback){
-    $("#apend").load("https://aisana01.github.io/" + calcCode, function() {
+    $("#apend").load("https://ibuild.kz/" + calcCode, function() {
         document.getElementsByClassName("button_primary")[0].remove();
         document.getElementsByClassName("result_calc_title")[0].style.display = "none";
         var inputs = document.getElementsByClassName("form_control_calc")
