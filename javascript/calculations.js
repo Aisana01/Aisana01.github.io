@@ -533,12 +533,51 @@ function matchSend(calcId, xhr) {
             "total_weight": ${c},
             "cost": ${d}
         }`;
-    } else if (calcId == '') {
 
-    } else if (calcId == '') {
 
-    } else if (calcId == '') {
 
+    } else if (calcId == 'wall/brick') {
+        var a = parseFloat(document.getElementById('aa').value)
+        var b = parseFloat(document.getElementById('ab').value)
+        var c = parseFloat(document.getElementById('ac').value)
+        var d = parseFloat(document.getElementById('ad').value)
+        var e = parseFloat(document.getElementById('ae').value)
+        var f = parseFloat(document.getElementById('af').value)
+        var g = parseFloat(document.getElementById('ag').value)
+
+        myBody = `{
+            "brick_type": ${a},
+            "wall_length": ${b},
+            "wall_height": ${c},
+            "thickness": ${d},
+            "solution_thickness": ${e},
+            "brick_weight": ${f},
+            "brick_cost": ${g}
+        }`;
+    } else if (calcId == 'wall/block') {
+        var a = parseFloat(document.getElementById('ba').value)
+        var b = parseFloat(document.getElementById('bb').value)
+        var c = parseFloat(document.getElementById('bc').value)
+        var d = parseFloat(document.getElementById('bd').value)
+        var e = parseFloat(document.getElementById('be').value)
+        var f = parseFloat(document.getElementById('bf').value)
+        var g = parseFloat(document.getElementById('bg').value)
+
+        myBody = `{
+            "brick_type": ${a},
+            "wall_length": ${b},
+            "wall_height": ${c},
+            "thickness": ${d},
+            "solution_thickness": ${e},
+            "brick_weight": ${f},
+            "brick_cost": ${g}
+        }`;
+    } else if (calcId == 'wall/block-volume') {
+        var a = parseFloat(document.getElementById('ca').value)
+
+        myBody = `{
+            "brick_size": ${a}
+        }`;
     } else if (calcId == '') {
 
     }
@@ -771,6 +810,40 @@ function matchData(calcId, data) {
         document.getElementById('bres_c').innerHTML = data.meter
         document.getElementById('bres_d').innerHTML = data.rod_cost
         document.getElementById('bres_e').innerHTML = data.total_cost
+    }
+
+
+
+    else if (calcId == 'wall/brick') {
+        document.getElementById('ares_a').innerHTML = data.masonry_area
+        document.getElementById('ares_b').innerHTML = data.wall_thickness
+        document.getElementById('ares_c').innerHTML = data.brick_amount
+        document.getElementById('ares_d').innerHTML = data.brick_volume
+        document.getElementById('ares_e').innerHTML = data.brick_cube_amount
+        document.getElementById('ares_f').innerHTML = data.brick_row_amount
+        document.getElementById('ares_g').innerHTML = data.brick_weight_res
+        document.getElementById('ares_h').innerHTML = data.brick_total_weight
+        document.getElementById('ares_i').innerHTML = data.foundation_load
+
+        
+        var cost = parseFloat(document.getElementById('ag').value)
+        document.getElementById('ares_j').innerHTML = data.brick_amount * cost
+
+    } else if (calcId == 'wall/block') {
+        document.getElementById('bres_a').innerHTML = data.masonry_area
+        document.getElementById('bres_b').innerHTML = data.wall_thickness
+        document.getElementById('bres_c').innerHTML = data.brick_amount
+        document.getElementById('bres_d').innerHTML = data.brick_volume
+        document.getElementById('bres_e').innerHTML = data.brick_cube_amount
+        document.getElementById('bres_f').innerHTML = data.brick_row_amount
+        document.getElementById('bres_g').innerHTML = data.brick_weight_res
+        document.getElementById('bres_g').innerHTML = data.brick_total_weight
+        document.getElementById('bres_h').innerHTML = data.foundation_load
+
+        var cost = parseFloat(document.getElementById('bg').value)
+        document.getElementById('bres_i').innerHTML = data.brick_amount * cost
+    } else if (calcId == 'wall/block-volume') {
+        document.getElementById('cres_a').innerHTML = data.amount
     }
 }
 
